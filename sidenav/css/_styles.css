@@ -1,0 +1,1178 @@
+/****************************************************************** 
+ * override base, body, h1, links and btns *
+ *************************************************************************** */
+body {
+	margin: 0;
+	font-family:  Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+	background-color: #ffffff;
+}
+
+a {
+	color: #111111;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	color: #222222;
+	text-decoration: underline;
+}
+.img-rounded {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 10px 0;
+	font-family: inherit;
+	font-weight: bold;
+	line-height: 20px;
+	color: inherit;
+	text-rendering: optimizelegibility;
+}
+h1, h2, h3 {padding-bottom:.4em;}
+h1,
+h2,
+h3 {
+  line-height: 40px;
+}
+
+h1 {
+  font-size: 30.5px;
+}
+
+h2 {
+  font-size: 27.5px;
+}
+
+h3 {
+  font-size: 24.5px;
+}
+
+h4 {
+  font-size: 17.5px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 11.9px;
+}
+
+.btn, input.btn {
+	display: inline-block;
+	*display: inline;
+	/* IE7 inline-block hack */
+
+	*zoom: 1;
+	padding: 4px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #111111;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #e6e6e6;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: 1px solid #cccccc;
+	*border: 0;
+	border-bottom-color: #b3b3b3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	*margin-left: .3em;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	}
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+	color: #333333;
+	background-color: #e6e6e6;
+	*background-color: #d9d9d9;
+	}
+.btn:active,
+.btn.active {
+	background-color: #cccccc \9;
+	}
+.btn:first-child {
+	*margin-left: 0;
+}
+.btn:hover, 
+input.btn:hover,
+.btn:focus {
+	color: #222222;
+	text-decoration: none;
+	background-position: 0 -15px;
+	-webkit-transition: background-position 0.1s linear;
+	-moz-transition: background-position 0.1s linear;
+	-o-transition: background-position 0.1s linear;
+	transition: background-position 0.1s linear;
+}
+
+.btn.active,
+input.btn:active, 
+.btn:active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	}
+
+
+
+/****************************************************************** 
+ * containers or wrappers *
+ *************************************************************************** */
+.mastWrap, .contentWrap, .footerWrap {
+	max-width:1100px;
+	margin:0 auto;
+	}
+/*sets the maximum page size and centers for each section mastWrap, contentWrap and footWrap */
+.mastWrap, .contentWrap  {
+	margin-bottom:10px;
+	
+	}
+.contentWrap .top {
+	margin-bottom:20px;
+	padding-top:0;
+	text-align:left;
+	}
+.contentWrap .middle {
+	margin-bottom:20px;
+	padding-top:20px;
+	text-align:left;
+	}
+.contentWrap .bottom {
+	
+	}	
+.border-bottom {
+	padding-bottom: 16px;
+	border-bottom: 1px #f4f4f2 solid;
+	}
+
+.footWrap {
+	background-color:#efefef;
+	color:#fff;
+	}
+.contentWrap ol, .contentWrap ul {
+	list-style: none;
+	}
+
+/*sets the  page slide for left nav */
+#content {
+	width: 980px;
+	padding: 10px;
+	margin: 0 auto;
+	}
+
+ul#nav { 
+	padding-left: 0; 
+	list-style: none; 
+	width: 100%; 
+	margin-bottom: 40px; 
+	}
+ul#nav:after { 
+	content: "\0020"; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden; 
+	}
+
+#content ul#nav li { 
+	float: left;  
+	text-align: center; 
+	}
+#content ul#nav.nav-1 li {
+  width:100%;
+  max-width:100%;
+}
+#content ul#nav.nav-2 li {
+  width:49.8%;
+  max-width:49.8%;
+}
+#content ul#nav.nav-3 li {
+  width:33.133333333333%;
+  max-width:33.133333333333%;
+}
+#content ul#nav.nav-4 li {
+  width:24.8%;
+  max-width:24.8%;
+}
+#content ul#nav.nav-5 li {
+  width:19.8%;
+  max-width:19.8%;
+}
+#content ul#nav.nav-6 li {
+  width:16.466666666667%;
+  max-width:16.466666666667%;
+}
+#content ul#nav.nav-7 li {
+  width:14.085714285714%;
+  max-width:14.085714285714%;
+}
+#content ul#nav.nav-8 li {
+  width:12.3%;
+  max-width:12.3%;
+}
+#content ul#nav.nav-9 li {
+  width:10.911111111111%;
+  max-width:10.911111111111%;
+}
+#content ul#nav.nav-10 li {
+  width:9.8%;
+  max-width:9.8%;
+}
+#content ul#nav.nav-11 li {
+  width:8.8909090909090%;
+  max-width:8.8909090909090%;
+}
+#content ul#nav.nav-12 li {
+  width:8.1333333333333%;
+  max-width:8.1333333333333%;
+}
+#content ul#nav a { 
+	display: block; 
+	background: #000;
+	color: #FFF; 
+	font-weight: bold; 
+	padding: 10px; 
+	border-right: 1px solid #FFF;
+	}
+#content ul#nav a:hover { background: #333; }
+
+.open {
+	display: none;
+	width: 40px;
+	height: 30px;
+	margin-bottom: 10px;
+	background: url(../images/menu.png) center center no-repeat #333;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-border-radius: 8px;
+	box-shadow: inset 0 0 3px #000;
+	text-indent: -999999px;
+	border: 0;
+	}
+#pageslide {
+	/* These styles MUST be included. Do not change. */
+	display: none;
+	position: absolute;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	z-index: 999999;
+
+	/* Specify the width of your pageslide here */
+	width: 260px;
+	padding: 20px;
+
+	/* These styles are optional, and describe how the pageslide will look */
+	background-color: #333;
+	color: #FFF;
+	-webkit-box-shadow: inset 0 0 5px 5px #222;
+	-moz-shadow: inset 0 0 5px 5px #222;
+	box-shadow: inset 0 0 5px 5px #222;
+	}
+
+#secondary { display: none; color: #EFEFEF; }
+#secondary h2 { color: #FFF; }
+            
+/****************************************************************** 
+ * logo AND BRAND *
+ *************************************************************************** */
+
+
+
+.logo {
+	display:block;
+	position:relative;
+	}	
+.logo img {
+	width:100%;
+	max-width:375px;
+	}
+
+
+/****************************************************************** 
+ * navigation icons on mobile *
+ *************************************************************************** */
+
+
+
+.btn.btn-navbar img {
+	width:100%;
+	min-width:22px;
+	max-width:55px;
+	}
+
+
+.btn.btn-navbar {
+	width:15%;
+	}
+
+ 
+.login-collapse.collapse {
+	height: auto;
+	text-align: left;
+	}
+
+/****************************************************************** 
+ * ovderride primary nav or main nav *
+ *************************************************************************** */
+
+.navbar .nav {
+	position: relative;
+	clear:both;
+	height:auto;
+	margin:0 auto; 
+	border:1px solid #cfo;
+}
+.navbar-inner {
+	position:relative;
+	top:0;
+	left:0;
+	min-height: 0;
+	padding-right: 0;
+	padding-left: 0;
+	background:none;
+	border: none;
+	-webkit-border-radius:0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	filter: none;
+	*zoom: 1;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.nav {
+	
+	/*modify nav font*/
+	}
+
+.navbar .nav > li > a {
+}
+.navbar .nav > li > a:hover, .navbar .nav > li.active > a {
+	
+	text-decoration: none;
+}
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover {
+	
+	text-decoration: none;
+}
+
+.nav.nav-tabs li a { box-shadow:none;}
+
+
+/****************************************************************** 
+ * side nav *
+ *************************************************************************** */
+.sNav {
+	margin: 20px 0;
+	}
+
+.sNav ul {
+	margin-left: 10px;
+	}
+.sNav ul ul {
+	margin-left: 0;
+	}
+
+.sNav ul li {
+	padding: 0 0 12px 20px;
+	}
+.sNav ul li:hover {
+	background:#f7f7f7;
+	}
+.sNav ul ul li {
+
+	padding: 12px 0 0 10px;
+	}
+	
+
+.sNav ul li a:link, .sNav ul li a:visited {
+	
+	text-decoration: none;
+	}
+.sNav ul li a:hover, .sNav ul li a:active {
+	
+	text-decoration: underline;
+	}
+	
+.sNav ul ul li a:link, .sNav ul ul li a:visited {
+	
+	text-decoration: none;
+	}
+.sNav ul ul li a:hover, .sNav ul ul li a:active {
+
+	text-decoration: underline;
+	}
+
+.sNav ul li.withChildOpen {
+	background: url(../images/snav_on.gif) no-repeat .5em .2em;
+	}
+.sNav ul li.withChildClosed {
+	background: url(../images/snav_off.gif) no-repeat .5em .3em;
+	}
+.sNav ul li.withoutChild {
+	background: none;
+	}
+
+
+/****************************************************************** 
+ * utility *
+ *************************************************************************** */
+
+
+
+
+.uti {
+	padding: 0;
+	width:auto;
+	position:relative;
+	}
+	
+.uti ul {
+	margin: 0;
+	padding: 0;
+	display:inline-block;
+	white-space:nowrap;
+	position:relative;
+	}
+
+.uti li {
+	margin:10px 0;
+	padding: 0;
+	text-align: left;
+	display: inline;
+	list-style:none;
+	position:relative;
+	top:0;
+	vertical-align:top;
+	}
+li.searchArea {
+	display:inline; 
+	}
+.uti a:link, .uti a:visited {
+	text-decoration: none;
+	padding: 10px 10px 0 10px;
+	display: inline-block;
+
+	}
+.uti a:hover, .uti a:active {
+
+	}
+
+
+/****************************************************************** 
+ * logins *
+ *************************************************************************** */
+
+	
+
+.loginArea {
+	width:100%;
+	position:relative;
+	}
+.loginArea h1 {
+	position:relative;
+	padding:0 0 10px 0; 
+	
+	}
+.loginOB {
+	padding: 12px 8% 12px 6%;
+	position:relative;
+	}
+.loginOB form {
+	width: 100%;
+	margin-bottom: 0;
+	}
+.loginCol {
+	margin:5px 0 0 0;
+	position:relative;
+	}
+.
+.iconRight {float:right;}
+.loginCol input.btn{
+	position: relative;
+	top:0;
+	}
+
+.appcenters {
+	background:#000;
+	width:100%;
+	
+	}
+.appcenters .span6, .span12.appcenters {
+	margin:0;
+	padding:0;
+	}
+.appcenters img {height:32px;}
+/****************************************************************** 
+ * search *
+ *************************************************************************** */
+
+
+
+.searchArea {
+	position:relative;
+	display:inline;
+	}
+.searchArea form {
+	position:relative;
+	top:0;
+	vertical-align:top;
+	
+	}
+.searchArea input {
+	position:relative;
+	top:0;
+	width:80%;
+	min-width: 100px;
+	font-size:12px;
+	background: #fff url(../images/searchicon.png) 5px .3em no-repeat;
+	padding:5px 10px 4px 24px;
+	box-shadow: 0 5px 5px #ddd inset;
+	
+	}
+.searchArea a.btn {
+	position:relative;
+	vertical-align:top;
+	top:0;
+	
+	}
+
+
+
+
+/****************************************************************** 
+ * special modules or containers *
+ *************************************************************************** */
+
+.module {
+	border:1px solid #fbfbfb;
+	background:#efefef;
+	padding: 0 5% 10px 5%;
+	}
+
+.highlight li {
+	
+	padding: 12px 0;
+	}
+.highlight li:hover {
+	color:#fff;
+	background:#666;
+	}
+.highlight li:hover a {color:#fff;}
+
+.module h1 {
+	
+	background:none;
+	padding:0;
+	margin:0;
+	}
+
+.module a:link, .module a:visited {
+	padding:11px 0;
+	text-decoration:none;
+	}
+.module a:active, .module a:hover { 
+	text-decoration:none;
+	
+	}
+.module li.firstLi {
+	
+	}
+.top .module {min-height:100px;}
+.middle .module {min-height:240px;}
+.bottom .module {min-height:220px;}
+.newsWrap, .ratesWrap {
+	
+	
+	}
+
+/****************************************************************** 
+ * rates *
+ *************************************************************************** */
+.rateTxt img {
+	
+	}
+.rates {
+	
+	}
+
+.rateTxt {
+	font-size:24px;
+	}
+
+.rateTxtsm {font-size:8px;}
+/****************************************************************** 
+ *main promotion *
+ *************************************************************************** */
+.slides {
+	position: relative;
+	}
+
+.promoImg img {width:100%;}
+.promoImg {
+	position:relative; 
+	top:0;
+	left:0;
+	z-index:100;
+	/*border-radius:8px;
+	-webkit-border-radius:8px;*/
+	}
+.promoTxt {
+	font-size:28px;
+	z-index:300;
+	
+	}
+
+.flexslider.promoMain, .slides {
+	position:relative;
+	margin-top:5px;
+	margin-bottom:40px;
+	}
+
+/****************************************************************** 
+ * smaller promotions with scale on hover for images*
+ *************************************************************************** */
+.promoSmall img {
+	width: 100%;
+	-webkit-box-shadow:  2px 2px 1px 1px rgba(000, 000, 000, .15);
+	box-shadow:  2px 2px 1px 1px rgba(000, 000, 000, .15);
+	-webkit-border-radius: 4px;
+	border-radius:4px;
+	}
+.promoSmall a img { 
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out; 
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out; 
+	transition: all .2s ease-in-out; 
+	}
+.promoSmall a:hover img {
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05); 
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05); 
+	}
+
+/****************************************************************** 
+ * content area on backpages *
+ *************************************************************************** */
+.content {
+	padding: 0 30px 30px 30px;
+	clear:both;
+	font-size:14px;
+	line-height:1.75em;
+	text-align:left;
+	border-top: none;
+	}
+	
+.content ul, .content ol {
+	margin: 0 0 0 0;
+	padding: 0 0 6px 0;
+	}
+	
+.content ul li { 
+	padding: 0 0 6px 20px;
+	}
+	
+.content ol li {
+	margin: 0 0 6px 25px;
+	}
+	/*mixed lists */
+.content ul ul, .content ol ol {
+	margin-bottom: -6px;
+	padding: 6px 0 0 0;
+	}
+
+.content ul li, .content ol li ul li, .content ol li ul li ol li ul li {
+	background: url(../images/bullet.png) no-repeat 0 .5em;
+	list-style:none;
+	}
+.content ol li, .content ol li ol li, .content ul li ol li ol li {
+	background:none;
+	list-style:upper-roman;
+	}
+.content ol li ol li {
+	background:none;
+	list-style:lower-alpha; 
+	}
+
+.content ul ul li {
+	background: url(../images/bullet2.png) no-repeat 0 .1em;
+}
+
+.contentImg { /* ensure that there is a width and height attribute on the image in case the WYSIWYG editor assigns a snippet's image a width or height of 0 */
+	padding:.5em 2%;
+	width:auto;
+	float:right;
+	margin:0 0 .5em 3%;
+	}
+.content img {max-width:100%;}	 /*image punch*/
+
+
+.content h1:first-child,
+.content h1:first-of-type {
+	
+	}
+
+blockquote {border-left:0;}
+blockquote:before {
+	display: block;
+	content: "\201C";
+	font-size: 50px;
+	position: relative;
+	left: -20px;
+	top: 0;
+	color: #7a7a7a;
+}
+blockquote cite {
+	color: #999999;
+	display: block;
+	margin-top: 10px;
+}
+ 
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+
+/****************************************************************** 
+ * footer nav and images *
+ *************************************************************************** */
+.footWrap ul {
+	list-style: none;
+}
+.footWrap li {
+	
+	list-style: none;
+	vertical-align: middle;
+	display: inline;
+	line-height:33px;
+}
+.footWrap li a:link, .footWrap li a:visited {
+	
+	text-decoration: none;
+	}
+.footWrap li a:hover, .footWrap li a:active {
+	text-decoration:underline;
+	}
+img.ehl {margin-top:-3px;}
+.footL {
+	text-align: left;
+	
+	
+	}
+	
+.footR {
+	float: right;
+	text-align: right;
+	
+	
+	}
+
+.footWrap img {display:inline;}
+.footWrap li.lastLi {display:block;}
+
+
+
+/****************************************************************** 
+ * forms *
+ *************************************************************************** */
+label {
+	display: block;
+	margin: 2px 0 0 0;
+	}
+
+	
+.appfield1 {
+	width: 98%;
+	border: 1px #c7c4bd solid;
+	border-radius: 0;
+	background: #fff;
+	padding:5px 0 2px 2px;
+	box-shadow: 0 5px 5px #ddd inset;
+}
+
+/* --- 	This is your FOCUS style, when you click into an input field --- */
+.appfield2 {
+	width: 98%;
+	border: 1px #c7c4bd solid;
+	border-radius: 0;
+	background: #efefef;
+	padding:5px 0 2px 2px;
+	box-shadow: 0 5px 5px #ddd inset;
+}
+
+.submitBtn {
+	margin-top: 7px;
+}
+
+
+
+
+/****************************************************************** 
+ * tables *
+ *************************************************************************** */
+table { 
+	}
+
+.tableheader {
+	background: ;
+	color: ;
+	font-weight: bold;
+	padding:.3em 15px;
+	}
+	
+th {
+	border-bottom: 1px solid #d9e2f6;
+	background-color:;
+	color:;
+	text-align: left;
+	padding:.3em 15px;
+	}
+	
+.tablecontent1 td {
+	border-bottom: 1px solid #d9e2f6;
+	background-color: #eff3fb;
+	padding:.3em 15px;
+	}
+	
+.tablecontent2 td {
+	border-bottom: 1px solid #d9e2f6;
+	background-color:#fff;
+	padding:.3em 15px;
+	}
+
+
+/****************************************************************** 
+ * etc formatting other *
+ *************************************************************************** */
+sup {font-size:.6em;}/*make sup smaller*/
+.faqQ { 
+	font-weight: bold;
+	}
+
+.faqQ { }
+.faqA { }
+	
+.xsmall {
+	font-size:.8em; 
+	}
+.small {
+	font-size:.9em;
+	}
+.medium {
+	font-size:1em;
+	}
+.large {
+	font-size:1.1em;
+	}
+.xlarge{
+	font-size:1.2em;
+	}
+
+.special3 {
+	}
+.special2 {
+	}
+.special1 {
+	}
+
+.disclaimer {
+	color: #7e7e7e;
+}
+	
+.required {
+	color: #dd2525;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 980 plus DESKTOP ONLY-----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 980px) {
+
+.login-collapse.collapse {
+	height: auto !important;
+	overflow: visible !important;
+	}
+.hidden-desktop {display:none;}
+.visible-desktop {display:block;}
+.content {min-height:550px;}
+
+
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------smaller than desktop group---------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 979 and below ------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 979px) {
+/*page slide*/
+#content { width: 748px; }
+/*page slide*/
+.login-collapse .loginOB a {
+	
+	}
+.login-collapse .loginOB a:active, .login-collapse .loginOB a:hover {
+	text-decoration:none; 
+	
+	}
+body {
+	padding-top: 0;
+	}
+.nav li li {list-style:none;}
+.uti {
+	padding: 0;
+	display:block;
+	}
+
+
+.uti > li > a {
+	
+	display:block;
+	}
+
+.uti li {
+	display:block;
+	list-style:none;
+	text-align:left;
+	
+	}
+.uti li:hover {}
+.uti a {
+	background: none !important;
+	padding:0 0 0 0 !important;
+	}
+.span9.fullwidth {width:100%;}
+.flexslider {
+	margin-bottom:35px !important;
+	}
+
+.nav-collapse.collapse.in {
+	margin-top:5px;
+	background:#fff;
+	border-top:5px solid #333;
+	height:480px !important; /* setting explicit height to activate animated slide */
+	width:100%;
+	}
+.login-collapse.collapse.in {
+	margin-top:5px;
+	height:135px !important; /* setting explicit height to activate animated slide */
+	width:100%;
+	background:#fff;
+	}
+.login-collapse.collapse.in .loginArea {
+	background:none;
+	}
+.login-collapse {
+	margin-top:5px;
+	height: 0 !important;
+	}
+
+.login-collapse {
+	clear: left;
+	}
+
+.login-collapse {
+	float: none;
+	margin: 0 0 10px;
+	}
+
+.login-collapse li {
+	float: none;
+	}
+
+.login-collapse,
+.login-collapse.collapse {
+	height: 0;
+	overflow: hidden;
+	}
+
+.promoTxt {
+	font-size:19px; 
+	line-height:22px;
+	margin-left:3%;
+	background:#f7f7f7;
+	}
+
+.footWrap {margin-top:10px;}
+.footWrap ul {
+	display:block;
+	min-height:1.6em;
+	}
+.footWrap li {
+	display:inline;
+	float:left; 
+	margin-right:10px;
+	}
+.footR {text-align:right;}
+.footL {text-align:left;}
+
+
+
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 768-979 tablet portrait --------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 979px) {
+.hidden-tablet {display:none;}
+.visible-tablet {display:block;}
+
+body {
+	padding-left: 0;
+	padding-right: 0;
+	}
+
+
+.searchArea {margin-top:-3px;}
+.logo .hidden-desktop {display:block;}
+.logo .hidden-phone {display:none;}
+.row-fluid .span9.p {width:100% !important; }
+
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 768 and below -------------------large phone------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media (max-width: 767px) {
+
+.hidden-phone {display:none;}
+.visible-phone {display:block;}
+/*page slide*/
+#content { width: 400px; }
+#content h1 { font-size: 22px; line-height: 30px; background-color: #ccc; color: #FFF; padding: 10px; }
+#content ul#nav { display: none;margin-left:0; }
+#content ul#nav ul, #content ul#nav li li {
+	margin-left:0; 
+	list-style:none;
+	padding-left:0;
+	}
+.open { display: block; }
+#pageslide { width: 180px; }
+#pageslide #nav li { width:80%;padding: 10px 0; border-bottom: 1px solid #fff; list-style:none; margin-left:0; }
+#pageslide #nav li a { color: #FFF; border: none; }
+#pageslide #nav li a:hover { text-decoration: underline; }
+/*page slide*/
+.flex-direction-nav {
+	display:none !important; /* arrows on promo*/
+	}
+
+.module {
+	padding:.5em 15px;
+	}
+.border-bottom {
+	margin:5px 0;
+	padding:0; 
+	}
+
+
+li.searchArea {
+	display:block;
+	padding-top:10px;
+	}
+.footL, 
+.footR {
+	text-align:center; 
+	margin:0 auto; 
+	width:auto;
+	}
+.footWrap a {margin:.3em 3%;}
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 480 and below ----------------android phones-------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 480px) {
+/* page slide */
+#content { width: 280px; }
+#content h1 { font-size: 14px; }
+/* page slide */
+.login-collapse {
+	-webkit-transform: translate3d(0, 0, 0);
+	}
+
+.hidden-phone {display:none;}
+.row-fluid.visible-phone input, 
+.row-fluid.visible-phone button {
+	font-size:9px;
+	}
+.ncua {display:none;}
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 320 and below ------------small phones------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 320px) {
+
+}
+
+@media (max-width: 240px) {
+
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTIONINTERNET EXPLORER DESKTOP ONLY---------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------- strange ie */
