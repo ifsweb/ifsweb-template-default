@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title></title>
+	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--webfont-->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+	<!-- Le styles -->
+	<link href="../css/bootstrap.css" type="text/css" rel="stylesheet" >
+	<link href="../css/bootstrap-responsive.css" type="text/css" rel="stylesheet" >
+	<link href="../css/_styles.css" type="text/css" rel="stylesheet">
+	<link href="../css/flexslider.css" rel="stylesheet">
+	<link href="../css/menu.css" rel="stylesheet">
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/apple-touch-icon-144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/apple-touch-icon-114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/apple-touch-icon-72.png">
+	<link rel="apple-touch-icon-precomposed" href="../images/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="../images/favicon.png">
+
+	<script type="text/javascript" src="../js/rollovers.js"></script>
+	<script type="text/javascript" src="../js/jquery-1_7.js"></script>
+	<script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.flexslider').flexslider({
+				controlNav : false,
+				directionNav: true,
+		          'prevText'            : '<img src="../images/btn_prev_off.png" alt="Previous" />',
+		          'nextText'            : '<img src="../images/btn_next_off.png" alt="Next" />'
+			});
+  		});
+	
+	</script>
+</head>
+
+<!--[if lt IE 7]><body id="home" class="ie ie6"><![endif]-->
+<!--[if IE 7]><body id="home" class="ie ie7"><![endif]-->
+<!--[if IE 8]><body id="home" class="ie ie8"><![endif]-->
+<!--[if IE 9]><body id="home" class=""><![endif]-->
+<!--[if !IE]> --><body id="home" class="non_ie"><!-- <![endif]-->
+
+<div class="contentWrap">
+<div class="container-fluid">
+<h1>Typography</h1><hr />
+<div class="row-fluid span12 content">
+
+<div class="span5">
+<h1>h1. Heading 1</h1>
+<h2>h2. Heading 2</h2>
+<h3>h3. Heading 3</h3>
+<h4>h4. Heading 4</h4>
+<hr />
+<h2>List Items</h2>
+<ul>
+	<li>Lorem ipsum dolor sit amet, consectetuer adipicing elit.</li>
+	<li>Nullam gravida dolor ac augue.</li>
+	<li>Cras pharetra posuere justo.</li>
+	<li>Suspendisse potenti. Donec nec quam.</li>
+</ul>
+<hr />
+<h2>Numbered lists</h2>
+<ol>
+	<li>Lorem ipsum dolor sit amet, consectetuer adipicing elit.</li>
+	<li>Nullam gravida dolor ac augue.</li>
+	<li>Cras pharetra posuere justo.</li>
+	<li>Suspendisse potenti. Donec nec quam.</li>
+</ol>
+</div><!--span5-->
+<div class="span7">
+<h2>Example body text</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipicing elit. Cras pharetra posuere justo. Suspendisse potenti. Donec nec quam. Class aptent taciti sociosqu ad itora torquent per corulia nostra, per. Donec trum purus at eros. In eu liberero magna. Nam est. Curabitur elementum leo ac nulla. Aliquam nec arcu sit amet purus mattis placerat. Suspendisse potenti. Quisque scelerisque mattis justo. Nunc tincidunt nisl sit amet tellus. Cras varius mollis nunc.</p>
+<p>Praesent tellus libero, tempor vel, viverra quis, mattis at, ipsum. Pellentesque suscipit, wisi vitae dapibus semper, lectus lectus aliquam ipsum, id iaculis turpis orci nec nunc. Nam justo est, elementum non, fringilla at, ultrices sit amet, erat. Ut nec ipsum at tellus trum scelerisque. Sed sed justo. Sed fringilla massa. Pellentesque habitant tristique senectus et netus et fames ac turmis egestas. Etiam condimentum erat quis dias. Cras non dolor eget arcu consectetuer nonummy. <a href="#">Aenean at massa.</a></p>
+<hr /><blockquote>Lorem ipsum dolor sit amet, consectetuer adipicing elit. Cras pharetra posuere justo. <br />- Edward Nort</blockquote></div><!--span7-->
+</div><!--row-fluid-->
+<h1>Forms &amp; Buttons</h1><hr />
+<div class="row-fluid span12">
+
+<div class="span5">
+<h2>Form</h2>
+                    <input type="text" name="name" class="appfield1" placeholder="Name" />
+                  
+                    <input type="text" name="phone" class="appfield1" placeholder="Phone" />
+                    <input type="text" name="email" class="appfield1" placeholder="Email" />
+                     <div class="control-group">
+            
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox" id="optionsCheckbox2" value="option1">
+                This is a checkbox
+              </label>
+              
+            </div>
+          </div>
+<input type="submit" class="btn" name="Submit" />
+
+<hr />
+<h2>Alert Messages</h2>
+<div class="alert"> <a class="close">&times;</a>Basic alert information</div>
+<div class="alert alert-info"> <a class="close">&times;</a>Info alert information</div>
+<div class="alert alert-danger"> <a class="close">&times;</a>Danger alert information</div>
+<div class="alert alert-success"> <a class="close">&times;</a>Success alert information</div>
+</div><!--span5-->
+<div class="span7">
+<h2>Buttons</h2>
+<input type="submit" class="btn" name="Submit" /><input type="button" value="Accept"class="btn-success" name="Success" /><input type="button" value="Delete" class="btn-danger" name="Danger" />
+<hr />
+<h2>Breadcrumbs</h2>
+	<ul class="breadcrumb">
+		<li><a href="#">Home</a> <span class="divider">/</span></li>
+		<li><a href="#">Personal</a> <span class="divider">/</span></li>
+		<li class="active">Savings</li>
+	</ul>
+<hr />
+<h2>Tabs</h2>
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#A" data-toggle="tab">Section 1</a></li>
+		<li><a href="#B" data-toggle="tab">Section 2</a></li>
+		<li><a href="#C" data-toggle="tab">Section 3</a></li>
+	</ul>
+	<div class="tabbable">
+		<div class="tab-content">
+			<div class="tab-pane active" id="A">
+			<p>Text from Section 1.</p>
+			</div>
+			<div class="tab-pane" id="B">
+			<p>Text from Section 2.</p>
+			</div>
+			<div class="tab-pane" id="C">
+			<p>This is Section C.</p>
+			</div>
+		</div>
+	</div> <!-- /tabbable -->
+
+<hr />
+<h2>Pagination</h2>
+	<div class="pagination">
+		<div class="pagination pagination-centered">
+			<ul>
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!--span7-->
+</div><!--row-fluid-->
+<h1>Tables</h1><hr />
+<div class="row-fluid span12">
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Account</th>
+        <th>Minimum</th>
+        <th>Free Online Banking</th>
+        <th>Free Remote Deposit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Super</td>
+        <td>1000</td>
+        <td><div class="icon-check"> </div></td>
+        <td><div class="icon-check"> </div></td>
+      </tr>
+      <tr>
+        <td>Free</td>
+        <td>0</td>
+        <td><div class="icon-check"> </div></td>
+        <td><div class=" icon-star-empty"> </div></td>
+      </tr>
+      <tr>
+        <td>Senior</td>
+        <td>500</td>
+        <td><div class=" icon-star"> </div></td>
+        <td><div class=" icon-star"> </div></td>
+      </tr>
+    </tbody>
+  </table>
+  </div><!--rowluid-->
+  <div class="row-fluid span12">
+  <div class="span3">
+	<div class="well">
+		<h2 class="muted">Platinum</h2>
+		<p><span class="label">POPULAR</span></p>
+		<ul>
+			<li>No fees</li>
+			<li>Remote deposit Capture</li>
+			<li>Unlimited Checking</li>
+			<li>Free Bill pay</li>
+		</ul>          
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+		<hr>
+		<h3>$5999 Minimum Deposit</h3>
+		<hr>
+		<p><a class="btn btn-large" href="#"><i class="icon-ok"></i> Start account</a></p>
+	</div>
+</div>
+<div class="span3">
+	<div class="well">
+		<h2 class="text-warning">Bronze</h2>
+		<p><span class="label label-success">POPULAR</span></p>
+		<ul>
+			<li>No fees with automatic deposit</li>
+			<li>Free Online Banking and transfers</li>
+		</ul>          
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+		<hr>
+		<h3>$100 Minimum Deposit</h3>
+		<hr>
+		<p><a class="btn btn-success btn-large" href="#"><i class="icon-ok"></i> Start account</a></p>
+	</div>
+</div>
+<div class="span3">
+	<div class="well">
+		<h2 class="text-info">Free</h2>
+		<p><span class="label label-info">BUDGET</span></p>
+		<ul>
+			<li>Free with automated deposit</li>
+			<li>Free online statements</li>
+		</ul>          
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+		<hr>
+		<h3>No minimum deposit</h3>
+		<hr>
+      <p><a class="btn btn-large" href="#"><i class="icon-ok"></i> Open Account</a></p>
+	</div>
+</div>
+</div><!--row-fluid-->
+</div><!--container-fluid-->
+
+</div><!--contentWrap-->
+</body>
+</html>

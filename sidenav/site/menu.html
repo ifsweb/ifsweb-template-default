@@ -1,0 +1,167 @@
+<!--paste this on nav a tag to show hover onMouseOver="$('#menu_accounts').show();" onmouseout="setTimeout(function(){$('#menu_accounts').hide()}, 3800);"-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title></title>
+	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--webfont-->
+	<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+	<!-- Le styles -->
+	<link href="../css/bootstrap.css" type="text/css" rel="stylesheet" >
+	<link href="../css/_styles.css" type="text/css" rel="stylesheet">
+	<link href="../css/flexslider.css" rel="stylesheet">
+	<link href="../css/menu.css" rel="stylesheet">
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="../assets/ico/favicon.png">
+
+	<script type="text/javascript" src="../js/rollovers.js"></script>
+	<script type="text/javascript" src="../js/jquery-1_7.js"></script>
+	<script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.flexslider').flexslider({
+				controlNav : true,
+				directionNav: false,
+		          'prevText'            : '<img src="../images/btn_prev_off.png" alt="Previous" />',
+		          'nextText'            : '<img src="../images/btn_next_off.png" alt="Next" />'
+			});
+  		});
+	
+	</script>
+</head>
+
+<!--[if lt IE 7]><body id="home" class="ie ie6"><![endif]-->
+<!--[if IE 7]><body id="home" class="ie ie7"><![endif]-->
+<!--[if IE 8]><body id="home" class="ie ie8"><![endif]-->
+<!--[if IE 9]><body id="home" class=""><![endif]-->
+<!--[if !IE]> --><body id="home" class="non_ie"><!-- <![endif]-->
+
+<div class="mastWrap">
+	
+	<div class="navbar">
+		<div class="container-fluid">
+			<div class="row-fluid span12">
+				<div class="brand logo">
+				<img src="../images/logo.png" alt=""/>
+				</div><!--logo-->
+				<div class="navbar-inner">
+					<div class="container-fluid">
+						<button type="button" class="btn btn-mini btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><img src="../images/menu.png" alt="Menu"></button>
+						<button type="button" class="btn btn-mini btn-navbar" data-toggle="collapse" data-target=".login-collapse"><img src="../images/lock.png" alt="Login"></button>
+						<div class="nav-collapse collapse">
+							<ul class="uti">
+								<li><a href="#" class="rollover">Home</a></li>
+								<li><a href="#" class="rollover">Contact Us</a></li>
+								<li><a href="#" class="rollover">Careers</a></li>
+								<li class="searchArea">
+									<form action="/home/site.search" >
+									<input type="text" name="searchQuery" class="appfield1" placeholder="Search"  />
+									</form>
+								</li>
+							</ul><!--uti-->
+							<ul class="nav">
+								<li><a href="#" onMouseOver="$('#menu_accounts').show();" onmouseout="setTimeout(function(){$('#menu_accounts').hide()}, 3800);">Personal Banking</a></li>
+								<li><a href="#">Business Banking</a></li>
+								<li><a href="#">Lending</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Investments</a></li>
+								<li><a href="#">Investor Relations</a></li>
+ 								<li><a href="#">Financial Answer Center</a></li>
+							</ul>
+						</div><!--/.nav-collapse -->
+
+						<div class="login-collapse collapse">
+							<div class="loginArea hidden-desktop">
+								<div class="loginOB">
+									<h1><a href="#">Mobile Banking</a></h1>
+									<h1><a href="#">Desktop Banking</a></h1>
+								</div><!--loginOB-->
+							</div><!--loginarea hidedesk-->
+						</div><!--logincollapse-->
+					</div><!---container-fluid-->
+				</div><!--navbar-inner-->
+
+           
+        </div><!--row-fluid-->
+	</div><!--container-fluid-->
+    
+					<div id="menu_accounts" class="subMenu" >
+						<div class="navColumn navCol1">
+							<ul>
+								<li><a href="#" class="level_one">Checking</a></li>
+								<li><a href="#" class="level_two">Thrive Checking</a></li>
+								<li><a href="#" class="level_two">Thrive 50+</a></li>
+								<li><a href="#" class="level_two">Power Checking</a></li>
+								<li><a href="#" class="level_two">Platinum Money Market</a></li>
+								<li><a href="#" class="level_one">Savings</a></li>
+								
+							</ul>
+						</div>
+						<div class="navColumn navCol2">
+							<ul>
+								<li><a href="#" class="level_two">Statement Savings</a></li>
+								<li><a href="#" class="level_two">Certificates of Deposit</a></li>
+								<li><a href="#" class="level_two">Individual Retirement Accounts (IRAs)</a></li>
+								<li><a href="#" class="level_one">Online Banking</a></li>
+								<li><a href="#" class="level_one">Mobile Banking</a></li>
+								<li><a href="#" class="level_one">Visa Debit Card</a></li>
+							</ul>
+						</div>
+						<div class="navColumn navCol3">
+							<ul>
+								<li><a href="#" class="level_one">Mortgage Loans</a></li>
+								<li><a href="#" class="level_one">Loans</a></li>
+								<li><a href="#" class="level_two">Mortgage</a></li>
+								<li><a href="#" class="level_two">Consumer</a></li>
+								<li><a href="#" class="level_one">Other Services</a></li>
+								<li><a href="#" class="level_one">Financial Answer Center</a></li>
+						</ul>
+						</div>
+					<div class="dhtmlpromo">Free Online Bill Pay <a href="#" class="btn">Sign Up</a></div>
+                    </div>
+    </div><!--navbar-->
+    
+</div><!--masthead-->
+
+
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/bootstrap-transition.js"></script>
+	<script src="../js/bootstrap-alert.js"></script>
+	<script src="../js/bootstrap-modal.js"></script>
+	<script src="../js/bootstrap-dropdown.js"></script>
+	<script src="../js/bootstrap-scrollspy.js"></script>
+	<script src="../js/bootstrap-tab.js"></script>
+	<script src="../js/bootstrap-tooltip.js"></script>
+	<script src="../js/bootstrap-popover.js"></script>
+	<script src="../js/bootstrap-button.js"></script>
+	<script src="../js/bootstrap-collapse.js"></script>
+	<script src="../js/bootstrap-carousel.js"></script>
+	<script src="../js/bootstrap-typeahead.js"></script>
+
+	<script type="text/javascript" src="../js/jquery.placeholder.min.js">/* */</script>
+	<script type="text/javascript">
+		$(function() { 
+			// IE shim for placeholder. See jquery_placeholder.js 
+			$('input').placeholder();
+		});
+	</script>
+
+
+
+
+	</body>
+</html>
+
