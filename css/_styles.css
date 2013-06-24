@@ -7,6 +7,7 @@ body {
 	font-size: 14px;
 	line-height: 20px;
 	color: #333333;
+	text-align:center;
 	background-color: #ffffff;
 }
 
@@ -343,6 +344,7 @@ input.btn:active,
 .uti {
 	padding: 0;
 	width:auto;
+	position:relative;
 	}
 	
 .uti ul {
@@ -350,21 +352,27 @@ input.btn:active,
 	padding: 0;
 	display:inline-block;
 	white-space:nowrap;
-}
+	position:relative;
+	}
 
 .uti li {
 	margin:10px 0;
 	padding: 0;
 	text-align: left;
-	display: inline-block;
-}
-li.searchArea {display:inline-block;}
+	display: inline;
+	list-style:none;
+	position:relative;
+	top:0;
+	vertical-align:top;
+	}
+li.searchArea {
+	display:inline; 
+	}
 .uti a:link, .uti a:visited {
-	
 	text-decoration: none;
 	padding: 10px 10px 0 10px;
-	display: block;
-	
+	display: inline-block;
+
 	}
 .uti a:hover, .uti a:active {
 
@@ -422,27 +430,30 @@ li.searchArea {display:inline-block;}
 
 
 .searchArea {
-	
 	position:relative;
-	display:inline-block;
+	display:inline;
 	}
 .searchArea form {
-	margin-bottom: 0;
 	position:relative;
+	top:0;
+	vertical-align:top;
+	
 	}
 .searchArea input {
 	position:relative;
 	top:0;
-	min-width: 210px;
+	min-width: 130px;
 	font-size:12px;
 	background: #fff url(../images/searchicon.png) 5px .3em no-repeat;
-	padding:4px 10 4px 44px;
+	padding:5px 10px 4px 24px;
 	box-shadow: 0 5px 5px #ddd inset;
-
-}
-.searchArea input.btn {
-	position: relative;
+	
+	}
+.searchArea a.btn {
+	position:relative;
+	vertical-align:top;
 	top:0;
+	
 	}
 
 
@@ -853,7 +864,7 @@ body {
 	background: none !important;
 	padding:0 0 0 0 !important;
 	}
-.span9.p {width:100%;}
+.span9.fullwidth {width:100%;}
 .flexslider {
 	margin-bottom:35px !important;
 	}
@@ -919,8 +930,8 @@ body {
 .footL {text-align:left;}
 
 .searchArea input {
-	display:block;
-	width:90%; 
+	
+	
 	min-width:200px;
 	}
 
@@ -943,7 +954,6 @@ body {
 
 
 .searchArea {margin-top:-3px;}
-.searchArea input.appfield1 {width:65%;}
 .logo .hidden-desktop {display:block;}
 .logo .hidden-phone {display:none;}
 .row-fluid .span9.p {width:100% !important; }
