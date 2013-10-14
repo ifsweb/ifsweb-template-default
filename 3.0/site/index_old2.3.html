@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title></title>
+	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
+	<!--webfont comment the header/body fonts for qa-->
+    
+	<!-- css styles -->
+	<link href="../css/bootstrap.css" type="text/css" rel="stylesheet" >
+	<link href="../css/flexslider.css" rel="stylesheet">
+	<link href="../css/menu.css" rel="stylesheet">
+	<link href="../css/_styles.css" type="text/css" rel="stylesheet">
+
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="../images/apple-touch-icon-144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72.png">
+	<link rel="apple-touch-icon" href="../images/apple-touch-icon-57.png">
+	<link rel="shortcut icon" href="../images/favicon.png">
+
+	<script type="text/javascript" src="../js/rollovers.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.flexslider').flexslider({
+				controlNav : false,
+				directionNav: true,
+		          'prevText'            : '<img src="../images/btn_prev_off.png" alt="Previous" />',
+		          'nextText'            : '<img src="../images/btn_next_off.png" alt="Next" />'
+			});
+  		});
+	
+	</script>
+</head>
+
+<!--[if lt IE 7]><body id="home" class="ie ie6 old_ie"><![endif]-->
+<!--[if IE 7]><body id="home" class="ie ie7 old_ie"><![endif]-->
+<!--[if IE 8]><body id="home" class="ie ie8 old_ie"><![endif]-->
+<!--[if IE 9]><body id="home" class="ie ie9"><![endif]-->
+<!--[if !IE]><!--><body id="home" class="non_ie" style="margin:0;padding:0;"><!--<![endif]-->
+
+<div class="row-fluid mastWrap">
+	
+	<div class="navbar">
+			<div class="span12">
+				<div class="logo">
+				<a href="#" class="brand"><img src="../images/logo.png" alt=""/></a>
+				</div><!--logo-->
+				<div class="navbar-inner">
+					<div class="container">
+						<a href="#" class="btn btn-mini btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><img src="../images/menu.png" alt="Menu"></a>
+						<div class="nav-collapse collapse">
+                        <div class="pull-right visible-desktop">
+                        <ul class="uti">
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#">Rates &amp; Fees</a></li>
+                            <li><a href="#">Calculators</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li class="searchArea pull-right">
+                                <input class="span2" type="text" placeholder="Search">
+                                <a class="btn" href="#" >Go!</a>
+                            </li>
+                        </ul>
+                        </div><!--pullright-->
+						<ul class="nav nav-tabs">
+							<li class="pull-right hidden-desktop"><a class="close">&times;</a></li>
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">Personal</a></li>
+							<li><a href="#">Business</a></li>
+							<li><a href="#">Loans</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Resources</a>
+								<ul class="uti visible-phone visible-tablet">
+									<li><a href="#">Locations</a></li>
+									<li><a href="#">Rates &amp; Fees</a></li>
+									<li><a href="#">Calculators</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li class="searchArea pull-right">
+									<input class="span2" type="text" placeholder="Search">
+									<a href="#" class="btn" >Go!</a>
+									</li>
+								</ul>
+							</li>
+							</ul>
+						</div><!-- nav-collapse -->
+
+					</div><!---container-fluid-->
+				</div><!--navbar-inner-->
+
+		</div><!--row-fluid-->
+	</div><!--navbar-->
+
+</div><!--mastwrap-->
+<div class="row-fluid container">
+	<div class="alert">
+		<p>We will be closed for the 4th Of July weekend. Please see our <a href="/calendar">calendar</a> for more details.</p>
+	</div><!--alert-->
+</div><!--row-fluid-->
+<!-- phone MWB login-->
+<div class="row-fluid visible-phone"> 
+	<div class="module">
+		<div class="loginOB">
+			<a class="pull-right close" href="#">&times;</a>
+			<h1>Online Banking</h1>
+			<form name="mobileLogin" action="">
+				<div class="row-fluid input-append clearfix">
+					<input type="text" class="" placeholder="Username" />
+					<input type="password" id="appendedInputButton" class="password" placeholder="Password" />
+					<a href="#" class="btn" name="login">Login</a>
+				</div><!--inputappend-->
+				<div class="row-fluid">
+					<div class="span8 pull-left">
+						<a href="#" class="badge">New user?</a><a href="#" class="badge">Forgotten Password?</a>
+					</div><!-- span8 -->
+					<div class="span4 appcenters">
+						<a href="#"><img src="../images/badge_google_play.png" alt="Download at Google play" /></a>
+					</div><!--appcenters-->
+				</div><!--row-->
+			</form>
+		</div><!--loginOB-->
+	</div><!--loginArea-->
+</div><!--row visible-phone-->
+
+<!--tablet IB login-->
+<div class="row-fluid visible-tablet"> 
+	<div class="loginArea">
+		<div class="loginOB">
+			<h1>Online Banking</h1>
+			<form name="Login" action="#">
+			<div class="loginCol clearfix">
+				<input type="text" class="" placeholder="Username" />
+			</div>
+			<div class="loginCol clearfix">
+				<input type="password" class="password" placeholder="Password" />
+				<input type="submit" class="btn" name="login" value="Login" />
+			</div>
+			<div class="loginCol clearfix">
+				<a href="#">Sign Up</a>&nbsp;
+				<span class="loginForgot"><a href="#">Forgotten Password?</a></span>
+			</div><!-- loginCol -->
+			<div class="appcenters">
+				<a href="#"><img src="../images/badge_app_store.png" alt="Download at App Store" /></a>
+			</div><!--appcenters-->
+			</form>
+			<h1>Business Banking</h1><a href="#" class="btn">Login</a>
+		</div><!--loginOB-->
+	</div><!--loginArea-->
+</div><!--visible tablet-->
+
+<div class="contentWrap">
+	<div class="row-fluid top">
+		<div class="span12 border-bottom module">
+
+			<div class="span9 fullwidth">
+				<div class="flexslider promoMain" role="img">
+					<ul class="slides">
+						<li>
+							<img class="promoImg" src="../images/promo1.jpg" alt="" />
+							<div class="promoTxt">Save money on your auto loan</div>
+						</li>
+						<li>
+							<img class="promoImg" src="../images/promo2.jpg" alt="" />
+							<div class="promoTxt">Free Online Bill Pay <a href="#" class="btn">try it today</a></div>
+						</li>
+						
+					</ul>
+				</div><!-- flexslider promoMain-->
+			</div><!--span9-->
+			<div class="visible-desktop"> 
+				<div class="span3">
+				<div class="loginArea">
+					<div class="loginOB">
+					<h1>Online Banking</h1>
+						<form name="Login" action="#">
+							<div class="loginCol clearfix">
+								<input type="text" class="appfield1" placeholder="Username" /></div>
+								<div class="loginCol clearfix">
+								<input type="password" class="appfield1 password" placeholder="Password" />
+								<input type="submit" class="btn" name="login" value="Login" />
+								</div>
+								<div class="loginCol clearfix">
+								<a href="#">Sign Up</a>&nbsp;
+								<span class="loginForgot"><a href="#">Forgotten Password?</a></span>
+							</div><!-- loginCol -->
+						</form>
+						<div class="span12 appcenters">
+							<a href="#" class="span6 pull-left"><img src="../images/badge_app_store.png" alt="Download at App Store" /></a>
+							<a href="#" class="span6 pull-right"><img src="../images/badge_google_play.png" alt="Download at Google play" /></a>
+						</div><!--appcenters-->
+					<h1>Business Banking</h1><input type="submit" class="btn" name="login" value="Login" />
+					</div><!--loginOB-->
+				</div><!--loginArea-->
+				</div><!--hide-->
+			</div><!--span3-->
+			
+		</div><!--visible desktop-->
+</div><!--top-->
+		
+		<div class="row-fluid middle">
+			<div class="span12 border-bottom">
+				<div class="span4 module">
+					<h1>Auto Buying Service</h1>
+					<p>Work with your very own personal <a href="#">auto buying consultant</a> at no charge</p>
+					<div class="visible-desktop">
+						<div class="grpText" style="display:none;"><!-- grp --></div>
+						<script src="/mstinc/grp/js/grp.js" type="text/javascript">/* GRP */</script> 
+					</div><!-- visible desktop as text-->
+				</div><!--span4 homeContent-->
+
+				<div class="span4 module">
+					<h1>TurboTax</h1>
+					<p>It's your money keep more of it with <a href="#">TurboTax.</a></p>
+				</div><!--span4-->
+
+				<div class="span4 module">
+				<h1>Business Banking</h1>
+				<p>Business Checking with <a href="#">FREE online &amp; mobile banking</a></p>
+				</div><!--span4-->
+			</div><!--span12-->
+		</div><!--row middle-->
+		<div class="row-fluid bottom">
+			<div class="span12 border-bottom">
+				<div class="span8">
+					<span class="pull-right"><a href="#">read news ></a></span>
+					<div class="newsWrap module">
+					<h1>News</h1>
+						<ul class="highlight">
+							<li><a href="#">5.15.13 Fundraiser Event at Location</a></li>
+							<li><a href="#">5.21.13 Finance Workshop for Young Couples</a></li>
+						</ul>
+					</div><!--newsWrap-->
+				</div><!--span8-->
+
+			<div class="span4">
+				<div class="newsWrap module">
+					<h1>Resources &amp; Tools</h1>
+						<ul class="highlight">
+							<li><a href="#">Calculators</a></li>
+							<li><a href="#">Reorder Checks</a></li>
+						</ul>
+				</div><!--news-->
+			</div><!--span4-->
+			</div><!--span12-->
+		</div><!--row bottom-->
+		<div class="row-fluid visible-phone">
+			<div class="grpSquare" style="display:none;"><!-- grp --></div>
+			<script src="/mstinc/grp/js/grp.js" type="text/javascript">/* GRP */</script> 
+		</div><!--rowfluid visible phone-->
+	</div><!--row-fluid contentwrap-->
+
+
+<div class="row-fluid footWrap">
+	<div class="container">
+		<div class="span12">
+
+			<div class="span6">
+				<div class="footL">
+					<ul>
+						<li>
+							<a href="#"><img src="http://diwebdev3.com/mstinc/web/images/fdic_57x19_k_75.png" alt="FDIC" /></a>
+							<span class="visible-desktop">&nbsp;|&nbsp;</span>
+							<a href="#" class="ncua hidden-phone"><img src="http://diwebdev3.com/mstinc/web/images/ncua_351x32_k_75.png" alt="NCUA" /></a>
+							<a href="#" class="ncua visible-phone"><img src="http://diwebdev3.com/mstinc/web/images/ncua_140x109_k_100.png" alt="NCUA" /></a>
+							<span class="visible-desktop">&nbsp;|&nbsp;</span>
+							<a href="#"><img src="http://diwebdev3.com/mstinc/web/images/ehl_40x35_k_75.png" alt="Equal Housing Lender" /></a>
+						</li>
+					</ul>
+				</div><!---footL-->
+			</div><!--span6-->
+
+			<div class="span6 footR">
+				<div class="footR">
+					<ul>
+						<li>
+							<a href="#">Sitemap</a><span class="visible-desktop">&nbsp;|&nbsp;</span>
+							<a href="#">About Us</a><span class="visible-desktop">&nbsp;|&nbsp;</span>
+							<a href="#">Privacy</a><span class="visible-desktop">&nbsp;|&nbsp;</span>
+							<a href="#">Newsletter</a><span class="visible-desktop">&nbsp;|&nbsp;</span>
+							<a href="#">Disclosures</a><span class="visible-desktop">&nbsp;|&nbsp;</span>
+							<a href="#"><img src="http://diwebdev3.com/mstinc/web/images/intuit_100x22.png" alt="Powered by Intuit" /></a>
+						</li>
+					</ul>
+				</div><!--footr-->
+			</div><!--span6-->
+
+		</div><!--row-->
+	</div><!--container-->
+</div><!--footWrap-->
+
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.min.js">/* */</script>
+	<script type="text/javascript">
+		$(function() { 
+			// IE shim for placeholder. See jquery_placeholder.js 
+			$('input').placeholder();
+			
+	
+		});
+	</script>
+
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
