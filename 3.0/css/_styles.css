@@ -154,7 +154,7 @@ input.btn:active,
  * containers or wrappers *
  *************************************************************************** */
 
-.mastWrap  {
+#fixedtop .mastWrap  {
 	background:#363636;
 	
 	}
@@ -418,6 +418,7 @@ li.searchArea {
  *************************************************************************** */
 .slides {
 	position: relative;
+	
 	}
 .promoMain .promoImg {
 	position:relative; 
@@ -440,11 +441,7 @@ li.searchArea {
 .promoMain .promoTxt h1 {
 	font-size:33px;
 	line-height:28px;
-	
-	
 	margin:10px 0px 5px 0;
-
-	
 	}
 .promoMain .promoTxt p {
 	line-height:25px; 
@@ -456,7 +453,7 @@ li.searchArea {
 	border:1px solid #ccc;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
-	
+	max-width:100%;
 	}
 
 /****************************************************************** 
