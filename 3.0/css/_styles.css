@@ -368,22 +368,7 @@ li.searchArea {
 	vertical-align:top;
 	
 	}
-.searchArea input {
-	position:relative;
-	top:0;
-	min-width: 130px;
-	font-size:12px;
-	background: #fff url(../images/searchicon.png) 5px .3em no-repeat;
-	padding:5px 10px 4px 24px;
-	box-shadow: 0 5px 5px #ddd inset;
-	
-	}
-.searchArea a.btn {
-	position:relative;
-	vertical-align:top;
-	top:0;
-	
-	}
+
 
 
 
@@ -905,6 +890,7 @@ body {
 	min-height:50px !important;
 	}
 .module ul {margin:0;}
+.loginOB {margin:0;padding:0;}
 .border-bottom {
 	margin:5px 0;
 	padding:0; 

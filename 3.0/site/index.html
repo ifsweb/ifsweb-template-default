@@ -57,7 +57,7 @@
 				<a href="#" class="brand"><img src="../images/logo.png" alt=""/></a>
 				</div><!--logo-->
                 </div>
-					<div class="visible-xs visible-x col-xs-9">
+					<div class="visible-xs visible-sm col-xs-9">
 						<a href="#" class="btn btn-mini btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse"><img src="../images/menu.png" alt="Menu"></a>
 					</div><!--hide deskt-->
 				<div class="col-xs-9 pull-right visible-lg visible-md">
@@ -66,14 +66,19 @@
                             <li><a href="#">Rates &amp; Fees</a></li>
                             <li><a href="#">Calculators</a></li>
                             <li><a href="#">Contact Us</a></li>
-                            <li class="searchArea pull-right">
-                                <input class="span2" type="text" placeholder="Search">
-                                <a class="btn" href="#" >Go!</a>
+							<li class="searchArea col-xs-5 pull-right">
+								<div class="input-group">
+								<input type="text" class="form-control input-sm">
+								<span class="input-group-btn">
+									<input type="submit" class="btn" value="Go!" />
+								</span>
+								</div><!-- /input-group -->
+								
                             </li>
                         </ul>
 					</div><!--pullright-->
                     
-					<div class="row visible-lg">
+					<div class="row visible-md visible-lg">
 						<ul class="nav nav-tabs">
 							<li class="active"><a href="#">Home</a></li>
 							<li><a href="#">Personal</a></li>
@@ -87,8 +92,12 @@
 									<li><a href="#">Calculators</a></li>
 									<li><a href="#">Contact Us</a></li>
 									<li class="searchArea pull-right">
-									<input class="" type="text" placeholder="Search">
-									<a href="#" class="btn" >Go!</a>
+										<div class="input-group">
+											<input type="text"  placeholder="Enter search words" class="form-control">
+											<span class="input-group-btn">
+												<input class="btn btn-default" type="button" value="Go!" />
+											</span>
+										</div><!-- /input-group -->
 									</li>
 								</ul>
 							</li>
@@ -107,8 +116,12 @@
 									<li><a href="#">Calculators</a></li>
 									<li><a href="#">Contact Us</a></li>
 									<li class="searchArea">
-									<input class="" type="text" placeholder="Search">
-									<a href="#" class="btn" >Go!</a>
+										<div class="input-group">
+											<input type="text" placeholder="Enter search words" class="form-control">
+											<span class="input-group-btn">
+												<input class="btn btn-default" type="button" value="Go!" />
+											</span>
+										</div><!-- /input-group -->
 									</li>
 							
 							</ul>
@@ -123,20 +136,26 @@
 <!-- phone MWB login-->
 <div class="visible-sm visible-xs">
 
-	<div class="col-lg-12 module">
+	<div class="col-xs-12 module">
 		<div class="loginOB">
 			<h1>Online Banking</h1>
-			<form name="mobileLogin" action="">
-				<div class="row input-append clearfix">
-					<input type="text" class="" placeholder="Username" />
-					<input type="password" id="appendedInputButton" class="password" placeholder="Password" />
-					<input type="submit" class="btn" value="Login"/>
-				</div><!--inputappend-->
+			<form class="form-horizontal" role="form">
+    <div class="form-group  col-xs-5">
+        <label class="sr-only" for="user">User</label>
+        <input type="text" class="form-control" placeholder="Enter email">
+    </div>
+    <div class="form-group col-xs-5">
+        <label class="sr-only" for="pass">Password</label>
+        <input type="password" class="form-control" placeholder="Password">
+    </div>
+    
+    <input type="submit" class="btn btn-default col-xs-2" value="Login" />
+</form>
 				<div class="row">
 					<div class="col-lg-8 pull-left">
 						<a href="#" class="badge">New user?</a><a href="#" class="badge">Forgot Password?</a>
 					</div><!-- col-lg-8 -->
-					<div class="col-lg-4">
+					<div class="col-lg-4 pull-right">
 						<a href="#"><img src="../images/badge_google_play.png" alt="Download at Google play" /></a>
 					</div><!--col-lg-4-->
 				</div><!--row-->
