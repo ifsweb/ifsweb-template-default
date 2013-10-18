@@ -155,17 +155,16 @@ input.btn:active,
  *************************************************************************** */
 
 .mastWrap, .contentWrap  {
-	margin-bottom:10px;
+	
 	
 	}
 .contentWrap .top {
-	margin-bottom:20px;
+
 	padding-top:0;
 	text-align:left;
 	}
 .contentWrap .middle {
-	margin-bottom:20px;
-	padding-top:20px;
+	
 	text-align:left;
 	}
 .contentWrap .bottom {
@@ -194,9 +193,10 @@ input.btn:active,
 
 
 .logo {
-	display:block;
-	float:left;
+	display:inline-block;
+	text-align:left;
 	position:relative;
+	
 	}	
 .logo img {
 	width:100%;
@@ -272,6 +272,7 @@ input.btn:active,
 	padding: 0;
 	width:auto;
 	position:relative;
+	text-align:right;
 	}
 	
 .uti ul {
@@ -283,7 +284,7 @@ input.btn:active,
 	}
 
 .uti li {
-	margin:10px 0;
+	margin: 0;
 	padding: 0;
 	text-align: left;
 	display: inline;
