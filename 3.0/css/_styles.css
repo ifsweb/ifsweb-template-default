@@ -395,7 +395,7 @@ li.searchArea {
 	}
 .top .module {min-height:100px;}
 .middle .module {min-height:240px;}
-.bottom .module {min-height:220px;}
+.bottom .module {min-height:240px;}
 
 
 /****************************************************************** 
@@ -418,30 +418,75 @@ li.searchArea {
  *************************************************************************** */
 .slides {
 	position: relative;
-	margin:0;
-	padding:0;
-	max-width:100%;
 	}
-
-.promoImg img {width:100%;}
-.promoImg {
+.promoMain .promoImg {
 	position:relative; 
-	z-index:100;
-	max-width:100%;
-	/*border-radius:8px;
-	-webkit-border-radius:8px;*/
+	top:0;
+	left:0;
+	z-index:10;
 	}
-.promoTxt {
+.promoMain .promoImg img {width:100%;}
+
+.promoMain .promoTxt {
 	font-size:28px;
+	line-height:normal;
 	z-index:300;
+	position:absolute;
+	top:0px;
+	font-family: 'Istok Web', sans-serif;
+	margin-left:20px;
+	margin-top:20px;
+	}
+.promoMain .promoTxt h1 {
+	font-size:33px;
+	line-height:28px;
+	
+	
+	margin:10px 0px 5px 0;
+
 	
 	}
-
-.flexslider.promoMain, .slides {
+.promoMain .promoTxt p {
+	line-height:25px; 
+	padding-top:0;
+	margin-top:0; 
+	}
+.flexslider.promoMain {
 	position:relative;
+	border:1px solid #ccc;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
 	
 	}
 
+/****************************************************************** 
+ * smaller promotions with scale on hover for images*
+ *************************************************************************** */
+ .flexslider.promoSmall, .slider {
+	position:relative;
+	margin-top:0;
+	z-index: 500;
+	}
+	
+
+.promoSmall {
+	background:#ccc;
+	min-height: 50px;
+	padding: 0 75px 0;
+	font-size: 17px;
+	}
+
+.promoSmall ul.slides {margin: 0;padding:0;}
+.promoSmall ul.slides li {
+	margin: 0;
+	padding:10px 15px; 
+	min-height:140px;
+	max-height:140px;
+	overflow:hidden;
+	}
+	
+.promoSmall h1 {line-height:28px;padding-bottom:0; margin-bottom:0;}
+.promoSmall p {line-height:20px;padding-top:0; margin-top:5px;}
 /****************************************************************** 
  * smaller promotions with scale on hover for images*
  *************************************************************************** */
@@ -796,7 +841,6 @@ a.badge {
 	margin-left:3%;
 	background:#f7f7f7;
 	}
-.hilight li {text-align:left !important;}
 .footWrap {margin-top:10px;}
 .footWrap ul {
 	display:block;
