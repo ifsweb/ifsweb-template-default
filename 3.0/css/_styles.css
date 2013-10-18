@@ -327,31 +327,10 @@ li.searchArea {
 	padding: 12px 8% 12px 6%;
 	position:relative;
 	}
-.loginOB form {
-	width: 100%;
-	margin-bottom: 0;
-	}
-.loginCol {
-	margin:5px 0 0 0;
-	position:relative;
-	}
-.
-.iconRight {float:right;}
-.loginCol input.btn{
-	position: relative;
-	top:0;
-	}
+.loginCol {margin-top:10px;}
 
-.appcenters {
-	background:#000;
-	width:100%;
-	
-	}
-.appcenters .span6, .span12.appcenters {
-	margin:0;
-	padding:0;
-	}
-.appcenters img {height:32px;}
+
+
 /****************************************************************** 
  * search *
  *************************************************************************** */
@@ -614,11 +593,7 @@ label {
 
 	
 .appfield1 {
-	width: 98%;
-	border: 1px #c7c4bd solid;
-	border-radius: 0;
-	background: #fff;
-	padding:5px 0 2px 2px;
+
 	box-shadow: 0 5px 5px #ddd inset;
 }
 
@@ -630,10 +605,6 @@ label {
 	background: #efefef;
 	padding:5px 0 2px 2px;
 	box-shadow: 0 5px 5px #ddd inset;
-}
-
-.submitBtn {
-	margin-top: 7px;
 }
 
 
