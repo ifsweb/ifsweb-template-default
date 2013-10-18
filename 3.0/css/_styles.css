@@ -154,8 +154,8 @@ input.btn:active,
  * containers or wrappers *
  *************************************************************************** */
 
-.mastWrap, .contentWrap  {
-	
+.mastWrap  {
+	background:#363636;
 	
 	}
 .contentWrap .top {
@@ -163,6 +163,7 @@ input.btn:active,
 	padding-top:0;
 	text-align:left;
 	}
+#fixedtop .contentWrap {margin-top:60px;} /* clear fixed top nav when on */
 .contentWrap .middle {
 	
 	text-align:left;
@@ -242,8 +243,9 @@ input.btn:active,
 	border:1px solid #cfo;
 }
 
-
-
+.navbar-fixed-top .nav {display:inline;}
+.navbar-fixed-top .nav li {display:inline-block; width:auto;}
+.navbar-fixed-top .nav li a, .navbar-fixed-top .uti li a {color:#fff;}
 .navbar .nav > li > a {
 }
 .navbar .nav > li > a:hover, .navbar .nav > li.active > a {
