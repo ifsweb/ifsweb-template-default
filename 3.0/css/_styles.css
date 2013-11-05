@@ -163,7 +163,7 @@ input.btn:active,
 	padding-top:0;
 	text-align:left;
 	}
-#fixedtop .contentWrap , .contentWrapBack {margin-top:60px;} /* clear fixed top nav when on */
+#fixedtop .contentWrap , .contentWrapBack, #fixedtop .alert {margin-top:60px;} /* clear fixed top nav when on */
 .row.contentWrapBack div {
     -webkit-transition: width 0.3s ease, margin 0.3s ease;
     -moz-transition: width 0.3s ease, margin 0.3s ease;
@@ -204,8 +204,128 @@ input.btn:active,
 	list-style: none;
 	}
 
+/******************************
+ * for page slide out nav *
+ ********************************  */
+/*sets the  page slide for left nav */
+#content {
+	width: 980px;
+	padding: 10px;
+	margin: 0 auto;
+	}
 
+ul#nav { 
+	padding-left: 0; 
+	list-style: none; 
+	width: 100%; 
+	margin-bottom: 40px; 
+	}
+ul#nav:after { 
+	content: "\0020"; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden; 
+	}
 
+#content ul#nav li { 
+	float: left;  
+	text-align: center; 
+	}
+#content ul#nav.nav-1 li {
+  width:100%;
+  max-width:100%;
+}
+#content ul#nav.nav-2 li {
+  width:49.8%;
+  max-width:49.8%;
+}
+#content ul#nav.nav-3 li {
+  width:33.133333333333%;
+  max-width:33.133333333333%;
+}
+#content ul#nav.nav-4 li {
+  width:24.8%;
+  max-width:24.8%;
+}
+#content ul#nav.nav-5 li {
+  width:19.8%;
+  max-width:19.8%;
+}
+#content ul#nav.nav-6 li {
+  width:16.466666666667%;
+  max-width:16.466666666667%;
+}
+#content ul#nav.nav-7 li {
+  width:14.085714285714%;
+  max-width:14.085714285714%;
+}
+#content ul#nav.nav-8 li {
+  width:12.3%;
+  max-width:12.3%;
+}
+#content ul#nav.nav-9 li {
+  width:10.911111111111%;
+  max-width:10.911111111111%;
+}
+#content ul#nav.nav-10 li {
+  width:9.8%;
+  max-width:9.8%;
+}
+#content ul#nav.nav-11 li {
+  width:8.8909090909090%;
+  max-width:8.8909090909090%;
+}
+#content ul#nav.nav-12 li {
+  width:8.1333333333333%;
+  max-width:8.1333333333333%;
+}
+#content ul#nav a { 
+	display: block; 
+	background: #000;
+	color: #FFF; 
+	font-weight: bold; 
+	padding: 10px; 
+	border-right: 1px solid #FFF;
+	}
+#content ul#nav a:hover { background: #333; }
+
+#leftslide .open {
+	display: none;
+	width: 40px;
+	height: 30px;
+	margin-bottom: 10px;
+	background: url(../images/menu.png) center center no-repeat #333;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-border-radius: 8px;
+	box-shadow: inset 0 0 3px #000;
+	text-indent: -999999px;
+	border: 0;
+	}
+#pageslide {
+	/* These styles MUST be included. Do not change. */
+	display: none;
+	position: absolute;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	z-index: 999999;
+
+	/* Specify the width of your pageslide here */
+	width: 260px;
+	padding: 20px;
+
+	/* These styles are optional, and describe how the pageslide will look */
+	background-color: #333;
+	color: #FFF;
+	-webkit-box-shadow: inset 0 0 5px 5px #222;
+	-moz-shadow: inset 0 0 5px 5px #222;
+	box-shadow: inset 0 0 5px 5px #222;
+	}
+
+#secondary { display: none; color: #EFEFEF; }
+#secondary h2 { color: #FFF; }
 
 /****************************************************************** 
  * logo AND BRAND *
@@ -775,7 +895,9 @@ sup {font-size:.6em;}/*make sup smaller*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 979px) {
-	
+/*page slide*/
+#content { width: 748px; }
+/*page slide*/
 
 .login-collapse .loginOB a:active, 
 .login-collapse .loginOB a:hover {
@@ -907,7 +1029,21 @@ body {
 
 
 @media (max-width: 767px) {
-
+/*page slide*/
+#content { width: 400px; }
+#content h1 { font-size: 22px; line-height: 30px; background-color: #ccc; color: #FFF; padding: 10px; }
+#content ul#nav { display: none;margin-left:0; }
+#content ul#nav ul, #content ul#nav li li {
+	margin-left:0; 
+	list-style:none;
+	padding-left:0;
+	}
+.open { display: block; }
+#pageslide { width: 180px; }
+#pageslide #nav li { width:80%;padding: 10px 0; border-bottom: 1px solid #fff; list-style:none; margin-left:0; }
+#pageslide #nav li a { color: #FFF; border: none; }
+#pageslide #nav li a:hover { text-decoration: underline; }
+/*page slide*/
 /* arrows on promo*/
 .flex-direction-nav {
 	
@@ -957,7 +1093,10 @@ body {
 	-webkit-transform: translate3d(0, 0, 0);
 	}
 
-
+/* page slide */
+#content { width: 280px; }
+#content h1 { font-size: 14px; }
+/* page slide */
 
 }
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/

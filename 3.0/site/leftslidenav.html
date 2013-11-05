@@ -12,9 +12,8 @@
 	<link href="../css/bootstrap.css" type="text/css" rel="stylesheet" >
 	<link href="../css/flexslider.css" rel="stylesheet">
 	<link href="../css/menu.css" rel="stylesheet">
-	<link href="../css/jumbotron-narrow.css" rel="stylesheet">
 	<link href="../css/_styles.css" type="text/css" rel="stylesheet">
-
+	<link  href="../css/jquery.pageslide.css" type="text/css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -50,85 +49,47 @@
 <!--[if IE 8]><body id="home" class="ie ie8 old_ie"><![endif]-->
 <!--[if IE 9]><body id="home" class="ie ie9"><![endif]-->
 <!--[if !IE]><!--><body id="home" class="non_ie" style="margin:0;padding:0;"><!--<![endif]-->
-<div class="container" id="fixedtop">
-	<div class="row mastWrap navbar-fixed-top">
-			<div class="col-xs-3">
-				<div class="logo">
-				<a href="#" class="brand"><img src="../images/logo.png" alt="<!--FI Name-->"/></a>
-				</div><!--logo-->
-			</div><!--colsx3-->
-<!--mobile menu button-->
-					<div class="visible-xs visible-sm col-xs-9">
-						<a href="#" class="btn btn-mini btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse"><img src="../images/menu.png" alt="Menu"></a>
-					</div><!--hide deskt-->
-<!--desktop utility-->
-				<div class="col-xs-9 pull-right visible-lg visible-md">
-						<ul class="uti">
-							<li><a href="#">Locations</a></li>
-							<li><a href="#">Rates &amp; Fees</a></li>
-							<li><a href="#">Calculators</a></li>
-							<li><a href="#">Contact Us</a></li>
-							<li class="searchArea col-xs-5 pull-right">
-								<div class="input-group">
-								<input type="text" class="form-control input-sm">
-								<span class="input-group-btn">
-									<input type="submit" class="btn" value="Go!" />
-								</span>
-								</div><!-- /input-group -->
-								
-							</li>
-						</ul>
-					</div><!--pullright-->
-<!--main nav - drops on phone with utility appended-->
-					<div class="row visible-md visible-lg">
-						<ul class="nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#">Personal</a></li>
-							<li><a href="#">Business</a></li>
-							<li><a href="#">Loans</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Resources</a>
-								<ul class="uti visible-xs visible-s">
-									<li><a href="#">Locations</a></li>
-									<li><a href="#">Rates &amp; Fees</a></li>
-									<li><a href="#">Calculators</a></li>
-									<li><a href="#">Contact Us</a></li>
-									<li class="searchArea pull-right">
-										<div class="input-group">
-											<label class="sr-only" for="search">Search</label><input type="text"  placeholder="Enter search words" class="form-control">
-											<span class="input-group-btn">
-												<input class="btn btn-default" type="button" value="Go!" />
-											</span>
-										</div><!--inputgroup-->
-									</li>
-								</ul>
-							</li>
-							</ul>
-					</div><!--row -->
-				<div class="nav-collapse collapse">
-						<ul class="nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#">Personal</a></li>
-							<li><a href="#">Business</a></li>
-							<li><a href="#">Loans</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Resources</a></li>
-									<li><a href="#">Locations</a></li>
-									<li><a href="#">Rates &amp; Fees</a></li>
-									<li><a href="#">Calculators</a></li>
-									<li><a href="#">Contact Us</a></li>
-									<li class="searchArea">
-										<div class="input-group">
-											<label class="sr-only" for="search">Search</label>
-											<input type="text" placeholder="Enter search words" class="form-control">
-											<span class="input-group-btn">
-												<input class="btn btn-default" type="button" value="Go!" />
-											</span>
-										</div>
-									</li>
-							</ul>
-					</div><!-- nav-collapse -->
-</div><!--mastwrap-->
+<div id="leftslide">
+<div id="content">
+
+<div class="pull-right visible-lg visible-md">
+		<ul class="uti">
+			<li><a href="#">Locations</a></li>
+			<li><a href="#">Rates &amp; Fees</a></li>
+			<li><a href="#">Calculators</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li class="searchArea pull-right">
+			<form><input class="span2" type="text" placeholder="Search">
+			<input class="btn" value="Go"></form>
+			</li>
+		</ul>
+	</div><!--pullright uti desktop-->
+	<h1><a class="open" href="#nav">Menu</a>
+	<div class="logo">
+		<a href="#" class="brand"><img src="../images/logo.png" alt="<!--FI Name-->"/></a>
+	</div><!--logo-->
+	</h1>
+	<ul id="nav" class="nav-7">
+		<li><a href="#" class="active">Home</a></li>
+		<li><a href="#">Personal</a></li>
+		<li><a href="#">Business</a></li>
+		<li><a href="#">Loans</a></li>
+		<li><a href="#">About Us</a><li><a href="#">Loans</a></li>
+		<li><a href="#">About Us</a>
+			<ul class="uti visible-sm">
+				<li><a href="#">Locations</a></li>
+				<li><a href="#">Rates &amp; Fees</a></li>
+				<li><a href="#">Calculators</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li class="searchArea pull-right">
+					<form><input class="span2" type="text" placeholder="Search">
+					<input class="btn" value="Go"></form>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	
+<div class="copy">
 
 <!--alerts text area-->
 <div class="row">
@@ -166,7 +127,6 @@
 			</form>
 		</div><!--loginOB-->
 	</div><!--module-->
-
 </div><!--row visible-phone-->
 
 <div class="contentWrap">
@@ -217,7 +177,6 @@
 								<a href="#">Sign Up</a>&nbsp;<a href="#">Get App</a>&nbsp;
 								<span class="loginForgot"><a href="#">Forgotten Password?</a></span>
 							</div><!-- loginCol -->
-					
 					</div><!--loginOB-->
 				</div><!--loginArea-->
 				
@@ -250,6 +209,7 @@
 					</ul>
 				</div><!--flexslidersmall-->
 		</div><!--row middle-->
+        
 		<div class="row bottom">
 			<div class="">
 				<div class="col-sm-8 module">
@@ -277,6 +237,7 @@
 			</div><!--col-lg-4-->
 			</div><!--col-lg-12-->
 		</div><!--row bottom-->
+        
 		<div class="row visible-phone">
 			<div class="grpSquare" style="display:none;"><!-- grp --></div>
 			<script src="/mstinc/grp/js/grp.js" type="text/javascript">/* GRP */</script> 
@@ -315,9 +276,11 @@
 					</ul>
 				</div><!--footr-->
 			</div><!--col-lg-6-->
-	
+	</div><!--contentwrap-->
 </div><!--footWrap-->
-</div><!--container-->
+</div><!--content-->
+</div><!--copy-->
+</div><!--pageslide id-->
 
 <!-- Le javascript
 ================================================== -->
@@ -334,9 +297,13 @@
 		});
 	</script>
 
-
+    <script src="../js/jquery.pageslide.min.js"></script>
+    <script>
+        $(".open").pageslide();
+    </script>
 	</body>
 </html>
+
 
 
 
