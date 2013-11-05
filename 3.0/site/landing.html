@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
+<title><!--FI Name--></title>
 	<meta charset="utf-8">
-	<title></title>
-	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<!--webfont-->
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-	<!-- Le styles -->
+	<!--webfont comment the header/body fonts for qa-->
+    
+	<!-- css styles -->
 	<link href="../css/bootstrap.css" type="text/css" rel="stylesheet" >
-	<link href="../css/bootstrap-responsive.css" type="text/css" rel="stylesheet" >
-	<link href="../css/_styles.css" type="text/css" rel="stylesheet">
 	<link href="../css/flexslider.css" rel="stylesheet">
 	<link href="../css/menu.css" rel="stylesheet">
+	<link href="../css/jumbotron-narrow.css" rel="stylesheet">
+	<link href="../css/_styles.css" type="text/css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
 	<!-- Fav and touch icons -->
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/apple-touch-icon-144.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/apple-touch-icon-114.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/apple-touch-icon-72.png">
-	<link rel="apple-touch-icon-precomposed" href="../images/apple-touch-icon-57-precomposed.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../images/apple-touch-icon-144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72.png">
+	<link rel="apple-touch-icon" href="../images/apple-touch-icon-57.png">
 	<link rel="shortcut icon" href="../images/favicon.png">
 
 	<script type="text/javascript" src="../js/rollovers.js"></script>
-	<script type="text/javascript" src="../js/jquery-1_7.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
 	<script type="text/javascript" src="../js/jquery.flexslider.js"></script>
 	<script type="text/javascript">
 		$(function(){
@@ -38,39 +45,39 @@
 	</script>
 </head>
 
-<!--[if lt IE 7]><body id="home" class="ie ie6"><![endif]-->
-<!--[if IE 7]><body id="home" class="ie ie7"><![endif]-->
-<!--[if IE 8]><body id="home" class="ie ie8"><![endif]-->
-<!--[if IE 9]><body id="home" class=""><![endif]-->
-<!--[if !IE]> --><body id="home" class="non_ie"><!-- <![endif]-->
+<!--[if lt IE 7]><body id="home" class="ie ie6 old_ie"><![endif]-->
+<!--[if IE 7]><body id="home" class="ie ie7 old_ie"><![endif]-->
+<!--[if IE 8]><body id="home" class="ie ie8 old_ie"><![endif]-->
+<!--[if IE 9]><body id="home" class="ie ie9"><![endif]-->
+<!--[if !IE]><!--><body id="home" class="non_ie" style="margin:0;padding:0;"><!--<![endif]-->
 
 <div class="contentWrap">
-<div class="container-fluid">
+<div class="container">
 <h1>Checking (Section Title)</h1>
-<div class="row-fluid span12">
-<div class="span4 well">
-	<div class="row-fluid span12">
-		<div class="span6"><a href="#" class="thumbnail"><img src="../images/img_checking.jpg" alt=""></a></div>
-		<div class="span6">
+<div class="row">
+<div class="col-xs-4 well">
+	<div class="row">
+		<div class="col-md-6"><a href="#" class="thumbnail"><img src="../images/img_checking.jpg" alt=""></a></div>
+		<div class="col-md-6">
 			<p>Platinum Checking</p>
           	<p><strong>Account minimum $5999</strong></p>
 			<span class=" badge badge-warning">Read More</span> <span class=" badge badge-info">Open Account</span>
 		</div>
 	</div>
 </div>
-<div class="span4 well">
-	<div class="row-fluid span12">
-		<div class="span6"><a href="#" class="thumbnail"><img src="../images/img_checking.jpg" alt=""></a></div>
-		<div class="span6">
+<div class="col-xs-4 well">
+	<div class="row">
+		<div class="col-md-6"><a href="#" class="thumbnail"><img src="../images/img_checking.jpg" alt=""></a></div>
+		<div class="col-md-6">
 			<p>Silver Checking</p>
           	<p><strong>Account minimum $999</strong></p>
 			<span class=" badge badge-warning">Read More</span> <span class=" badge badge-info">Open Account</span>
 		</div>
 	</div>
-</div><div class="span4 well">
-	<div class="row-fluid span12">
-		<div class="span6"><a href="#" class="thumbnail"><img src="../images/img_checking.jpg" alt=""></a></div>
-		<div class="span6">
+</div><div class="col-xs-4 well">
+	<div class="row">
+		<div class="col-md-6"><a href="#" class="thumbnail"><img src="../images/img_checking.jpg" alt=""></a></div>
+		<div class="col-md-6">
 			<p>Free Checking</p>
           	<p><strong>No Account Minimum</strong></p>
 			<span class=" badge badge-warning">Read More</span> <span class=" badge badge-info">Open Account</span>
@@ -78,11 +85,11 @@
 	</div>
 </div>
 </div><!--rowfluid-->
-<div class="row-fluid span12">
- <div class="span3">
+<div class="row">
+ <div class="col-md-3">
 	<div class="well">
 		<h2 class="muted">Platinum</h2>
-		<p><span class="label">POPULAR</span></p>         
+		<p><span class="label label-primary">POPULAR</span></p>         
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
 		<hr>
 		<h3>$5999 Minimum Deposit</h3>
@@ -90,7 +97,7 @@
 		<p><a class="btn btn-large" href="#">Learn more</a></p>
 	</div>
 </div>
-<div class="span3">
+<div class="col-md-3">
 	<div class="well">
 		<h2 class="text-warning">Bronze</h2>
 		<p><span class="label label-success">POPULAR</span></p>
@@ -102,10 +109,10 @@
 		<p><a class="btn btn-success btn-large" href="#">Learn more</a></p>
 	</div>
 </div>
-<div class="span3">
+<div class="col-md-3">
 	<div class="well">
 		<h2 class="text-info">Free</h2>
-		<p><span class="label label-info">BUDGET</span></p>
+		<p><span class="label label-default">BUDGET</span></p>
 		
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
 		<hr>
@@ -114,10 +121,37 @@
       <p><a class="btn btn-large" href="#">Learn more</a></p>
 	</div>
 </div>
-</div><!--row-fluid-->
+<div class="col-md-3">
+	<div class="well">
+		<h2 class="text-info">Free</h2>
+		<p><span class="label label-default">BUDGET</span></p>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+		<hr>
+		<h3>No minimum deposit</h3>
+		<hr>
+      <p><a class="btn btn-large" href="#">Learn more</a></p>
+	</div>
+</div>
+</div><!--row-->
 
-</div><!--container-fluid-->
+</div><!--container-->
 
-</div><!--contentWrap-->
-</body>
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.min.js">/* */</script>
+	<script type="text/javascript">
+		$(function() { 
+			// IE shim for placeholder. See jquery_placeholder.js 
+			$('input').placeholder();
+			
+	
+		});
+	</script>
+
+
+	</body>
 </html>
