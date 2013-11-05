@@ -269,7 +269,7 @@ input.btn:active,
 .navbar .nav > li > a {
 }
 .navbar .nav > li > a:hover, .navbar .nav > li.active > a {
-	
+	color:#300;
 	text-decoration: none;
 }
 .navbar .nav .active > a,
@@ -985,3 +985,212 @@ body {
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* --------------------------------------------------------- strange ie */
+
+.old_ie .login-collapse.collapse {
+	height: auto !important;
+	overflow: visible !important;
+	}
+
+.old_ie .content {min-height:450px;}
+/* make old ie have grid working and not read in phone page */
+.old_ie .container {
+  width:980px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.old_ie .visible-lg, .old_ie .visible-md.visible-lg, .old_ie .visible-lg.visible-md {display:block !important;}
+.old_ie .container:before,
+.old_ie .container:after {
+  display: table;
+  content: " ";
+}
+
+.old_ie .container:after {
+  clear: both;
+}
+
+.old_ie .container:before,
+.old_ie .container:after {
+  display: table;
+  content: " ";
+}
+
+.old_ie .container:after {
+  clear: both;
+}
+
+.old_ie .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.old_ie .row:before,
+.old_ie .row:after {
+  display: table;
+  content: " ";
+}
+
+.old_ie .row:after {
+  clear: both;
+}
+
+.old_ie .row:before,
+.old_ie .row:after {
+  display: table;
+  content: " ";
+}
+
+.old_ie .row:after {
+  clear: both;
+}
+
+.old_ie .col-xs-1,
+.old_ie .col-xs-2,
+.old_ie .col-xs-3,
+.old_ie .col-xs-4,
+.old_ie .col-xs-5,
+.old_ie .col-xs-6,
+.old_ie .col-xs-7,
+.old_ie .col-xs-8,
+.old_ie .col-xs-9,
+.old_ie .col-xs-10,
+.old_ie .col-xs-11,
+.old_ie .col-xs-12,
+.old_ie .col-sm-1,
+.old_ie .col-sm-2,
+.old_ie .col-sm-3,
+.old_ie .col-sm-4,
+.old_ie .col-sm-5,
+.old_ie .col-sm-6,
+.old_ie .col-sm-7,
+.old_ie .col-sm-8,
+.old_ie .col-sm-9,
+.old_ie .col-sm-10,
+.old_ie .col-sm-11,
+.old_ie .col-sm-12,
+.old_ie .col-md-1,
+.old_ie .col-md-2,
+.old_ie .col-md-3,
+.old_ie .col-md-4,
+.old_ie .col-md-5,
+.old_ie .col-md-6,
+.old_ie .col-md-7,
+.old_ie .col-md-8,
+.old_ie .col-md-9,
+.old_ie .col-md-10,
+.old_ie .col-md-11,
+.old_ie .col-md-12,
+.old_ie .col-lg-1,
+.old_ie .col-lg-2,
+.old_ie .col-lg-3,
+.old_ie .col-lg-4,
+.old_ie .col-lg-5,
+.old_ie .col-lg-6,
+.old_ie .col-lg-7,
+.old_ie .col-lg-8,
+.old_ie .col-lg-9,
+.old_ie .col-lg-10,
+.old_ie .col-lg-11,
+.old_ie .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.old_ie .col-xs-1,
+.old_ie .col-xs-2,
+.old_ie .col-xs-3,
+.old_ie .col-xs-4,
+.old_ie .col-xs-5,
+.old_ie .col-xs-6,
+.old_ie .col-xs-7,
+.old_ie .col-xs-8,
+.old_ie .col-xs-9,
+.old_ie .col-xs-10,
+.old_ie .col-xs-11,
+.old_ie .col-sm-1,
+.old_ie .col-sm-2,
+.old_ie .col-sm-3,
+.old_ie .col-sm-4,
+.old_ie .col-sm-5,
+.old_ie .col-sm-6,
+.old_ie .col-sm-7,
+.old_ie .col-sm-8,
+.old_ie .col-sm-9,
+.old_ie .col-sm-10,
+.old_ie .col-sm-11,
+.old_ie .col-md-1,
+.old_ie .col-md-2,
+.old_ie .col-md-3,
+.old_ie .col-md-4,
+.old_ie .col-md-5,
+.old_ie .col-md-6,
+.old_ie .col-md-7,
+.old_ie .col-md-8,
+.old_ie .col-md-9,
+.old_ie .col-md-10,
+.old_ie .col-md-11,
+.old_ie .col-lg-1,
+.old_ie .col-lg-2,
+.old_ie .col-lg-3,
+.old_ie .col-lg-4,
+.old_ie .col-lg-5,
+.old_ie .col-lg-6,
+.old_ie .col-lg-7,
+.old_ie .col-lg-8,
+.old_ie .col-lg-9,
+.old_ie .col-lg-10,
+.old_ie .col-lg-11 {
+  float: left;
+}
+
+.old_ie .col-xs-1, .old_ie .col-sm-1, .old_ie .col-md-1, .old_ie .col-lg-1 {
+  width: 8.333333333333332%;
+}
+
+.old_ie .col-xs-2, .old_ie .col-sm-2, .old_ie .col-md-2, .old_ie .col-lg-2 {
+  width: 16.666666666666664%;
+}
+
+.old_ie .col-xs-3, .old_ie .col-sm-3, .old_ie .col-md-3, .old_ie .col-lg-3 {
+  width: 25%;
+}
+
+.old_ie .col-xs-4, .old_ie .col-sm-4, .old_ie .col-md-4, .old_ie .col-lg-4 {
+  width: 33.33333333333333%;
+}
+
+.old_ie .col-xs-5, .old_ie .col-sm-5, .old_ie .col-md-5, .old_ie .col-lg-5 {
+  width: 41.66666666666667%;
+}
+
+.old_ie .col-xs-6, .old_ie .col-sm-6, .old_ie .col-md-6, .old_ie .col-lg-6 {
+  width: 50%;
+}
+
+.old_ie .col-xs-7, .old_ie .col-sm-7, .old_ie .col-md-7, .old_ie .col-lg-7 {
+  width: 58.333333333333336%;
+}
+
+.old_ie .col-xs-8, .old_ie .col-sm-8, .old_ie .col-md-8, .old_ie .col-lg-8 {
+  width: 66.66666666666666%;
+}
+
+.old_ie .col-xs-9, .old_ie .col-sm-9, .old_ie .col-md-9, .old_ie .col-lg-9 {
+  width: 75%;
+}
+
+.old_ie .col-xs-10, .old_ie .col-sm-10, .old_ie .col-md-10, .old_ie .col-lg-10 {
+  width: 83.33333333333334%;
+}
+
+.old_ie .col-xs-11, .old_ie .col-sm-11, .old_ie .col-md-11, .old_ie .col-lg-11 {
+  width: 91.66666666666666%;
+}
+
+.old_ie .col-xs-12, .old_ie .col-sm-12, .old_ie .col-md-12, .old_ie .col-lg-12 {
+  width: 100%;
+}
