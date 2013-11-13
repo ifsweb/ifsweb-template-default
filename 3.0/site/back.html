@@ -28,10 +28,30 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72.png">
 	<link rel="apple-touch-icon" href="../images/apple-touch-icon-57.png">
 	<link rel="shortcut icon" href="../images/favicon.png">
+<!-- templatebully -->
+	<style type="text/css" media="all">@import url("http://ifsweb.intuit.com/templatebully/tb_templateBully.css");</style>
+	<script type="text/javascript" src="http://ifsweb.intuit.com/templatebully/jquery_1_6.js"></script>
+	<script type="text/javascript" src="http://ifsweb.intuit.com/templatebully/tb_templateBully.js"></script>
 
 	<script type="text/javascript" src="../js/rollovers.js"></script>
 	<script type="text/javascript" src="../js/jquery.js"></script>
-	
+	<!-- scroll to top fade in and out code-->
+    <script>
+$(function() {
+	$(".backToTopButton").hide();
+	$(window).scroll(function() {
+		if($(this).scrollTop()>400){
+			$('.backToTopButton').fadeIn();
+		} else { 
+			$('.backToTopButton').fadeOut()
+		}	
+	});
+	$('.backToTopButton').click(function(){
+		$('body,html').animate({scrollTop:0},800);
+		return false;
+	});		
+})
+</script>
     
 </head>
 
@@ -122,7 +142,9 @@
 							</ul>
 					</div><!-- nav-collapse -->
 </div><!--mastwrap-->
-
+<div class="hidden-sm">
+	<a href="#" class="backToTopButton">Back to top</a>
+</div><!--hide phone back top top-->
 <div class="row contentWrapBack">
 
     <div id="col1" class="col-xs-11 shift-right">
