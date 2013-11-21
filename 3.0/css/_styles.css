@@ -204,6 +204,46 @@ input.btn:active,
 .contentWrap ol, .contentWrap ul {
 	list-style: none;
 	}
+/*******************************
+* for parallax classes *
+********************************/
+#header, #intro, #second{
+	width: 100%;
+}
+
+#intro{
+	background:url(../images/firstBG.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 600px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#second{
+	background: url(../images/secondBG.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1300px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+#second .bg{
+	background: url(../images/ad_phonewithMWBscreen.png) 50% 0 no-repeat fixed;
+	height: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 900px;
+	z-index: 200;
+}
+
+#third{
+	background: url(../images/thirdBG.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 650px;
+	padding: 100px 0 0 0;	
+}
 
 /******************************
  * for page slide out nav *
@@ -505,7 +545,7 @@ li.searchArea {
 	padding: 0 5% 10px 5%;
 	text-align:left;
 	}
-
+#parallax .module {background:none;}
 .highlight li {
 	margin-left:-12px;
 	padding: 12px 12px;
@@ -613,7 +653,7 @@ li.searchArea {
 	padding: 0 75px 0;
 	font-size: 17px;
 	}
-
+#parallax .promoSmall {background:none;}
 .promoSmall ul.slides {margin: 0;padding:0;}
 .promoSmall ul.slides li {
 	margin: 0;
@@ -891,7 +931,33 @@ sup {font-size:.6em;}/*make sup smaller*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media (min-width: 980px) {
+#parallax .collapse {display:block;}
+#parallax .container {width:100% !important;min-width:980px;}
+#parallax .nav {
+	width:100%;
+	clear:both;
+	display:inline-block;
+	text-align:left;
+	}
+#parallax .nav li {
+	display:inline-block; 
+	width:auto;
+	text-align:left;
+	margin-bottom:8px;
+	}
+#parallax .nav li li {
+	display:block; 
+	text-align:left;
+	margin-bottom:8px;
+	list-style:none;
+	}
 
+
+#parallax .nav-collapse.collapse.in {
+	
+	height:auto !important; /* setting explicit height to activate animated slide */
+	width:100%;
+	}
 .login-collapse.collapse {
 	height: auto !important;
 	overflow: visible !important;
