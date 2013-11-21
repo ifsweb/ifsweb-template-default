@@ -154,7 +154,7 @@ input.btn:active,
 /****************************************************************** 
  * containers or wrappers *
  *************************************************************************** */
-
+#parallax .mastWrap {background:url(../images/bg_blacktran.png) top left repeat-x;height:100px;max-width:100%;}
 #fixedtop .mastWrap  {
 	background:#363636;
 	
@@ -213,36 +213,36 @@ input.btn:active,
 
 #intro{
 	background:url(../images/firstBG.jpg) 50% 0 no-repeat fixed;
-	color: white;
+	
 	height: 600px;
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 }
 
 #second{
 	background: url(../images/secondBG.jpg) 50% 0 no-repeat fixed;
-	color: white;
-	height: 1300px;
-	margin: 0 auto;
+	
+	height: 750px;
+	margin: 0;
 	overflow: hidden;
 	padding: 0;
 }
 
 #second .bg{
-	background: url(../images/ad_phonewithMWBscreen.png) 50% 0 no-repeat fixed;
-	height: 1300px;
-	margin: 0 auto;
-	padding: 0;
+	background: url(../images/ad_phonewithMWBscreen.png) 0% 0% no-repeat fixed;
+	height: 950px;
+	margin: 0;
+	padding: 150px;
 	position: absolute;
-	width: 900px;
+	width:100%;
 	z-index: 200;
 }
 
 #third{
 	background: url(../images/thirdBG.jpg) 50% 0 no-repeat fixed;
-	color: white;
-	height: 650px;
-	padding: 100px 0 0 0;	
+	
+	height:350px;
+	padding: 0;	
 }
 
 /******************************
@@ -423,7 +423,7 @@ ul#nav:after {
 	margin:0 auto; 
 	border:1px solid #cfo;
 }
-
+#parallax .nav {background:#fff;}
 .navbar-fixed-top .nav {display:inline;}
 .navbar-fixed-top .nav li {display:inline-block; width:auto;}
 .navbar-fixed-top .nav li a, .navbar-fixed-top .uti li a {color:#fff;}
@@ -485,6 +485,7 @@ li.searchArea {
 	display: inline-block;
 
 	}
+#parallax .uti a {color:#f7f7f7;}
 .uti a:hover, .uti a:active {
 
 	}
@@ -501,6 +502,7 @@ li.searchArea {
 	position:relative;
 	
 	}
+#parallax .loginArea {width:60%;text-align:left;}
 .loginArea h1 {
 	position:relative;
 	padding:0 0 10px 0; 
@@ -528,7 +530,8 @@ li.searchArea {
 	position:relative;
 	top:0;
 	vertical-align:top;
-	
+	margin:0;
+	padding:0;
 	}
 
 
