@@ -207,8 +207,8 @@ input.btn:active,
 /*******************************
 * for parallax classes *
 ********************************/
-#header, #intro, #second{
-	width: 100%;
+#intro, #second, #third, #parallax .mastWrap, #parallax .contentWrap, #parallax .footWrap {
+	width: 100%; max-width:100%; margin:0;padding:0;
 }
 
 #intro{
@@ -232,16 +232,16 @@ input.btn:active,
 	background: url(../images/ad_phonewithMWBscreen.png) 0% 0% no-repeat fixed;
 	height: 950px;
 	margin: 0;
-	padding: 150px;
+	padding: 150px 0 0 0;
 	position: absolute;
 	width:100%;
-	z-index: 200;
+	z-index: 5;
 }
 
 #third{
 	background: url(../images/thirdBG.jpg) 50% 0 no-repeat fixed;
-	
-	height:350px;
+	margin:0;
+	height:280px;
 	padding: 0;	
 }
 
