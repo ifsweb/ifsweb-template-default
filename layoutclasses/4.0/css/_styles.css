@@ -1,0 +1,1785 @@
+/****************************************************************** 
+ * override base, body, h1, links and btns *
+ *************************************************************************** */
+
+body {
+	margin: 0;
+	font-family:  Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #333333;
+	text-align:center;
+	background-color: #ffffff;
+}
+
+a {
+	color: #111111;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	color: #222222;
+	text-decoration: underline;
+}
+.img-rounded {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 10px 0;
+	font-family: inherit;
+	font-weight: bold;
+	line-height: 20px;
+	color: inherit;
+	text-rendering: optimizelegibility;
+}
+h1, h2, h3 {padding-bottom:.4em;}
+h1,
+h2,
+h3 {
+  line-height: 40px;
+}
+
+h1 {
+  font-size: 30.5px;
+}
+
+h2 {
+  font-size: 27.5px;
+}
+
+h3 {
+  font-size: 24.5px;
+}
+
+h4 {
+  font-size: 17.5px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 11.9px;
+}
+
+.btn, input.btn {
+	display: inline-block;
+	*display: inline;
+	/* IE7 inline-block hack */
+
+	*zoom: 1;
+	padding: 0 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 27px;
+	height: 27px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #111111;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #e6e6e6;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: 1px solid #cccccc;
+	*border: 0;
+	border-bottom-color: #b3b3b3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	*margin-left: .3em;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	}
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+	color: #333333;
+	background-color: #e6e6e6;
+	*background-color: #d9d9d9;
+	}
+.btn:active,
+.btn.active {
+	background-color: #cccccc \9;
+	}
+.btn:first-child {
+	*margin-left: 0;
+}
+.btn:hover, 
+input.btn:hover,
+.btn:focus {
+	color: #222222;
+	text-decoration: none;
+	background-position: 0 -15px;
+	-webkit-transition: background-position 0.1s linear;
+	-moz-transition: background-position 0.1s linear;
+	-o-transition: background-position 0.1s linear;
+	transition: background-position 0.1s linear;
+}
+
+.btn.active,
+input.btn:active, 
+.btn:active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	}
+
+
+
+
+/****************************************************************** 
+ * containers or wrappers *
+ *************************************************************************** */
+
+#fixedtop .mastWrap  {
+	background:#363636;
+	
+	}
+.contentWrap .top {
+	margin-bottom: 10px;
+	padding-top:0;
+	}
+#fixedtop .contentWrap , .contentWrapBack {margin-top:60px;} /* clear fixed top nav when on */
+.row.contentWrapBack div {
+    -webkit-transition: width 0.3s ease, margin 0.3s ease;
+    -moz-transition: width 0.3s ease, margin 0.3s ease;
+    -o-transition: width 0.3s ease, margin 0.3s ease;
+    transition: width 0.3s ease, margin 0.3s ease;
+	min-height:250px;
+}
+#trig {
+    margin: 10px;
+}
+.shift-left {
+    margin-left: -35% !important;
+}
+.shift-right {
+    margin-left: 0px !important;
+}
+.contentWrapBack .col-xs-0 {
+    width: 0;
+    margin-left: 0;
+}
+
+.contentWrap .top,
+.contentWrap .middle,
+.contentWrap .bottom {
+	text-align: center;
+	}	
+.border-bottom {
+	padding-bottom: 16px;
+	border-bottom: 1px #f4f4f2 solid;
+	}
+
+.footWrap {
+	background-color:#efefef;
+	color:#fff;
+	}
+.contentWrap ol, .contentWrap ul {
+	list-style: none;
+	}
+
+.row,
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5,
+.col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10,
+.col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3,
+.col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8,
+.col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1,
+.col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+.col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11,
+.col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4,
+.col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9,
+.col-lg-10, .col-lg-11, .col-lg-12	 {
+	/*margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;*/
+	}
+
+
+
+.form-inline .form-group {
+	margin-bottom: 10px;
+	}
+
+
+
+
+/****************************************************************** 
+ * logo AND BRAND *
+ *************************************************************************** */
+
+.logo {
+	display:inline-block;
+	text-align:left;
+	position:relative;
+	
+	}	
+.logo img {
+	width:100%;
+	max-width:375px;
+	}
+
+
+
+
+/****************************************************************** 
+ * navigation icons on mobile *
+ *************************************************************************** */
+
+.btn.btn-navbar img {
+	width:100%;
+	min-width:32px;
+	max-width:44px;
+	}
+
+
+.btn.btn-navbar {
+	max-width:50px;
+	padding:8px;
+	text-align:center;
+	margin-right:20px;
+	}
+
+ 
+.login-collapse.collapse {
+	height: auto;
+	text-align: left;
+	}
+
+
+
+
+/****************************************************************** 
+ * ovderride primary nav or main nav *
+ *************************************************************************** */
+
+.nav {
+	position: relative;
+	clear:both;
+	height:auto;
+	margin:0 auto; 
+	border:1px solid #cfo;
+}
+
+.navbar-fixed-top .nav {display:inline;}
+.navbar-fixed-top .nav li {display:inline-block; width:auto;}
+.navbar-fixed-top .nav li a, .navbar-fixed-top .uti li a {color:#fff;}
+.navbar .nav > li > a {
+}
+.navbar .nav > li > a:hover, .navbar .nav > li.active > a {
+	
+	text-decoration: none;
+}
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover {
+	
+	text-decoration: none;
+}
+
+
+
+
+/****************************************************************** 
+ * utility *
+ *************************************************************************** */
+
+.uti {
+	padding: 0;
+	width:auto;
+	position:relative;
+	text-align:right;
+	}
+	
+.uti ul {
+	margin: 0;
+	padding: 0;
+	display:inline-block;
+	white-space:nowrap;
+	position:relative;
+	}
+
+.uti li {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	display: inline;
+	list-style:none;
+	position:relative;
+	top:0;
+	vertical-align:top;
+	}
+li.searchArea {
+	display:inline; 
+	}
+.uti a:link, .uti a:visited {
+	text-decoration: none;
+	padding: 10px 10px 0 10px;
+	display: inline-block;
+
+	}
+.uti a:hover, .uti a:active {
+
+	}
+
+
+
+
+/****************************************************************** 
+ * search *
+ *************************************************************************** */
+
+.searchArea {
+	position:relative;
+	display:inline;
+	}
+.searchArea form {
+	position:relative;
+	top:0;
+	vertical-align:top;
+	
+	}
+
+
+
+
+/****************************************************************** 
+ * logins *
+ *************************************************************************** */
+
+.loginArea {
+	position:relative;
+	
+	}
+.loginArea h1 {
+	position:relative;
+	padding: 0 0 10px 0;
+	margin-top: 0;
+	
+	}
+.loginOB {
+	margin: 15px 0 0;
+	padding-bottom: 20px;
+	position:relative;
+	}
+.loginCol {
+	margin-top: ;
+	}
+
+.loginBB {
+	padding: 20px 0 0;
+	border-top: 1px solid rgba(0,0,0,.2);
+	}
+
+
+
+
+/****************************************************************** 
+ * special modules or containers *
+ *************************************************************************** */
+
+.wideWrap {
+	 width: 100%;
+	 max-width: 100%;
+	 }
+
+.wideWrapInner {
+	max-width: 1170px;
+	}
+
+.moduleWrapper1 {
+	text-align: left;
+	background-color: #ccc;
+	background-image: -moz-linear-gradient(top, #, #);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#), to(#));
+	background-image: -webkit-linear-gradient(top, #, #);
+	background-image: -o-linear-gradient(top, #, #);
+	background-image: linear-gradient(to bottom, #, #);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#', endColorstr='#', GradientType=0);
+	border-color: # # #;
+	border-color: rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0);
+	*background-color: #e6e6e6;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: 1px solid rgba(0,0,0,0.0);
+	*border: 0;
+	border-bottom-color: #;
+	-webkit-border-radius: px;
+	-moz-border-radius: px;
+	border-radius: px;
+	*margin-left: .3em;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	}
+
+.moduleWrapper2 {
+	text-align: left;
+	background-color: #ccc;
+	background-image: -moz-linear-gradient(top, #, #);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#), to(#));
+	background-image: -webkit-linear-gradient(top, #, #);
+	background-image: -o-linear-gradient(top, #, #);
+	background-image: linear-gradient(to bottom, #, #);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#', endColorstr='#', GradientType=0);
+	border-color: # # #;
+	border-color: rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0);
+	*background-color: #e6e6e6;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: 1px solid rgba(0,0,0,0.0);
+	*border: 0;
+	border-bottom-color: #;
+	-webkit-border-radius: px;
+	-moz-border-radius: px;
+	border-radius: px;
+	*margin-left: .3em;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	}
+
+
+.moduleInnerWrapper1 {
+	text-align: ;
+	margin: 10px;
+	padding: 10px;
+	font-size: ;
+	line-height: ;
+	vertical-align: ;
+	cursor: pointer;
+	color: #;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.0);
+	background-color: #;
+	background-image: -moz-linear-gradient(top, #, #);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#), to(#));
+	background-image: -webkit-linear-gradient(top, #, #);
+	background-image: -o-linear-gradient(top, #, #);
+	background-image: linear-gradient(to bottom, #, #);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#', endColorstr='#', GradientType=0);
+	border-color: # # #;
+	border-color: rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0);
+	*background-color: #;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: 1px solid rgba(0,0,0,0.0);
+	*border: 0;
+	border-bottom-color: #;
+	-webkit-border-radius: px;
+	-moz-border-radius: px;
+	border-radius: px;
+	*margin-left: .3em;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	}
+
+
+.module1 {
+	text-align: left;
+	padding: 15px;
+	margin: 10px;
+	font-size: 14px;
+	line-height: 20px;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.0);
+	background-color: #eee;
+	background-image: -moz-linear-gradient(top, #, #);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#), to(#));
+	background-image: -webkit-linear-gradient(top, #, #);
+	background-image: -o-linear-gradient(top, #, #);
+	background-image: linear-gradient(to bottom, #, #);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#', endColorstr='#', GradientType=0);
+	border-color: # # #;
+	border-color: rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0);
+	*background-color: #e6e6e6;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: 1px solid rgba(0,0,0,0.0);
+	*border: 0;
+	border-bottom-color: #;
+	-webkit-border-radius: px;
+	-moz-border-radius: px;
+	border-radius: px;
+	*margin-left: .3em;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	}
+.module1 a {
+	color: #;
+	font-size: ;
+	font-weight: ;
+	}
+
+.module2 {
+	text-align: left;
+	padding: 15px;
+	margin: 10px;
+	font-size: 14px;
+	line-height: 20px;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #009;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	background-color: #f5f5f5;
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #e6e6e6;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: 1px solid #cccccc;
+	*border: 0;
+	border-bottom-color: #b3b3b3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	*margin-left: .3em;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	}
+.module2 a {
+	color: #009;
+	font-size: ;
+	font-weight: ;
+	}
+
+.highlight li {
+	margin-left:-12px;
+	padding: 12px 12px;
+	}
+.highlight li:hover {
+	color:#fff;
+	background:#666;
+	text-decoration: underline;
+	}
+.highlight li:hover a {color:#fff;}
+
+.module h1 {
+	
+	background:none;
+	padding:0;
+	margin:0;
+	}
+
+.module a:link, .module a:visited {
+	padding:11px 0;
+	text-decoration:none;
+	}
+.module a:active, .module a:hover { 
+	text-decoration:none;
+	
+	}
+.module li.firstLi {
+	
+	}
+
+.module1First {
+	
+	}
+.module2First {
+	
+	}
+.module1Last {
+	
+	}
+.module2Last {
+	
+	}
+	
+.top .moduleWrapper1 {min-height:100px;}
+.middle .moduleWrapper1 {min-height:160px;}
+.bottom .moduleWrapper1 {min-height:240px;}
+
+.top .module1 {min-height:80px;}
+.middle .module1 {min-height:140px;}
+.bottom .module2 {min-height:271px;}
+
+.top .module1 ul,
+.middle .module1 ul,
+.bottom .module1 ul,
+.top .module2 ul,
+.middle .module2 ul,
+.bottom .module2 ul {
+	padding-left: 12px;
+	}
+
+
+
+
+/****************************************************************** 
+ * STYLING *
+ *************************************************************************** */
+
+
+/* ----------------------------------------------------------------------------------------------------------------PROMO IMGS-------------------------------------------------------- */
+.promoMainImageSize {
+	width: ;
+	height: 328px;
+	}
+
+.promoSmallImageSize {
+	width: ;
+	height: 160px;
+	}
+
+
+/* ----------------------------------------------------------------------------------------------------------------BACKGROUND FLAT-------------------------------------------------------- */
+a.backgroundFlat1,
+div.backgroundFlat1,
+li.backgroundFlat1,
+input.backgroundFlat1,
+span.backgroundFlat1 {
+	background-image: none;
+	background-repeat: no-repeat;
+	filter: none;
+	background: none;
+	background: #0CF;
+	}
+
+
+/* ----------------------------------------------------------------------------------------------------------------GRADIENT-------------------------------------------------------- */
+.gradient1 {
+	background-color: #a8a8a8;
+	background-image: -moz-linear-gradient(top, #b4b4b4, #929292);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b4b4b4), to(#929292));
+	background-image: -webkit-linear-gradient(top, #b4b4b4, #929292);
+	background-image: -o-linear-gradient(top, #b4b4b4, #929292);
+	background-image: linear-gradient(to bottom, #b4b4b4, #929292);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b4b4b4', endColorstr='#929292', GradientType=0);
+	*background-color: #a8a8a8;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	}
+
+.gradient2 {
+	background-color: #818181;
+	background-image: -moz-linear-gradient(top, #929292, #676767);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#929292), to(#676767));
+	background-image: -webkit-linear-gradient(top, #929292, #676767);
+	background-image: -o-linear-gradient(top, #929292, #676767);
+	background-image: linear-gradient(to bottom, #929292, #676767);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#929292', endColorstr='#676767', GradientType=0);
+	*background-color: #818181;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	}
+
+
+/* ----------------------------------------------------------------------------------------------------------------BORDER-------------------------------------------------------- */
+.border1 {
+	border: 1px solid rgba(153,153,153,1.0);
+	}
+
+.border2 {
+	border: 1px solid rgba(51,51,51,1.0);
+	}
+
+
+/* ----------------------------------------------------------------------------------------------------------------BORDER RADIUS-------------------------------------------------------- */
+.borderRadius1 {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	}
+
+.borderRadius2 {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	}
+
+
+/* ----------------------------------------------------------------------------------------------------------------BOX SHADOW-------------------------------------------------------- */
+.boxshadow1 {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+
+.boxshadow2 {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------PADDING-------------------------------------------------------- */
+.padding1 {
+	padding: 15px;
+	}
+
+.padding2 {
+	padding: 25px;
+	}
+
+
+/* --------PADDINGSpecific-------- */
+.paddingTop1 {
+	padding-top: px;
+	}
+
+.paddingRight1 {
+	padding-right: px;
+	}
+
+.paddingBottom1 {
+	padding-bottom: px;
+	}
+
+.paddingLeft1 {
+	padding-left: px;
+	}
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------MARGIN-------------------------------------------------------- */
+.margin1 {
+	margin: 15px;
+	}
+
+.margin2 {
+	margin: 25px;
+	}
+
+
+/* --------MARGINSpecific-------- */
+.marginTop1 {
+	margin-top: 10px;
+	}
+
+.marginRight1 {
+	margin-right: px;
+	}
+
+.marginBottom1 {
+	margin-bottom: px;
+	}
+
+.marginLeft1 {
+	margin-left: px;
+	}
+
+.moduleWrapper1MarginSpecial1 {
+	
+	}
+
+.module1MarginSpecial1 {
+	margin-left: 0;
+	}
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------MARGIN & Padding-------------------------------------------------------- */
+a.marginANDpadding1,
+div.marginANDpadding1,
+li.marginANDpadding1,
+input.marginANDpadding1,
+span.marginANDpadding1 {
+	margin: ;
+	padding: ;
+	}
+
+
+
+
+/****************************************************************** 
+ * rates *
+ *************************************************************************** */
+
+.rateTxt img {
+	
+	}
+.rates {
+	
+	}
+
+.rateTxt {
+	font-size:24px;
+	}
+
+.rateTxtsm {font-size:8px;}
+
+
+
+
+/****************************************************************** 
+ *main promotion *
+ *************************************************************************** */
+
+.slides {
+	position: relative;
+	
+	}
+.promoMain .promoImg {
+	position:relative; 
+	top:0;
+	left:0;
+	z-index:10;
+	}
+.promoMain .promoImg img {width:100%;}
+
+.promoMain .promoTxt {
+	font-size:28px;
+	line-height:normal;
+	z-index:300;
+	position:absolute;
+	top:0px;
+	font-family: 'Istok Web', sans-serif;
+	margin-left:20px;
+	margin-top:20px;
+	}
+.promoMain .promoTxt h1 {
+	font-size:33px;
+	line-height:28px;
+	margin:10px 0px 5px 0;
+	}
+.promoMain .promoTxt p {
+	line-height:25px; 
+	padding-top:0;
+	margin-top:0; 
+	}
+.flexslider.promoMain {
+	position:relative;
+	border:1px solid #ccc;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	max-width:100%;
+}
+
+
+
+
+/****************************************************************** 
+ * smaller promotions with scale on hover for images*
+ *************************************************************************** */
+ 
+ .flexslider.promoSmall, .slider {
+	position:relative;
+	margin-top:0;
+	z-index: 500;
+	}
+	
+
+.promoSmall {
+	background:#ccc;
+	min-height: 50px;
+	padding: 0 75px 0;
+	font-size: 17px;
+	}
+
+.promoSmall ul.slides {margin: 0;padding:0;}
+.promoSmall ul.slides li {
+	margin: 0;
+	padding:10px 15px; 
+	min-height:140px;
+	max-height:140px;
+	overflow:hidden;
+	}
+	
+.promoSmall h1 {line-height:28px;padding-bottom:0; margin-bottom:0;}
+.promoSmall p {line-height:20px;padding-top:0; margin-top:5px;}
+
+
+
+
+/****************************************************************** 
+ * smaller promotions with scale on hover for images*
+ *************************************************************************** */
+ 
+.promoSmall img {
+	width: 100%;
+	-webkit-box-shadow:  2px 2px 1px 1px rgba(000, 000, 000, .15);
+	box-shadow:  2px 2px 1px 1px rgba(000, 000, 000, .15);
+	-webkit-border-radius: 4px;
+	border-radius:4px;
+	}
+.promoSmall a img { 
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out; 
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out; 
+	transition: all .2s ease-in-out; 
+	}
+.promoSmall a:hover img {
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05); 
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05); 
+	}
+
+
+
+
+/****************************************************************** 
+ * content area on backpages *
+ *************************************************************************** */
+
+.content {
+	padding: 0 0 30px 0;
+	clear:both;
+	font-size:14px;
+	line-height:1.75em;
+	text-align:left;
+	border-top: none;
+	}
+	
+.content ul, .content ol {
+	margin: 0 0 0 0;
+	padding: 0 0 6px 0;
+	}
+	
+.content ul li { 
+	padding: 0 0 6px 20px;
+	}
+	
+.content ol li {
+	margin: 0 0 6px 25px;
+	}
+	/*mixed lists */
+.content ul ul, .content ol ol {
+	margin-bottom: -6px;
+	padding: 6px 0 0 0;
+	}
+
+.content ul li, .content ol li ul li, .content ol li ul li ol li ul li {
+	background: url(../images/bullet.png) no-repeat 0 .5em;
+	list-style:none;
+	}
+.content ol li, .content ol li ol li, .content ul li ol li ol li {
+	background:none;
+	list-style:upper-roman;
+	}
+.content ol li ol li {
+	background:none;
+	list-style:lower-alpha; 
+	}
+
+.content ul ul li {
+	background: url(../images/bullet2.png) no-repeat 0 .1em;
+}
+
+.contentImg { /* ensure that there is a width and height attribute on the image in case the WYSIWYG editor assigns a snippet's image a width or height of 0 */
+	padding:.5em 2%;
+	width:auto;
+	float:right;
+	margin:0 0 .5em 3%;
+	}
+.content img {max-width:100%;}	 /*image punch*/
+
+
+.content h1:first-child,
+.content h1:first-of-type {
+	
+	}
+
+blockquote {border-left:0;}
+blockquote:before {
+	display: block;
+	content: "\201C";
+	font-size: 50px;
+	position: relative;
+	left: -20px;
+	top: 0;
+	color: #7a7a7a;
+}
+blockquote cite {
+	color: #999999;
+	display: block;
+	margin-top: 10px;
+}
+ 
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+.content a.btn {padding:6px 12px;}
+
+
+
+
+/****************************************************************** 
+ * footer nav and images *
+ *************************************************************************** */
+
+.footWrap ul {
+	list-style: none;
+}
+.footWrap li {
+	
+	list-style: none;
+	vertical-align: middle;
+	display: inline;
+	line-height:33px;
+}
+.footWrap li a:link, .footWrap li a:visited {
+	display:inline;
+	text-decoration: none;
+	}
+.footWrap li a:hover, .footWrap li a:active {
+	text-decoration:underline;
+	}
+img.ehl {margin-top:-3px;}
+.footL {
+	text-align: left;
+	}
+	
+.footR {
+	float: right;
+	text-align: right;
+	
+	
+	}
+
+.footWrap img {display:inline;}
+.footWrap li.lastLi {display:block;}
+
+
+
+
+/****************************************************************** 
+ * forms *
+ *************************************************************************** */
+
+label {
+	display: block;
+	margin: 2px 0 0 0;
+	}
+
+	
+.appfield1 {
+
+	box-shadow: 0 5px 5px #ddd inset;
+}
+
+/* --- 	This is your FOCUS style, when you click into an input field --- */
+.appfield2 {
+	width: 98%;
+	border: 1px #c7c4bd solid;
+	border-radius: 0;
+	background: #efefef;
+	padding:5px 0 2px 2px;
+	box-shadow: 0 5px 5px #ddd inset;
+}
+
+
+
+
+/****************************************************************** 
+ * tables *
+ *************************************************************************** */
+
+table { 
+	}
+
+.tableheader {
+	background: ;
+	color: ;
+	font-weight: bold;
+	padding:.3em 0;
+	}
+	
+th {
+	border-bottom: 1px solid #d9e2f6;
+	background-color:;
+	color:;
+	text-align: left;
+	padding:.3em 0;
+	}
+	
+.tablecontent1 td {
+	border-bottom: 1px solid #d9e2f6;
+	background-color: #eff3fb;
+	padding:.3em 15px;
+	}
+	
+.tablecontent2 td {
+	border-bottom: 1px solid #d9e2f6;
+	background-color:#fff;
+	padding:.3em 15px;
+	}
+
+
+
+
+/****************************************************************** 
+ * etc formatting other *
+ *************************************************************************** */
+
+sup {font-size:.6em;}/*make sup smaller*/
+.faqQ { 
+	font-weight: bold;
+	}
+
+.faqQ { }
+.faqA { }
+	
+.xsmall {
+	font-size:.8em; 
+	}
+.small {
+	font-size:.9em;
+	}
+.medium {
+	font-size:1em;
+	}
+.large {
+	font-size:1.1em;
+	}
+.xlarge{
+	font-size:1.2em;
+	}
+
+.special3 {
+	}
+.special2 {
+	}
+.special1 {
+	}
+
+.disclaimer {
+	color: #7e7e7e;
+}
+	
+.required {
+	color: #dd2525;
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------MIN-WIDTH 1200-----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 1200px) {
+
+.module1 h1,
+.module2 h1 {
+	font-size: 30.5px;
+	line-height: .9em;
+	min-height: 1.4em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	}
+
+
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------MIN-WIDTH 980-----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 980px) {
+
+.login-collapse.collapse {
+	height: auto !important;
+	overflow: visible !important;
+	}
+
+.content {min-height:450px;}
+
+
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 980-1200-----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 980px) and (max-width: 1200px) {
+
+.module1 h1,
+.module2 h1 {
+	font-size: 26px;
+	line-height: .9em;
+	min-height: 1.65em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	}
+
+
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------smaller than desktop group---------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 979 and below ------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 979px) {
+
+.login-collapse .loginOB a:active, 
+.login-collapse .loginOB a:hover {
+	text-decoration:none; 
+	
+	}
+body {
+	padding-top: 0;
+	}
+.badges a {
+	margin-right:10px;
+	padding:6px !important;
+	}
+.loginOB row {margin:10px auto !important;}
+.nav {
+	width:100%;
+	clear:both;
+	display:block;
+	text-align:left;
+	}
+.nav li {
+	display:block; 
+	text-align:left;
+	margin-bottom:8px;
+	}
+.nav li li {
+	display:block; 
+	text-align:left;
+	margin-bottom:8px;
+	list-style:none;
+	}
+
+.flexslider {
+	margin-bottom: 15px;
+	}
+
+.nav-collapse.collapse.in {
+	margin-top:5px;
+	background:#fff;
+	border-top:5px solid #333;
+	height:480px !important; /* setting explicit height to activate animated slide */
+	width:100%;
+	}
+.login-collapse.collapse.in {
+	margin-top:5px;
+	height:135px !important; /* setting explicit height to activate animated slide */
+	width:100%;
+	background:#fff;
+	}
+.login-collapse.collapse.in .loginArea {
+	background:none;
+	}
+.login-collapse {
+	margin-top:5px;
+	height: 0 !important;
+	}
+
+.login-collapse {
+	clear: left;
+	}
+
+.login-collapse {
+	float: none;
+	margin: 0 0 10px;
+	}
+
+.login-collapse li {
+	float: none;
+	}
+
+.login-collapse,
+.login-collapse.collapse {
+	height: 0;
+	overflow: hidden;
+	}
+
+.promoTxt {
+	font-size:19px; 
+	line-height:22px;
+	margin-left:3%;
+	background:#f7f7f7;
+	}
+.footWrap {margin-top:10px;}
+.footWrap ul {
+	display:block;
+	min-height:1.6em;
+	}
+.footWrap li {
+	display:inline;
+	float:left; 
+	margin-right:10px;
+	}
+.footR {text-align:right;}
+.footL {text-align:left;}
+
+.searchArea input {
+	width:70%; 
+	display:inline-block;
+	min-width:200px;
+	}
+.searchArea a.btn {width:auto !important; max-width:80px; display:inline-block !important;}
+
+
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 768-991 tablet portrait --------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.container {
+	max-width: none;
+	width: 96%;
+	}
+
+
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 768-979 tablet portrait --------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+body {
+	padding-left: 0;
+	padding-right: 0;
+	}
+
+.searchArea {margin-top:-3px;}
+
+.middle .module1 {
+    min-height: 170px;
+}
+
+.module1 h1 {
+	font-size: 26px;
+	line-height: .9em;
+	min-height: 2.1em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	}
+
+.module2 h1 {
+	font-size: 22px;
+	line-height: .9em;
+	min-height: 1.6em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	}
+.bottom .module2 {min-height:271px;}
+
+
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 767 and below -------------------large phone------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+
+/* arrows on promo*/
+.flex-direction-nav {
+	
+	}
+/*vertical spacing between column groups */
+.mastWrap, .contentWrap .middle, .contentWrap .top, .contentWrap .bottom, .footWrap {
+	padding-top:0;
+	margin-top:0;
+	margin-bottom:0;
+	}
+.module {
+	padding:.5em 15px;
+	text-align:left;
+	min-height:50px !important;
+	}
+.module ul {margin:0;}
+.loginOB {margin:0;padding:0;}
+.border-bottom {
+	margin:5px 0;
+	padding:0; 
+	}
+.ncua {display:none;}
+.footL, .footL ul, 
+.footR {
+	text-align:center; 
+	margin:0 auto; 
+	width:auto;
+	display:block;
+	}
+.footWrap ul {float:none;}
+.footR li, .footL li {margin:0;float:none; text-align:center; width:100%;}
+.footR li a {margin:.4em 11px;}
+.footL li a {display:inline-block; margin-bottom:.4em;}
+
+
+.middle .moduleWrapper1 {
+	min-height: inherit;
+	}
+
+.middle .module1 {
+    min-height: inherit;
+}
+
+.module1MarginSpecial1 {
+	margin-left: 10px;
+	margin-top: 0;
+	}
+
+.module1 h1,
+.module2 h1 {
+	font-size: 26px;
+	line-height: .9em;
+	min-height: 1.4em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	}
+
+.bottom .module2 {min-height:200px;}
+
+.badges {
+	margin: 10px 0;
+	}
+
+.badges img {
+	margin: 10px 0;
+	}
+
+
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 480 and below ----------------android phones-------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 480px) {
+
+.login-collapse {
+	-webkit-transform: translate3d(0, 0, 0);
+	}
+
+.badge {
+	margin-bottom: 8px;
+	}
+
+
+
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 320 and below ------------small phones------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 320px) {
+
+}
+
+
+
+
+
+@media (max-width: 240px) {
+
+}
+
+
+
+
+
+/*------------------------------------------------ZEROS---------------------------------------------------------------------------------*/
+
+/* --------BACKGROUND0-------- */
+a.background0,
+div.background0,
+li.background0,
+input.background0,
+span.background0 {
+	background-image: none;
+	background-repeat: no-repeat;
+	filter: none;
+	background: none;
+	}
+
+/* --------GRADIENT0-------- */
+a.gradient0,
+div.gradient0,
+li.gradient0,
+input.gradient0,
+span.gradient0 {
+	background-image: none;
+	background-repeat: no-repeat;
+	filter: none;
+	}
+
+
+/* --------BORDER0-------- */
+a.border0,
+div.border0,
+li.border0,
+input.border0,
+span.border0 {
+	border: 1px solid rgba(255,255,255,1.0);
+	}
+
+
+/* --------BORDER-RADIUS0-------- */
+a.border-radius0,
+div.border-radius0,
+li.border-radius0,
+input.border-radius0,
+span.border-radius0 {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	}
+
+
+/* --------BOX SHADOW0-------- */
+a.boxshadow0,
+div.boxshadow0,
+li.boxshadow0,
+input.boxshadow0,
+span.boxshadow0 {
+	-webkit-box-shadow: inset 0px 0px 0px rgba(255,255,255,0.0), 0px 0px 0px rgba(0,0,0,0.0);
+	-moz-box-shadow: inset 0px 0px 0px rgba(255,255,255,0.0), 0px 0px 0px rgba(0,0,0,0.0);
+	box-shadow: inset 0px 0px 0px rgba(255,255,255,0.0), 0px 0px 0px rgba(0,0,0,0.0);
+}
+
+
+/* --------PADDING0-------- */
+a.padding0,
+div.padding0,
+li.padding0,
+input.padding0,
+span.padding0 {
+	padding: 0;
+	}
+
+a.paddingTop0,
+div.paddingTop0,
+li.paddingTop0,
+input.paddingTop0,
+span.paddingTop0 {
+	padding-top: 0;
+	}
+
+a.paddingRight0,
+div.paddingRight0,
+li.paddingRight0,
+input.paddingRight0,
+span.paddingRight0 {
+	padding-right: 0;
+	}
+
+a.paddingBottom0,
+div.paddingBottom0,
+li.paddingBottom0,
+input.paddingBottom0,
+span.paddingBottom0 {
+	padding-bottom: 0;
+	}
+
+a.paddingLeft0,
+div.paddingLeft0,
+li.paddingLeft0,
+input.paddingLeft0,
+span.paddingLeft0 {
+	padding-left: 0;
+	}
+
+
+/* --------MARGIN0-------- */
+a.margin0,
+div.margin0,
+li.margin0,
+input.margin0,
+span.margin0 {
+	margin: 0;
+	}
+
+a.marginTop0,
+div.marginTop0,
+li.marginTop0,
+input.marginTop0,
+span.marginTop0 {
+	margin-top: 0;
+	}
+
+a.marginRight0,
+div.marginRight0,
+li.marginRight0,
+input.marginRight0,
+span.marginRight0 {
+	margin-right: 0;
+	}
+
+a.marginBottom0,
+div.marginBottom0,
+li.marginBottom0,
+input.marginBottom0,
+span.marginBottom0 {
+	margin-bottom: 0;
+	}
+
+a.marginLeft0,
+div.marginLeft0,
+li.marginLeft0,
+input.marginLeft0,
+span.marginLeft0 {
+	margin-left: 0;
+	}
+
+
+/* --------MARGIN & PADDING0-------- */
+a.marginANDpadding0,
+div.marginANDpadding0,
+li.marginANDpadding0,
+input.marginANDpadding0,
+span.marginANDpadding0 {
+	margin: 0;
+	padding: 0;
+	}
+	
+a.marginANDpaddingTop0,
+div.marginANDpaddingTop0,
+li.marginANDpaddingTop0,
+input.marginANDpaddingTop0,
+span.marginANDpaddingTop0 {
+	margin-top: 0;
+	padding-top: 0;
+	}
+	
+a.marginANDpaddingRight0,
+div.marginANDpaddingRight0,
+li.marginANDpaddingRight0,
+input.marginANDpaddingRight0,
+span.marginANDpaddingRight0 {
+	margin-right: 0;
+	padding-right: 0;
+	}
+	
+a.marginANDpaddingBottom0,
+div.marginANDpaddingBottom0,
+li.marginANDpaddingBottom0,
+input.marginANDpaddingBottom0,
+span.marginANDpaddingBottom0 {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	}
+	
+a.marginANDpaddingLeft0,
+div.marginANDpaddingLeft0,
+li.marginANDpaddingLeft0,
+input.marginANDpaddingLeft0,
+span.marginANDpaddingLeft0 {
+	margin-left: 0;
+	padding-left: 0;
+	}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTIONINTERNET EXPLORER DESKTOP ONLY---------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------- strange ie */
+
+
+
