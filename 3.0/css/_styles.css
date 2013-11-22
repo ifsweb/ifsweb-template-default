@@ -542,13 +542,196 @@ li.searchArea {
  * special modules or containers *
  *************************************************************************** */
 
-.module {
-	border:1px solid #fbfbfb;
-	background:#efefef;
-	padding: 0 5% 10px 5%;
-	text-align:left;
+.wideWrap {
+	width: 100%;
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 0;
 	}
+
+.wideWrapInner {
+	margin: 0 auto;
+	}
+
+.moduleWrapper1 {
+	text-align: left;
+	background-color: #;
+	background-image: -moz-linear-gradient(top, #, #);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#), to(#));
+	background-image: -webkit-linear-gradient(top, #, #);
+	background-image: -o-linear-gradient(top, #, #);
+	background-image: linear-gradient(to bottom, #, #);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#', endColorstr='#', GradientType=0);
+	border-color: # # #;
+	border-color: rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0);
+	*background-color: #;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: 1px solid rgba(0,0,0,0.0);
+	*border: 0;
+	border-bottom-color: #;
+	-webkit-border-radius: px;
+	-moz-border-radius: px;
+	border-radius: px;
+	*margin-left: .3em;
+	-webkit-box-shadow: inset px px px rgba(255,255,255,0.0), px px px rgba(0,0,0,0.0);
+	-moz-box-shadow: inset px px px rgba(255,255,255,0.0), px px px rgba(0,0,0,0.0);
+	box-shadow: inset px px px rgba(255,255,255,0.0), px px px rgba(0,0,0,0.0);
+	}
+
+.moduleWrapper2 {
+	text-align: left;
+	background-color: #;
+	background-image: -moz-linear-gradient(top, #, #);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#), to(#));
+	background-image: -webkit-linear-gradient(top, #, #);
+	background-image: -o-linear-gradient(top, #, #);
+	background-image: linear-gradient(to bottom, #, #);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#', endColorstr='#', GradientType=0);
+	border-color: # # #;
+	border-color: rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0);
+	*background-color: #;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: 1px solid rgba(0,0,0,0.0);
+	*border: 0;
+	border-bottom-color: #;
+	-webkit-border-radius: px;
+	-moz-border-radius: px;
+	border-radius: px;
+	*margin-left: .3em;
+	-webkit-box-shadow: inset px px px rgba(255,255,255,0.0), px px px rgba(0,0,0,0.0);
+	-moz-box-shadow: inset px px px rgba(255,255,255,0.0), px px px rgba(0,0,0,0.0);
+	box-shadow: inset px px px rgba(255,255,255,0.0), px px px rgba(0,0,0,0.0);
+	}
+
+
+.moduleInnerWrapper1 {
+	text-align: ;
+	margin: px;
+	padding: px;
+	font-size: ;
+	line-height: ;
+	vertical-align: ;
+	cursor: pointer;
+	color: #;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.0);
+	background-color: #;
+	background-image: -moz-linear-gradient(top, #, #);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#), to(#));
+	background-image: -webkit-linear-gradient(top, #, #);
+	background-image: -o-linear-gradient(top, #, #);
+	background-image: linear-gradient(to bottom, #, #);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#', endColorstr='#', GradientType=0);
+	border-color: # # #;
+	border-color: rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0);
+	*background-color: #;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: 1px solid rgba(0,0,0,0.0);
+	*border: 0;
+	border-bottom-color: #;
+	-webkit-border-radius: px;
+	-moz-border-radius: px;
+	border-radius: px;
+	*margin-left: .3em;
+	-webkit-box-shadow: inset px px px rgba(255,255,255,0.0), px px px rgba(0,0,0,0.0);
+	-moz-box-shadow: inset px px px rgba(255,255,255,0.0), px px px rgba(0,0,0,0.0);
+	box-shadow: inset px px px rgba(255,255,255,0.0), px px px rgba(0,0,0,0.0);
+	}
+
+
+.module1 {
+	text-align: left;
+	padding: px;
+	margin: px;
+	font-size: px;
+	line-height: px;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.0);
+	background-color: #;
+	background-image: -moz-linear-gradient(top, #, #);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#), to(#));
+	background-image: -webkit-linear-gradient(top, #, #);
+	background-image: -o-linear-gradient(top, #, #);
+	background-image: linear-gradient(to bottom, #, #);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#', endColorstr='#', GradientType=0);
+	border-color: # # #;
+	border-color: rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0);
+	*background-color: #;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: 1px solid rgba(0,0,0,0.0);
+	*border: 0;
+	border-bottom-color: #;
+	-webkit-border-radius: px;
+	-moz-border-radius: px;
+	border-radius: px;
+	*margin-left: .3em;
+	-webkit-box-shadow: inset px px px rgba(255,255,255,0.0), px px px rgba(0,0,0,0.0);
+	-moz-box-shadow: inset px px px rgba(255,255,255,0.0), px px px rgba(0,0,0,0.0);
+	box-shadow: inset px px px rgba(255,255,255,0.0), px px px rgba(0,0,0,0.0);
+	}
+.module1 a {
+	color: #;
+	font-size: ;
+	font-weight: ;
+	}
+
+.module2 {
+	text-align: ;
+	padding: px;
+	margin: px;
+	font-size: px;
+	line-height: px;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.0);
+	background-color: #;
+	background-image: -moz-linear-gradient(top, #, #);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#), to(#));
+	background-image: -webkit-linear-gradient(top, #, #);
+	background-image: -o-linear-gradient(top, #, #);
+	background-image: linear-gradient(to bottom, #, #);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#', endColorstr='#', GradientType=0);
+	border-color: # # #;
+	border-color: rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0) rgba(0, 0, 0, 0.0);
+	*background-color: #;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: 1px solid #;
+	*border: 0;
+	border-bottom-color: #;
+	-webkit-border-radius: px;
+	-moz-border-radius: px;
+	border-radius: px;
+	*margin-left: .3em;
+	-webkit-box-shadow: inset px px px rgba(255,255,255,0.0), px px px rgba(0,0,0,0.0);
+	-moz-box-shadow: inset px px px rgba(255,255,255,0.0), px px px rgba(0,0,0,0.0);
+	box-shadow: inset px px px rgba(255,255,255,0.0), px px px rgba(0,0,0,0.0);
+	}
+.module2 a {
+	color: #;
+	font-size: ;
+	font-weight: ;
+	}
+
+
 #parallax .module {background:none;}
+
 .highlight li {
 	margin-left:-12px;
 	padding: 12px 12px;
@@ -556,18 +739,18 @@ li.searchArea {
 .highlight li:hover {
 	color:#fff;
 	background:#666;
+	text-decoration: underline;
 	}
 .highlight li:hover a {color:#fff;}
 
 .module h1 {
-	
-	background:none;
-	padding:0;
-	margin:0;
+	background: ;
+	padding: px;
+	margin: px;
 	}
 
 .module a:link, .module a:visited {
-	padding:11px 0;
+	padding: 11px 0;
 	text-decoration:none;
 	}
 .module a:active, .module a:hover { 
@@ -577,9 +760,228 @@ li.searchArea {
 .module li.firstLi {
 	
 	}
-.top .module {min-height:100px;}
-.middle .module {min-height:240px;}
-.bottom .module {min-height:240px;}
+
+.module1First {
+	
+	}
+.module2First {
+	
+	}
+.module1Last {
+	
+	}
+.module2Last {
+	
+	}
+	
+.top .moduleWrapper1 {min-height:100px;}
+.middle .moduleWrapper1 {min-height:160px;}
+.bottom .moduleWrapper1 {min-height:240px;}
+
+.top .module1 {min-height:80px;}
+.middle .module1 {min-height:140px;}
+.bottom .module2 {min-height:271px;}
+
+.top .module1 ul,
+.middle .module1 ul,
+.bottom .module1 ul,
+.top .module2 ul,
+.middle .module2 ul,
+.bottom .module2 ul {
+	padding-left: 12px;
+	}
+
+
+
+
+/****************************************************************** 
+ * STYLING *
+ *************************************************************************** */
+
+
+/* ----------------------------------------------------------------------------------------------------------------PROMO IMGS-------------------------------------------------------- */
+.promoMainImageSize {
+	width: ;
+	height: px;
+	}
+
+.promoSmallImageSize {
+	width: ;
+	height: px;
+	}
+
+
+/* ----------------------------------------------------------------------------------------------------------------BACKGROUND FLAT-------------------------------------------------------- */
+
+a.backgroundFlat1,
+div.backgroundFlat1,
+li.backgroundFlat1,
+input.backgroundFlat1,
+span.backgroundFlat1 {
+	background-image: none;
+	background-repeat: no-repeat;
+	filter: none;
+	background: none;
+	background: #;
+	}
+	
+a.backgroundFlat2,
+div.backgroundFlat2,
+li.backgroundFlat2,
+input.backgroundFlat2,
+span.backgroundFlat2 {
+	background-image: none;
+	background-repeat: no-repeat;
+	filter: none;
+	background: none;
+	background: #;
+	}
+
+
+/* ----------------------------------------------------------------------------------------------------------------GRADIENT-------------------------------------------------------- */
+.gradient1 {
+	background-color: #;
+	background-image: -moz-linear-gradient(top, #, #);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#), to(#));
+	background-image: -webkit-linear-gradient(top, #, #);
+	background-image: -o-linear-gradient(top, #, #);
+	background-image: linear-gradient(to bottom, #, #);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#', endColorstr='#', GradientType=0);
+	*background-color: #;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	}
+
+.gradient2 {
+	background-color: #;
+	background-image: -moz-linear-gradient(top, #, #);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#), to(#));
+	background-image: -webkit-linear-gradient(top, #, #);
+	background-image: -o-linear-gradient(top, #, #);
+	background-image: linear-gradient(to bottom, #, #);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#', endColorstr='#', GradientType=0);
+	*background-color: #;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	}
+
+
+/* ----------------------------------------------------------------------------------------------------------------BORDER-------------------------------------------------------- */
+.border1 {
+	border: 1px solid rgba(0,0,0,0.0);
+	}
+
+.border2 {
+	border: 1px solid rgba(0,0,0,0.0);
+	}
+
+
+/* ----------------------------------------------------------------------------------------------------------------BORDER RADIUS-------------------------------------------------------- */
+.borderRadius1 {
+	-webkit-border-radius: px;
+	-moz-border-radius: px;
+	border-radius: px;
+	}
+
+.borderRadius2 {
+	-webkit-border-radius: px;
+	-moz-border-radius: px;
+	border-radius: px;
+	}
+
+
+/* ----------------------------------------------------------------------------------------------------------------BOX SHADOW-------------------------------------------------------- */
+.boxshadow1 {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+}
+
+.boxshadow2 {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.0), 0 1px 2px rgba(0,0,0,0.0);
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------PADDING-------------------------------------------------------- */
+.padding1 {
+	padding: px;
+	}
+
+.padding2 {
+	padding: px;
+	}
+
+
+/* --------PADDINGSpecific-------- */
+.paddingTop1 {
+	padding-top: px;
+	}
+
+.paddingRight1 {
+	padding-right: px;
+	}
+
+.paddingBottom1 {
+	padding-bottom: px;
+	}
+
+.paddingLeft1 {
+	padding-left: px;
+	}
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------MARGIN-------------------------------------------------------- */
+.margin1 {
+	margin: px;
+	}
+
+.margin2 {
+	margin: px;
+	}
+
+
+/* --------MARGINSpecific-------- */
+.marginTop1 {
+	margin-top: px;
+	}
+
+.marginRight1 {
+	margin-right: px;
+	}
+
+.marginBottom1 {
+	margin-bottom: px;
+	}
+
+.marginLeft1 {
+	margin-left: px;
+	}
+
+.moduleWrapper1MarginSpecial1 {
+	
+	}
+
+.module1MarginSpecial1 {
+	
+	}
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------MARGIN & Padding-------------------------------------------------------- */
+a.marginANDpadding1,
+div.marginANDpadding1,
+li.marginANDpadding1,
+input.marginANDpadding1,
+span.marginANDpadding1 {
+	margin: ;
+	padding: ;
+	}
+
 
 
 /****************************************************************** 
@@ -1416,3 +1818,202 @@ body {
 .old_ie .col-xs-12, .old_ie .col-sm-12, .old_ie .col-md-12, .old_ie .col-lg-12 {
   width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------ZEROS---------------------------------------------------------------------------------*/
+
+/* --------BACKGROUND0-------- */
+a.background0,
+div.background0,
+li.background0,
+input.background0,
+span.background0 {
+	background-image: none;
+	background-repeat: no-repeat;
+	filter: none;
+	background: none;
+	}
+
+/* --------GRADIENT0-------- */
+a.gradient0,
+div.gradient0,
+li.gradient0,
+input.gradient0,
+span.gradient0 {
+	background-image: none;
+	background-repeat: no-repeat;
+	filter: none;
+	}
+
+
+/* --------BORDER0-------- */
+a.border0,
+div.border0,
+li.border0,
+input.border0,
+span.border0 {
+	border: 1px solid rgba(255,255,255,1.0);
+	}
+
+
+/* --------BORDER-RADIUS0-------- */
+a.border-radius0,
+div.border-radius0,
+li.border-radius0,
+input.border-radius0,
+span.border-radius0 {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	}
+
+
+/* --------BOX SHADOW0-------- */
+a.boxshadow0,
+div.boxshadow0,
+li.boxshadow0,
+input.boxshadow0,
+span.boxshadow0 {
+	-webkit-box-shadow: inset 0px 0px 0px rgba(255,255,255,0.0), 0px 0px 0px rgba(0,0,0,0.0);
+	-moz-box-shadow: inset 0px 0px 0px rgba(255,255,255,0.0), 0px 0px 0px rgba(0,0,0,0.0);
+	box-shadow: inset 0px 0px 0px rgba(255,255,255,0.0), 0px 0px 0px rgba(0,0,0,0.0);
+}
+
+
+/* --------PADDING0-------- */
+a.padding0,
+div.padding0,
+li.padding0,
+input.padding0,
+span.padding0 {
+	padding: 0;
+	}
+
+a.paddingTop0,
+div.paddingTop0,
+li.paddingTop0,
+input.paddingTop0,
+span.paddingTop0 {
+	padding-top: 0;
+	}
+
+a.paddingRight0,
+div.paddingRight0,
+li.paddingRight0,
+input.paddingRight0,
+span.paddingRight0 {
+	padding-right: 0;
+	}
+
+a.paddingBottom0,
+div.paddingBottom0,
+li.paddingBottom0,
+input.paddingBottom0,
+span.paddingBottom0 {
+	padding-bottom: 0;
+	}
+
+a.paddingLeft0,
+div.paddingLeft0,
+li.paddingLeft0,
+input.paddingLeft0,
+span.paddingLeft0 {
+	padding-left: 0;
+	}
+
+
+/* --------MARGIN0-------- */
+a.margin0,
+div.margin0,
+li.margin0,
+input.margin0,
+span.margin0 {
+	margin: 0;
+	}
+
+a.marginTop0,
+div.marginTop0,
+li.marginTop0,
+input.marginTop0,
+span.marginTop0 {
+	margin-top: 0;
+	}
+
+a.marginRight0,
+div.marginRight0,
+li.marginRight0,
+input.marginRight0,
+span.marginRight0 {
+	margin-right: 0;
+	}
+
+a.marginBottom0,
+div.marginBottom0,
+li.marginBottom0,
+input.marginBottom0,
+span.marginBottom0 {
+	margin-bottom: 0;
+	}
+
+a.marginLeft0,
+div.marginLeft0,
+li.marginLeft0,
+input.marginLeft0,
+span.marginLeft0 {
+	margin-left: 0;
+	}
+
+
+/* --------MARGIN & PADDING0-------- */
+a.marginANDpadding0,
+div.marginANDpadding0,
+li.marginANDpadding0,
+input.marginANDpadding0,
+span.marginANDpadding0 {
+	margin: 0;
+	padding: 0;
+	}
+	
+a.marginANDpaddingTop0,
+div.marginANDpaddingTop0,
+li.marginANDpaddingTop0,
+input.marginANDpaddingTop0,
+span.marginANDpaddingTop0 {
+	margin-top: 0;
+	padding-top: 0;
+	}
+	
+a.marginANDpaddingRight0,
+div.marginANDpaddingRight0,
+li.marginANDpaddingRight0,
+input.marginANDpaddingRight0,
+span.marginANDpaddingRight0 {
+	margin-right: 0;
+	padding-right: 0;
+	}
+	
+a.marginANDpaddingBottom0,
+div.marginANDpaddingBottom0,
+li.marginANDpaddingBottom0,
+input.marginANDpaddingBottom0,
+span.marginANDpaddingBottom0 {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	}
+	
+a.marginANDpaddingLeft0,
+div.marginANDpaddingLeft0,
+li.marginANDpaddingLeft0,
+input.marginANDpaddingLeft0,
+span.marginANDpaddingLeft0 {
+	margin-left: 0;
+	padding-left: 0;
+	}
