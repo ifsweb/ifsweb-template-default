@@ -1131,7 +1131,7 @@ span.marginANDpadding1 {
 	}
 .content ol li, .content ol li ol li, .content ul li ol li ol li {
 	background:none;
-	list-style:upper-roman;
+	list-style:decimal;
 	}
 .content ol li ol li {
 	background:none;
