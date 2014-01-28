@@ -155,7 +155,7 @@ input.btn:active,
  * containers or wrappers *
  *************************************************************************** */
 #parallax .mastWrap {background:url(../images/bg_blacktran.png) top left repeat-x;height:100px;max-width:100%;}
-#fixedtop .mastWrap  {
+#fixedtop .mastWrap, #loginoverpromo .mastWrap  {
 	background:#363636;
 	
 	}
@@ -165,6 +165,8 @@ input.btn:active,
 	text-align:left;
 	}
 #fixedtop .contentWrap , .contentWrapBack, #fixedtop .alert {margin-top:60px;} /* clear fixed top nav when on */
+#loginoverpromo .contentWrap {margin-top:180px;margin-bottom:30px;} /* clear fixed top nav when on */
+#loginoverpromo .contentWrapBack {margin:0;margin-top:180px;}
 .row.contentWrapBack div {
     -webkit-transition: width 0.3s ease, margin 0.3s ease;
     -moz-transition: width 0.3s ease, margin 0.3s ease;
@@ -442,7 +444,38 @@ ul#nav:after {
 
 
 
+#loginoverpromo .nav-justified {
+	width:100%;
+	font-size:16px;
+}
+#loginoverpromo .nav-justified {display:inline;}
+#loginoverpromo .nav-justified li {border-right:1px dashed #d2b474;white-space:nowrap; }
+#loginoverpromo .nav-justified li.lastLi {border-right:none;}
+#loginoverpromo .nav-justified li a {
+	margin-left:0;
+	margin-right:0;
+	padding-top:5px;
+	padding-bottom:5px;
+	display:block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color:#fff;
+	}
+#loginoverpromo a.phone {font-size:18px;}
 
+#loginoverpromo .nav-justified > li > a:hover, .nav-justified li.active a {
+	color:#fff;
+	background: url(../images/bg_btn_off.jpg) center repeat-y;
+	-webkit-box-shadow: inset 0 2px 3px rgba(000,000,000,0.5), 0 0 3px rgba(0,0,0,0.0);
+	-moz-box-shadow: inset 0 2px 3px rgba(000,000,000,0.5), 0 0 3px rgba(0,0,0,0.0);
+	box-shadow: inset 0 2px 3px rgba(000,000,000,0.5), 0 0 3px rgba(0,0,0,0.0);
+	text-decoration: none;
+}
+
+
+
+#loginoverpromo .nav-collapse h1 { float:left;width:20%;margin-top:40px;margin-left:-20px;text-align:left;padding:0;}
 
 /****************************************************************** 
  * utility *
@@ -514,7 +547,71 @@ li.searchArea {
 	}
 .loginCol {margin-top:10px;}
 
+#loginoverpromo .loginArea {
+	width:250px;
+	position:absolute;
+	top:220px;
+	left:-10px;
+	background:#e6e6e6 url(../images/bg_login.jpg) top left repeat-x;
+	margin-bottom:30px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow:  0 2px 3px rgba(000,000,000,0.5), 0 0 3px rgba(0,0,0,0.0);
+	-moz-box-shadow:  0 2px 3px rgba(000,000,000,0.5), 0 0 3px rgba(0,0,0,0.0);
+	box-shadow:  0 2px 3px rgba(000,000,000,0.5), 0 0 3px rgba(0,0,0,0.0);
+z-index:400;
+	}
+#loginoverpromo .loginArea h1 {
+	position:relative;
+	padding:0 0 10px 0; 
+	font-size:18px;
+	}
+#loginoverpromo .loginOB {
+	padding: 12px 8% 12px 6%;
+	position:relative;
+	}
+#loginoverpromo .loginCol {
+	margin-top:5px;
+	margin-bottom:10px;
+	}
+.alert {
+	background:#fcf5e1;
+	-webkit-box-shadow: inset 0 0 15px 1px rgba(000,000,000,0.25);
+	-moz-box-shadow: inset 0 0 15px 1px rgba(000,000,000,0.25);
+	box-shadow: inset 0 0 0 15px 1px rgba(000,000,000,0.25);
+	border:1px solid #c0ac72;
+	color:#7a531a;
+	}
+.backToTopButton {
+	background:#fcf5e1;
+	-webkit-box-shadow:  0 0 15px 1px rgba(000,000,000,0.25);
+	-moz-box-shadow:  0 0 15px 1px rgba(000,000,000,0.25);
+	box-shadow:  0 0 0 15px 1px rgba(000,000,000,0.25);
+	border:10px solid #fff;
+	
+	}
+#loginoverpromo .loginCol a {
+	color:#764c16; 
+	margin-right:20px;
+background:url(../images/bg_ivory.png) repeat;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding:5px;
+}
 
+#loginoverpromo .loginArea a.btn {text-align:left;}
+#loginoverpromo .loginArea .form-group {margin:4px 0;width:98%;}
+#loginoverpromo .loginArea .form-group.password {width:70%;margin-left:0;}
+#loginoverpromo .loginArea .form-group.input-group-btn {width:25%; }
+#loginoverpromo .loginArea .form-group input {color: #473228;border-color:#c0ac72 !important;}
+#loginoverpromo .form-control:-moz-placeholder, #loginoverpromo .form-control::-moz-placeholder,#loginoverpromo .form-control:-ms-input-placeholder,#loginoverpromo  .form-control::-webkit-input-placeholder {
+  color: #473228 !important;
+}
+#loginoverpromo .loginArea .form-group input.btn.btn-default {color:#fff;-webkit-box-shadow:  0 2px 3px rgba(000,000,000,0.5), 0 0 3px rgba(0,0,0,0.0);
+	-moz-box-shadow:  0 2px 3px rgba(000,000,000,0.5), 0 0 3px rgba(0,0,0,0.0);
+	box-shadow:  0 2px 3px rgba(000,000,000,0.5), 0 0 3px rgba(0,0,0,0.0);}
 
 /****************************************************************** 
  * search *
@@ -541,6 +638,24 @@ li.searchArea {
 /****************************************************************** 
  * special modules or containers *
  *************************************************************************** */
+
+#loginoverpromo .fullPromo {
+	width:100%; 
+	height:100%; 
+	position:fixed;
+	top:80px;
+	width:100%;
+	z-index:0;
+	}
+#loginoverpromo .fullPromo img {width:100%;}
+#loginoverpromo .container.wideWrap {
+	position:relative;
+	width: 100%;
+	max-width: 980px;
+	padding-left: 0;
+	padding-right: 0;
+	z-index:100;
+	}
 #fullPromo .container.wideWrap {
 	background:url(../images/firstBG.jpg) top center no-repeat; 
 	width:100%; 
@@ -1052,7 +1167,19 @@ span.marginANDpadding1 {
 	border-radius: 3px;
 	max-width:100%;
 	}
-
+#loginoverpromo .promoMain .promoTxt {
+	font-size:28px;
+	line-height:normal;
+	z-index:300;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	
+	background:url(../images/promotxtshadow.png) center top no-repeat;
+	display:block;
+	width:100%;
+	text-align:center;
+	}
 /****************************************************************** 
  * smaller promotions with scale on hover for images*
  *************************************************************************** */
@@ -1347,7 +1474,7 @@ sup {font-size:.6em;}/*make sup smaller*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media (min-width: 980px) {
-#parallax .collapse, #fullPromo .collapse {display:block;}
+#parallax .collapse, #fullPromo .collapse, #loginoverpromo .collapse {display:block;}
 #parallax .container {width:100% !important;min-width:980px;}
 #parallax .nav, #fullPromo .nav {
 	width:100%;
@@ -1369,7 +1496,7 @@ sup {font-size:.6em;}/*make sup smaller*/
 	}
 
 
-#parallax .nav-collapse.collapse.in,  #fullPromo  .nav-collapse.collapse.in {
+#parallax .nav-collapse.collapse.in, #loginoverpromo .nav-collapse.collapse.in, #fullPromo  .nav-collapse.collapse.in {
 	
 	height:auto !important; /* setting explicit height to activate animated slide */
 	width:100%;
