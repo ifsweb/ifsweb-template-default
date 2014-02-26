@@ -172,7 +172,7 @@ input.btn:active,
     -moz-transition: width 0.3s ease, margin 0.3s ease;
     -o-transition: width 0.3s ease, margin 0.3s ease;
     transition: width 0.3s ease, margin 0.3s ease;
-	min-height:250px;
+	
 }
 #trig {
     margin: 10px;
@@ -1286,7 +1286,7 @@ span.marginANDpadding1 {
 	float:right;
 	margin:0 0 .5em 3%;
 	}
-.content img {max-width:100%;}	 /*image punch*/
+.hed img, .content img {max-width:100%;}	 /*image punch*/
 
 
 .content h1:first-child,
