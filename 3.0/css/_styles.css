@@ -1394,6 +1394,7 @@ th {
 	padding:.3em 0;
 	line-height:normal;
 	}
+th a.btn {margin:5px 0;font-size:10px; line-height:11px;padding:4px !important; display:block;}
 .table-striped th {text-align: left;-webkit-box-shadow: 3px 0 5px 0 rgba(180,153,84,0.2);
 	box-shadow: 3px 0 5px 0 rgba(180,153,84,0.2);}
 .tablecontent1 {
@@ -1429,7 +1430,7 @@ th {
 	-webkit-box-shadow: 3px 0 5px 0 rgba(180,153,84,0.2);
 	box-shadow: 3px 0 5px 0 rgba(180,153,84,0.2);}
 table ul {vertical-align:top; margin:0;padding:0;}
-table li {text-align:left; margin-left:0 !important; background:none;padding-left:10px; border-bottom:1px solid #eee;}
+table li {text-align:left; margin-left:0 !important; background:none !important;padding-left:0px !important; border-bottom:1px solid #eee;}
 .altTd {
 	border-left:1px solid #ece7d2;
 	border-right:1px solid #ece7d2;
