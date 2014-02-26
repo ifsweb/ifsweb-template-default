@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title><!--FI Name--></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--webfont comment the header/body fonts for qa-->
+    
+	<!-- css styles -->
+	<link href="../css/bootstrap.css" type="text/css" rel="stylesheet" >
+	<link href="../css/flexslider.css" rel="stylesheet">
+	<link href="../css/menu.css" rel="stylesheet">
+	<link href="../css/jumbotron-narrow.css" rel="stylesheet">
+	<link href="../css/_styles.css" type="text/css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="../images/apple-touch-icon-144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72.png">
+	<link rel="apple-touch-icon" href="../images/apple-touch-icon-57.png">
+	<link rel="shortcut icon" href="../images/favicon.png">
+<!-- templatebully -->
+	<style type="text/css" media="all">@import url("http://ifsweb.intuit.com/templatebully/tb_templateBully.css");</style>
+	<script type="text/javascript" src="http://ifsweb.intuit.com/templatebully/jquery_1_6.js"></script>
+	<script type="text/javascript" src="http://ifsweb.intuit.com/templatebully/tb_templateBully.js"></script>
+
+	<script type="text/javascript" src="../js/rollovers.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<!-- scroll to top fade in and out code-->
+    <script>
+$(function() {
+	$(".backToTopButton").hide();
+	$(window).scroll(function() {
+		if($(this).scrollTop()>400){
+			$('.backToTopButton').fadeIn();
+		} else { 
+			$('.backToTopButton').fadeOut()
+		}	
+	});
+	$('.backToTopButton').click(function(){
+		$('body,html').animate({scrollTop:0},800);
+		return false;
+	});		
+})
+</script>
+    
+</head>
+
+
+<!--[if lt IE 7]><body id="back" class="ie ie6"><![endif]-->
+<!--[if IE 7]><body id="back" class="ie ie7"><![endif]-->
+<!--[if IE 8]><body id="back" class="ie ie8"><![endif]-->
+<!--[if IE 9]><body id="back" class="ie ie9"><![endif]-->
+<!--[if !IE]> --><body id="back" class="non_ie"><!-- <![endif]-->
+
+<div class="container" id="fixedtop">
+	<div class="row mastWrap navbar-fixed-top">
+    <div class="container">
+			<div class="col-xs-3">
+				<div class="logo">
+				<a href="#" class="brand"><img src="../images/logo.png" alt="<!--FI Name-->"/></a>
+				</div><!--logo-->
+			</div><!--colsx3-->
+<!--mobile menu button-->
+					<div class="visible-xs visible-sm col-xs-9">
+						<span class="sr-only">Toggle navigation</span>
+						<a href="#" class="btn btn-mini btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse"><img src="../images/menu.png" alt="Menu"></a>
+					</div><!--hide deskt-->
+<!--desktop utility-->
+				<div class="col-xs-9 pull-right visible-lg visible-md">
+						<ul class="uti">
+							<li><a href="#">Locations</a></li>
+							<li><a href="#">Rates &amp; Fees</a></li>
+							<li><a href="#">Calculators</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li class="searchArea col-xs-3 pull-right">
+								<div class="input-group">
+								<input type="text" class="form-control input-sm">
+								<span class="input-group-btn">
+									<input type="submit" class="btn" value="Go!" />
+								</span>
+								</div><!-- /input-group -->
+								
+							</li>
+						</ul>
+					</div><!--pullright-->
+<!--main nav - drops on phone with utility appended--><div class="clearfix"><!--clearfix--></div>
+					<div class="row visible-md visible-lg">
+						<ul class="nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">Personal</a></li>
+							<li><a href="#">Business</a></li>
+							<li><a href="#">Loans</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Resources</a>
+								<ul class="uti visible-xs visible-s">
+									<li><a href="#">Locations</a></li>
+									<li><a href="#">Rates &amp; Fees</a></li>
+									<li><a href="#">Calculators</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li class="searchArea pull-right">
+										<div class="input-group">
+											<label class="sr-only" for="search">Search</label><input type="text"  placeholder="Enter search words" class="form-control">
+											<span class="input-group-btn">
+												<input class="btn btn-default" type="button" value="Go!" />
+											</span>
+										</div><!--inputgroup-->
+									</li>
+								</ul>
+							</li>
+							</ul>
+					</div><!--row -->
+                    </div><!--container-->
+                    
+				<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">Personal</a></li>
+							<li><a href="#">Business</a></li>
+							<li><a href="#">Loans</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Resources</a></li>
+									<li><a href="#">Locations</a></li>
+									<li><a href="#">Rates &amp; Fees</a></li>
+									<li><a href="#">Calculators</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li class="searchArea">
+										<div class="input-group">
+											<label class="sr-only" for="search">Search</label>
+											<input type="text" placeholder="Enter search words" class="form-control">
+											<span class="input-group-btn">
+												<input class="btn btn-default" type="button" value="Go!" />
+											</span>
+										</div>
+									</li>
+							</ul>
+					</div><!-- nav-collapse -->
+</div><!--mastwrap-->
+<div class="hidden-sm">
+	<a href="#" class="backToTopButton">Back to top</a>
+</div><!--hide phone back top top-->
+<div class="row contentWrapBack">
+
+    <div class="row marginANDpadding0">
+     <div class="hed"><img src="../images/hed.jpg" /></div>
+     </div>
+      <div class="row marginANDpadding0">
+     <div class="col-md-10 marginANDpadding0">
+				<div class="content" role="main">
+					<h1>Checking Comparison</h1>
+					
+					
+                    <table border="0" cellspacing="0" cellpadding="0" class="table-striped table-condensed table-hover">
+                        
+                        <tr>
+                            <th class="col-md-3"><!--blank-->&nbsp; &nbsp; &nbsp;</th>
+                            <th class="altTd">Regular Checking</th>
+                            <th>Premier Checking</th>
+                            <th class="altTd">Silver Checking</th>
+                            <th>Non-Profit Checking</th>
+                            <th class="altTd">Student Checking</th>
+                            <th>Cool Checking</th>
+                        </tr>
+                        <tr>
+                            <td class="tablecontent1">Requirements</td>
+                            <td class="tablecontent1 altTd">&nbsp;</td>
+                            <td class="tablecontent1">&nbsp;</td>
+                             <td class="tablecontent1 altTd">Age 55 or older</td>
+                            <td class="tablecontent1">&nbsp;</td>
+                            <td class="tablecontent1 altTd">Full-time student up to age 22</td>
+                             <td class="tablecontent1">&nbsp;</td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="tablecontent2">Minimum Opening Deposit</td>
+                            <td class="tablecontent2 altTd">$50</td>
+                            <td class="tablecontent2">$5</td>
+                            <td class="tablecontent2 altTd">$50</td>
+                            <td class="tablecontent2">&nbsp;</td>
+                            <td class="tablecontent2 altTd">&nbsp;</td>
+                            <td class="tablecontent2">$1500</td>
+                        </tr>
+                       <tr>
+                            <td class="tablecontent1">Monthly Service Fee</td>
+                            <td class="tablecontent1 altTd">$2</td>
+                            <td class="tablecontent1">$7.50</td>
+                             <td class="tablecontent1 altTd">$1</td>
+                            <td class="tablecontent1">&nbsp;</td>
+                            <td class="tablecontent1 altTd">&nbsp;</td>
+                             <td class="tablecontent1">$1</td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="tablecontent2">No Minimum Balance</td>
+                            <td class="tablecontent2 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2"><img src="../images/check.png " alt="Yes" /></td>
+                        </tr><tr>
+                            <td class="tablecontent1">Free Checks</td>
+                            <td class="tablecontent1 altTd">&nbsp;</td>
+                            <td class="tablecontent1">1 box basic wallet checks per year</td>
+                             <td class="tablecontent1 altTd">First box only</td>
+                            <td class="tablecontent1">&nbsp;</td>
+                            <td class="tablecontent1 altTd">&nbsp;</td>
+                             <td class="tablecontent1">&nbsp;</td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="tablecontent2">No transaction limitations</td>
+                            <td class="tablecontent2 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2"><img src="../images/check.png " alt="Yes" /></td>
+                        </tr><tr>
+                            <td class="tablecontent1">Free Online Banking</td>
+                            <td class="tablecontent1 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent1"><img src="../images/check.png " alt="Yes" /></td>
+                             <td class="tablecontent1 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent1"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent1 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                             <td class="tablecontent1"><img src="../images/check.png " alt="Yes" /></td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="tablecontent2">Free Bill Pay</td>
+                            <td class="tablecontent2 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2"><img src="../images/check.png " alt="Yes" /></td>
+                        </tr><tr>
+                            <td class="tablecontent1">FinanceWorks</td>
+                            <td class="tablecontent1 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent1"><img src="../images/check.png " alt="Yes" /></td>
+                             <td class="tablecontent1 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent1"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent1 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                             <td class="tablecontent1"><img src="../images/check.png " alt="Yes" /></td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="tablecontent2">Text Banking</td>
+                            <td class="tablecontent2 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent2"><img src="../images/check.png " alt="Yes" /></td>
+                        </tr><tr>
+                            <td class="tablecontent1">On-Call 24/7</td>
+                            <td class="tablecontent1 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent1"><img src="../images/check.png " alt="Yes" /></td>
+                             <td class="tablecontent1 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent1"><img src="../images/check.png " alt="Yes" /></td>
+                            <td class="tablecontent1 altTd"><img src="../images/check.png " alt="Yes" /></td>
+                             <td class="tablecontent1"><img src="../images/check.png " alt="Yes" /></td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="tablecontent2">Other Benefits</td>
+                            <td class="tablecontent2 altTd">&nbsp;</td>
+                            <td class="tablecontent2">
+								<ul>
+									<li>Accidental Death Insurance</li>
+									<li>Free money orders per month</li>
+									<li>$2500 identity theft insurance</li>
+									<li>Discounted gift cards <sup>1*</sup></li>
+									<li>Cash Rewards <sup>2*</sup></li>
+									
+									<li>Everyday rebate rewards <sup>4*</sup></li>
+								</ul>
+                            </td>
+                            <td class="tablecontent2 altTd">
+								<ul>
+									<li>Free 3x5 safe deposit box</li>
+									<li>Free personal money orders</li
+									><li>Free stop payment service</li>
+								</ul>
+                            </td>
+                            <td class="tablecontent2">&nbsp;</td>
+                            <td class="tablecontent2 altTd"><ul><li>No ATM fees</li></ul></td>
+                            <td class="tablecontent2">&nbsp;</td>
+                        </tr>
+                    </table>
+                    </div><!--content-->
+			</div><!--colmd9-->
+		
+            <div class="col-md-2  marginANDpadding0">
+				<ul class="nav nav-stacked">
+                <a href="index.html" class="btn">Account Login</a>
+					<li><a href="#">Lorem</a></li>
+					<li><a href="#">Lorem</a></li>
+					<li><a href="#">Lorem</a></li>
+					<li><a href="#">Lorem</a></li>
+					<li><a href="#">Lorem</a></li>
+					<li><a href="#">Lorem</a></li>
+				</ul>
+			</div><!--colmd3-->
+	</div><!--row-->
+	
+	
+
+
+<div class="row footWrap">
+
+			<div class="col-lg-6">
+				<div class="footL">
+					<ul>
+						<li>
+							<a href="#"><img src="http://diwebdev3.com/mstinc/web/images/fdic_57x19_k_75.png" alt="FDIC" /></a>
+							
+							<a href="#" class="hidden-xs"><img src="http://diwebdev3.com/mstinc/web/images/ncua_351x32_k_75.png" alt="NCUA" /></a>
+							<a href="#" class="visible-xs"><img src="http://diwebdev3.com/mstinc/web/images/ncua_140x109_k_100.png" alt="NCUA" /></a>
+							
+							<a href="#"><img src="http://diwebdev3.com/mstinc/web/images/ehl_40x35_k_75.png" alt="Equal Housing Lender" /></a>
+						</li>
+					</ul>
+				</div><!---footL-->
+			</div><!--col-lg-6-->
+
+			<div class="col-lg-6">
+				<div class="footR">
+					<ul>
+						<li>
+							<a href="#">Sitemap</a>
+							<a href="#">About Us</a>
+							<a href="#">Privacy</a>
+							<a href="#">Newsletter</a>
+							<a href="#">Disclosures</a>
+							<a href="#"><img src="http://diwebdev3.com/mstinc/web/images/logo_100x22.png" width="100" height="22" border="0" alt="" /></a>
+						</li>
+					</ul>
+				</div><!--footr-->
+			</div><!--col-lg-6-->
+	
+</div><!--footWrap-->
+</div><!--container-->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.min.js">/* */</script>
+	<script type="text/javascript">
+		$(function() { 
+			// IE shim for placeholder. See jquery_placeholder.js 
+			$('input').placeholder();
+			
+	
+		});
+	</script>
+
+
+	</body>
+</html>

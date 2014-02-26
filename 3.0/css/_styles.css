@@ -1365,15 +1365,6 @@ label {
 	box-shadow: 0 5px 5px #ddd inset;
 }
 
-/* --- 	This is your FOCUS style, when you click into an input field --- */
-.appfield2 {
-	width: 98%;
-	border: 1px #c7c4bd solid;
-	border-radius: 0;
-	background: #efefef;
-	padding:5px 0 2px 2px;
-	box-shadow: 0 5px 5px #ddd inset;
-}
 
 
 
@@ -1382,33 +1373,67 @@ label {
  * tables *
  *************************************************************************** */
 table { 
+	vertical-align:top;
+	-webkit-box-shadow: 3px 0 5px 0 rgba(180,153,84,0.2);
+	box-shadow: 3px 0 5px 0 rgba(180,153,84,0.2);
+	width:100%;
 	}
 
 .tableheader {
-	background: ;
-	color: ;
+	background:#e7d693 ;
+	color: #443128;
 	font-weight: bold;
 	padding:.3em 0;
 	}
 	
 th {
-	border-bottom: 1px solid #d9e2f6;
-	background-color:;
-	color:;
-	text-align: left;
+	border-bottom: 1px solid #847035;
+	
+	color:#af935c;
+	font-size:15px;
 	padding:.3em 0;
+	line-height:normal;
 	}
-	
-.tablecontent1 td {
-	border-bottom: 1px solid #d9e2f6;
-	background-color: #eff3fb;
+.table-striped th {text-align: left;-webkit-box-shadow: 3px 0 5px 0 rgba(180,153,84,0.2);
+	box-shadow: 3px 0 5px 0 rgba(180,153,84,0.2);}
+.tablecontent1 {
+	border-bottom: 1px solid #fff;
+	background-color: #fffae6;
 	padding:.3em 15px;
+	
 	}
 	
-.tablecontent2 td {
-	border-bottom: 1px solid #d9e2f6;
+.tablecontent2  {
+	border-bottom: 1px solid #fff;
 	background-color:#fff;
 	padding:.3em 15px;
+	
+	}
+.table-striped {text-align:center;}
+.table-striped tbody td {
+	vertical-align:top;
+	font-size:13px;
+	line-height:normal;
+	}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+	background:#fff;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #faf1bf;
+}
+.table-striped tr td:first-child {
+	color:#aa8944; 
+	text-align:right; 
+	vertical-align:top;
+	-webkit-box-shadow: 3px 0 5px 0 rgba(180,153,84,0.2);
+	box-shadow: 3px 0 5px 0 rgba(180,153,84,0.2);}
+table ul {vertical-align:top; margin:0;padding:0;}
+table li {text-align:left; margin-left:0 !important; background:none;padding-left:10px; border-bottom:1px solid #eee;}
+.altTd {
+	border-left:1px solid #ece7d2;
+	border-right:1px solid #ece7d2;
+	
 	}
 
 
