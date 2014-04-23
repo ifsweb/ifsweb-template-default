@@ -1112,18 +1112,43 @@ span.marginANDpadding1 {
 /****************************************************************** 
  * rates *
  *************************************************************************** */
-.rateTxt img {
-	
+.ratesWrap {
+	background-color: #efede7;
+	border-top:1px solid #d2d0c8;
+	border-bottom:1px solid #d2d0c8;
+	}
+.ratesWrap .btn.btn-lg {
+	margin-top:10px;
+	font-size:15px;
+	font-weight:600;
+	letter-spacing:-1;
+	max-width:90%;
+	white-space:normal;
 	}
 .rates {
+	border-right:1px solid #d2d0c8;
+	font-size:12px;
+	padding:10px 0;
+	color:#525252;
+	}
+.rates.last {
+	border-right:none;
 	
 	}
-
 .rateTxt {
-	font-size:24px;
+	font-size:26px;
+	display:inline;
+	color:#711471;
 	}
 
-.rateTxtsm {font-size:8px;}
+.rateTxtsm {
+	font-size:8px;
+	line-height:8px; 
+	display:inline-block;
+	color:#711471;
+	}
+.percent {font-size:12px;
+	line-height:10px; }
 /****************************************************************** 
  *main promotion *
  *************************************************************************** */
