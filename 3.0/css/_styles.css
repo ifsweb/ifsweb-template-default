@@ -1500,7 +1500,7 @@ sup {font-size:.6em;}/*make sup smaller*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media (min-width: 980px) {
-#parallax .collapse, #fullPromo .collapse, #loginoverpromo .collapse {display:block;}
+.collapse {display:block;}
 #parallax .container {width:100% !important;min-width:980px;}
 #parallax .nav, #fullPromo .nav {
 	width:100%;
@@ -1508,7 +1508,7 @@ sup {font-size:.6em;}/*make sup smaller*/
 	display:inline-block;
 	text-align:left;
 	}
-#parallax .nav li, #fullPromo .nav li {
+.nav li, #fullPromo .nav li {
 	display:inline-block; 
 	width:auto;
 	text-align:left;
@@ -1776,7 +1776,7 @@ body {
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* --------------------------------------------------------- strange ie */
 
-.old_ie .login-collapse.collapse {
+.old_ie .collapse {
 	height: auto !important;
 	overflow: visible !important;
 	}
