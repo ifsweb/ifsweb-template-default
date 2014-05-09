@@ -3,7 +3,7 @@
   <head>
     <title><!--FI Name--></title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
     <!--webfont comment the header/body fonts for qa-->
@@ -14,7 +14,7 @@
     <link href="../css/menu.css" rel="stylesheet">
     <link href="../css/jumbotron-narrow.css" rel="stylesheet">
     <link href="../css/_styles.css" type="text/css" rel="stylesheet">
-	<link  href="../css/jquery.pageslide.css" type="text/css" rel="stylesheet" />
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -43,26 +43,6 @@
     });
 	
 	</script>
-	<script type="text/javascript" src="../js/jquery.parallax-1.1.3.js"></script>
-	<script type="text/javascript" src="../js/jquery.localscroll-1.2.7-min.js"></script>
-	<script type="text/javascript" src="../js/jquery.scrollTo-1.4.2-min.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-	$('#nav').localScroll(800);
-	//.parallax(xPosition, speedFactor, outerHeight) options:
-	//xPosition - Horizontal position of the element
-	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-
-	$('#intro').parallax("50%", 0.1);
-	$('#second').parallax("50%", 0.1);
-	$('.bg').parallax("50%", 0.4);
-	$('#third').parallax("50%", 0.3);
-
-})
-
-</script>
-
 </head>
 
 <!--[if lt IE 7]><body id="home" class="ie ie6 old_ie"><![endif]-->
@@ -70,58 +50,77 @@
 <!--[if IE 8]><body id="home" class="ie ie8 old_ie"><![endif]-->
 <!--[if IE 9]><body id="home" class="ie ie9"><![endif]-->
 <!--[if !IE]><!--><body id="home" class="non_ie"><!--<![endif]-->
-  <div id="parallax"><div id="intro">
-  <div id="leftslide">
-<div id="content">
+  <div class="container">
+    <div class="row mastWrap">
+      <div class="col-xs-3">
+        <div class="logo">
+          <a href="#" class="brand"><img src="../images/logo.png" alt="<!--FI Name-->"/></a>
+        </div><!--logo-->
+      </div><!--colsx3-->
+      <!--mobile menu button-->
+      <div class="visible-xs visible-sm col-xs-9">
+        <a href="#" class="btn btn-mini btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse"><img src="../images/menu.png" alt="Menu"></a>
+      </div><!--hide deskt-->
+      
+      <!--main nav - drops on phone with utility appended-->
+      
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Personal</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Loans</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Resources</a></li>
+         
+        </ul><!--NAV-->
+         <ul class="uti">
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Rates &amp; Fees</a></li>
+          <li><a href="#">Calculators</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li class="searchArea col-xs-5 pull-right">
+          	<form>
+          	<div class="input-group">
+        		 <input type="text" class="form-control input-sm">
+            		<span class="input-group-btn">
+        		 <input type="submit" class="btn" value="Go!" />
+            		</span>
+          	</div><!-- /input-group -->
+          	</form>
 
-<h1><a class="open" href="#nav">Menu</a>
-	<div class="logo">
-		<a href="#" class=""><img src="../images/logo.png" alt="<!--FI Name-->"/></a>
-	</div><!--logo-->
-	</h1>
-    <div class="" id="nav">
-	<ul class="nav-7">
-		<li><a href="#" class="active">Home</a></li>
-		<li><a href="#">Personal</a></li>
-		<li><a href="#">Business</a></li>
-		<li><a href="#">Loans</a></li>
-		<li><a href="#">About Us</a></li>
-        <li><a href="#">Loans</a></li>
-		<li><a href="#">About Us</a></li>
-        </ul>
-			<ul class="uti">
-				<li><a href="#">Locations</a></li>
-				<li><a href="#">Rates &amp; Fees</a></li>
-				<li><a href="#">Calculators</a></li>
-				<li><a href="#">Contact Us</a></li>
-				<li class="searchArea pull-right">
-					<form><input class="span2" type="text" placeholder="Search">
-					<input class="btn" value="Go"></form>
-				</li>
-			</ul>
-	</div><!--nav id-->
-<div class="copy">
+          </li>
+        </ul><!--UTI-->
+      </div><!-- nav-collapse -->
+    </div><!--mastwrap-->
 
-    
-</div><!--content-->
-</div><!--copy-->
-</div><!--pageslide id-->
-<div class="row">
+    <!--alerts text area-->
+    <div class="row">
+      <div class="alert">
+        <p>We will be closed for the 4th Of July weekend. Please see our <a href="/calendar">calendar</a> for more details.</p>
+      </div><!--alert-->
+    </div><!--row-->
+
+
+
+  <div class="contentWrap">
+    <div class="row top">
+
       <div class="col-md-8">
         <div class="flexslider promoMain" role="img">
           <ul class="slides">
             <li>
-           
+            <img class="promoImg" src="../images/promo1.jpg" alt="" />
             <div class="promoTxt">Save money on your auto loan</div>
             </li>
             <li>
-            
+            <img class="promoImg" src="../images/promo2.jpg" alt="" />
             <div class="promoTxt">Free Online Bill Pay <a href="#" class="btn">try it today</a></div>
             </li>
           </ul>
         </div><!-- flexslider promoMain-->
       </div><!--col-lg-8-->
-      <!--keep ib untethered login open on mobile and add app and mwb icons-->
+      <!--untethered desktop login now appear in phone add button for MWB and apps-->
         <div class="col-md-4">
           <div class="loginArea">
             <div class="loginOB">
@@ -150,26 +149,12 @@
           </div><!--loginArea-->
 
         </div><!--col-lg-4-->
-      
+   
+    </div><!--top-->
 
- </div><!--row-->
-
-    
- 
-      <div class="alert">
-        <p>We will be closed for the 4th Of July weekend. Please see our <a href="/calendar">calendar</a> for more details.</p>
-      </div><!--alert-->
-
-
-
-
-  <div class="contentWrap">
-    
-
-    <div class="row middle" id="second">
-<div class="bg"></div>
+    <div class="row middle">
       <div class="">
-        <div class="col-sm-12 module">
+        <div class="col-sm-4 module">
           <h1>Auto Buying Service</h1>
           <p>Work with your very own personal <a href="#">auto buying consultant</a> at no charge</p>
           <div class="visible-desktop">
@@ -178,19 +163,19 @@
           </div><!-- visible desktop as text-->
         </div><!--col-lg-3 homeContent-->
 
-        <div class="col-sm-12 module">
+        <div class="col-sm-4 module">
           <h1>TurboTax</h1>
           <p>It's your money keep more of it with <a href="#">TurboTax.</a></p>
         </div><!--col-lg-3-->
 
-        <div class="col-sm-12 module">
+        <div class="col-sm-4 module">
           <h1>Business Banking</h1>
           <p>Business Checking with <a href="#">FREE online &amp; mobile banking</a></p>
         </div><!--col-lg-3-->
       </div><!--col-lg-12-->
     </div><!--row middle-->
-    <div class="row bottom" id="third">
-  
+    <div class="row bottom">
+      <div class="">
         <div class="col-sm-8 module">
           <span class="pull-right"><a href="#">read news ></a></span>
           <div class="newsWrap">
@@ -214,13 +199,106 @@
             </ul>
           </div><!--news-->
         </div><!--col-lg-4-->
+      </div><!--col-lg-12-->
     </div><!--row bottom-->
-    <div class="row visible-phone">
+    <div class="row visible-sm">
       <div class="grpSquare" style="display:none;"><!-- grp --></div>
       <script src="/mstinc/grp/js/grp.js" type="text/javascript">/* GRP */</script> 
     </div><!--rowfluid visible phone-->
 
-
+<div class="row ratesWrap">
+    <div class="col-sm-12 marginANDpadding0">
+    <div class="col-md-2 marginANDpadding0">
+    	<a href="#" class="btn btn-lg">DOWNLOAD RATES</a>
+    </div><!--col2-->
+    <div class="col-md-10 marginANDpadding0">
+		<div class="col-sm-2 marginANDpadding0">
+			<div class="rates">
+    		<div class="rateName">
+            NEW VEHICLE
+            </div><!--rateName-->
+       		<div class="rateTxt">
+				1.95
+				<span class="rateTxtsm">
+					<span class="percent">%</span><br />
+					APR*
+				</span><!--rateTxtsm-->
+			</div><!--rateTxt-->
+			</div><!--rates-->
+		</div><!--col2-->
+        <div class="col-sm-2 marginANDpadding0">
+			<div class="rates">
+    		<div class="rateName">
+            USED VEHICLE
+            </div><!--rateName-->
+       		<div class="rateTxt">
+				1.95
+				<span class="rateTxtsm">
+					<span class="percent">%</span><br />
+					APR*
+				</span><!--rateTxtsm-->
+			</div><!--rateTxt-->
+			</div><!--rates-->
+		</div><!--col2-->
+        <div class="col-sm-2 marginANDpadding0">
+			<div class="rates">
+    		<div class="rateName">
+            VISA CREDIT CARD
+            </div><!--rateName-->
+       		<div class="rateTxt">
+				2.90
+				<span class="rateTxtsm">
+					<span class="percent">%</span><br />
+					APR*
+				</span><!--rateTxtsm-->
+			</div><!--rateTxt-->
+			</div><!--rates-->
+		</div><!--col2-->
+        <div class="col-sm-2 marginANDpadding0">
+			<div class="rates">
+    		<div class="rateName">
+            5YR. SHARE CERT.
+            </div><!--rateName-->
+       		<div class="rateTxt">
+				1.61
+				<span class="rateTxtsm">
+					<span class="percent">%</span><br />
+					APY**
+				</span><!--rateTxtsm-->
+			</div><!--rateTxt-->
+			</div><!--rates-->
+		</div><!--col2-->
+        <div class="col-sm-2 marginANDpadding0">
+			<div class="rates">
+    		<div class="rateName">
+            5YR. IRA
+            </div><!--rateName-->
+       		<div class="rateTxt">
+				1.71
+				<span class="rateTxtsm">
+					<span class="percent">%</span><br />
+					APY**
+				</span><!--rateTxtsm-->
+			</div><!--rateTxt-->
+			</div><!--rates-->
+		</div><!--col2-->
+        <div class="col-sm-2 marginANDpadding0">
+			<div class="rates last">
+    		<div class="rateName">
+            1 ST TD HOMELOAN
+            </div><!--rateName-->
+       		<div class="rateTxt">
+				2.84
+				<span class="rateTxtsm">
+					<span class="percent">%</span><br />
+					APY**
+				</span><!--rateTxtsm-->
+			</div><!--rateTxt-->
+			</div><!--rates-->
+		</div><!--col2-->
+    </div><!--col10-->
+    </div><!--col12-->
+    </div><!--row rates-->
 
     <div class="row footWrap">
 
@@ -255,11 +333,8 @@
       </div><!--col-lg-6-->
 
     </div><!--footWrap-->
-    </div><!--intro-->
-</div><!--parallax-->
-</div><!--content-->
-</div><!--copy-->
-</div><!--pageslide id-->
+  </div><!--container-->
+
   <!-- Le javascript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
@@ -273,10 +348,7 @@
     });
   </script>
 
-   <script src="../js/jquery.pageslide.min.js"></script>
-    <script>
-        $(".open").pageslide();
-    </script>
+
   </body>
 </html>
 

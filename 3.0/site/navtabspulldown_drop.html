@@ -14,7 +14,6 @@
 	<link href="../css/menu.css" rel="stylesheet">
 	<link href="../css/jumbotron-narrow.css" rel="stylesheet">
 	<link href="../css/_styles.css" type="text/css" rel="stylesheet">
-<link  href="../css/jquery.pageslide.css" type="text/css" rel="stylesheet" />
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -50,41 +49,50 @@
 <!--[if IE 7]><body id="home" class="ie ie7 old_ie"><![endif]-->
 <!--[if IE 8]><body id="home" class="ie ie8 old_ie"><![endif]-->
 <!--[if IE 9]><body id="home" class="ie ie9"><![endif]-->
-<!--[if !IE]><!--><body id="home" class="non_ie"><!--<![endif]-->
-<div class="container" id="fixedtop">
-	
-			<div id="leftslide">
-<div id="content">
+<!--[if !IE]><!--><body id="home" class="non_ie" style="margin:0;padding:0;"><!--<![endif]-->
+<div class="container">
+	<div class="row mastWrap">
+			<div class="col-xs-3">
+				<div class="logo">
+				<a href="#" class="brand"><img src="../images/logo.png" alt="<!--FI Name-->"/></a>
+				</div><!--logo-->
+			</div><!--colsx3-->
+<!--mobile menu button-->
+					<div class="visible-xs visible-sm col-xs-9">
+						<a href="#" class="btn btn-mini btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse"><img src="../images/menu.png" alt="Menu"></a>
+					</div><!--hide deskt-->
+<!--desktop utility-->
+			
+<!--main nav - drops on phone with utility appended-->
+				
+				<div class="nav-collapse collapse">
+						<ul class="uti">
+							<li><a href="#">Locations</a></li>
+							<li><a href="#">Calculators</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li class="searchArea col-xs-5 pull-right">
+								<form>
+								<div class="input-group">
+								<input type="text" class="form-control input-sm">
+								<span class="input-group-btn">
+									<input type="submit" class="btn" value="Go!" />
+								</span>
+								</div><!-- /input-group -->
+								</form>
+								
+							</li>
+						</ul><!--uti-->
+						<ul class="nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">Personal</a></li>
+							<li><a href="#">Business</a></li>
+							<li><a href="#">Loans</a></li>
+							
+							</ul><!--nav-->
+							
+					</div><!-- nav-collapse -->
+</div><!--mastwrap-->
 
-<div class="row mastWrap navbar-fixed-top">
-	<h1><a class="open" href="#nav">Menu</a>
-	<div class="logo">
-		<a href="#" class=""><img src="../images/logo.png" alt="<!--FI Name-->"/></a>
-	</div><!--logo-->
-	</h1>
-    <div class="" id="nav">
-	<ul class="nav-7">
-		<li><a href="#" class="active">Home</a></li>
-		<li><a href="#">Personal</a></li>
-		<li><a href="#">Business</a></li>
-		<li><a href="#">Loans</a></li>
-		<li><a href="#">About Us</a></li>
-        <li><a href="#">Loans</a></li>
-		<li><a href="#">About Us</a></li>
-        </ul>
-			<ul class="uti">
-				<li><a href="#">Locations</a></li>
-				<li><a href="#">Rates &amp; Fees</a></li>
-				<li><a href="#">Calculators</a></li>
-				<li><a href="#">Contact Us</a></li>
-				<li class="searchArea pull-right">
-					<form><input class="span2" type="text" placeholder="Search">
-					<input class="btn" value="Go"></form>
-				</li>
-			</ul>
-	</div><!--nav id-->
-	</div><!--fixed-->
-<div class="copy">
 <!--alerts text area-->
 <div class="row">
 	<div class="alert">
@@ -93,34 +101,24 @@
 </div><!--row-->
 
 
-
 <div class="contentWrap">
 	<div class="row top">
 	
 			<div class="col-md-8">
-					<script type="text/javascript">var promoCount = parseInt("8");</script>
-					<script type="text/javascript">var promoTime = parseInt("8") * 1000; var fadeLength = parseInt("1") * 1000; var animation = 'slide'; var randomized = false; $(function() { $('.flexslider').flexslider({ "animation" : animation, "slideshowSpeed" : promoTime, "animationDuration" : fadeLength, "directionNav" : true, "controlNav" : false, "randomize" : randomized, "prevText" : '<img src="../images/btn_prev.png" alt="Previous" />', "nextText" : '<img src="../images/btn_next.png" alt="Next" />' }); });</script>
 				<div class="flexslider promoMain" role="img">
 					<ul class="slides">
 						<li>
-							<div class="promoImg"><img src="../images/promo1.jpg" alt="" /></div>
-							<div class="promoTxt">
-							<h1>Teach your family to save</h1>
-							<p>Great savings plans for all ages.</p>
-							</div>
+							<img class="promoImg" src="../images/promo1.jpg" alt="" />
+							<div class="promoTxt">Save money on your auto loan</div>
 						</li>
 						<li>
-							<div class="promoImg">
-							<img src="../images/promo2.jpg" alt="" />
-							</div>
-							<div class="promoTxt">
-							<h1>Your New Home</h1> Ready for you at a low rate.<br /> <a href="#" class="btn">learn more</a>
-							</div>
+							<img class="promoImg" src="../images/promo2.jpg" alt="" />
+							<div class="promoTxt">Free Online Bill Pay <a href="#" class="btn">try it today</a></div>
 						</li>
 					</ul>
-				</div><!--flexslider big-->
+				</div><!-- flexslider promoMain-->
 			</div><!--col-lg-8-->
-			<!--leave untethered login for desktop on phone add mwb button and app icons-->
+			<!--keep untethered ib open on phone and display mwb and app buttons-->
 				<div class="col-md-4">
 				<div class="loginArea">
 					<div class="loginOB">
@@ -143,6 +141,8 @@
 								<span class="loginForgot"><a href="#">Forgotten Password?</a></span>
 							</div><!-- loginCol -->
 					
+						
+					<h1>Business Banking</h1><input type="submit" class="btn" name="login" value="Login" />
 					</div><!--loginOB-->
 				</div><!--loginArea-->
 				
@@ -152,55 +152,51 @@
 </div><!--top-->
 		
 		<div class="row middle">
-				<script type="text/javascript">var promoCount = parseInt("14");</script>
-				<script type="text/javascript">var promoTimeSm = parseInt("10") * 1000; var fadeLengthSm = parseInt("1") * 1000; var animationSm = 'slide'; var randomizedSm = ('false' == "true"); var slideshow = ( promoTimeSm == 0 ) ? false : true; (function() { var $window = $(window), flexslider; function getGridSize() { return 3; } $window.load(function() { $('.slider').flexslider({ "animation" : animation, "slideshow" : slideshow, "slideshowSpeed" : promoTimeSm, "animationDuration" : fadeLengthSm, "directionNav" : true, "controlNav" : false, "randomize" : randomizedSm, "animationLoop" : true, "itemWidth" : 280, "itemMargin" : 0, "minItems" : getGridSize(), "maxItems" : getGridSize(), "prevText" : '<img src="../images/btn_prev.png" alt="Previous" />', "nextText" : '<img src="../images/btn_next.png" alt="Next" />' }); }); /* not working $window.resize(function() { var gridSize = getGridSize(); flexslider.vars.minItems = gridSize; flexslider.vars.maxItems = gridSize; }); */ }());</script>
-				<div class="slider promoSmall">
-					<ul class="slides highlight">
-						<li>
-							<h1>Trust Services</h1>
-							<p>Lorem ipsum domo si coluer.</p>
-						</li>
-						<li>
-							<h1>Investments</h1>
-							<p>Nullam gravida dolor ac augue. Praesent tellus libero, tempor vel, viverra quis, mattis at, ipsum. <a href="#">Domo si lorem</a></p>
-						</li>
-						<li>
-							<h1>Business Banking</h1>
-							<p>Business Checking with <a href="#">FREE online &amp; mobile banking</a></p>
-						</li>
-						<li>
-							<h1>Lorem Ipsum</h1>
-							<p>Business Checking with <a href="#">FREE online &amp; mobile banking</a></p>
-						</li>
-					</ul>
-				</div><!--flexslidersmall-->
+			<div class="">
+				<div class="col-sm-4 module">
+					<h1>Auto Buying Service</h1>
+					<p>Work with your very own personal <a href="#">auto buying consultant</a> at no charge</p>
+					<div class="visible-desktop">
+						<div class="grpText" style="display:none;"><!-- grp --></div>
+						<script src="/mstinc/grp/js/grp.js" type="text/javascript">/* GRP */</script> 
+					</div><!-- visible desktop as text-->
+				</div><!--col-lg-3 homeContent-->
+
+				<div class="col-sm-4 module">
+					<h1>TurboTax</h1>
+					<p>It's your money keep more of it with <a href="#">TurboTax.</a></p>
+				</div><!--col-lg-3-->
+
+				<div class="col-sm-4 module">
+				<h1>Business Banking</h1>
+				<p>Business Checking with <a href="#">FREE online &amp; mobile banking</a></p>
+				</div><!--col-lg-3-->
+			</div><!--col-lg-12-->
 		</div><!--row middle-->
 		<div class="row bottom">
-			<div class="">
-				<div class="col-sm-8 module">
+				<div class="col-md-8 module">
 					<span class="pull-right"><a href="#">read news ></a></span>
 					<div class="newsWrap">
 					<h1>News</h1>
 						<ul class="highlight">
 							<li><a href="#">5.15.13 Fundraiser Event at Location</a></li>
 							<li><a href="#">5.21.13 Finance Workshop for Young Couples</a></li>
-							<li><a href="#">5.15.13 Fundraiser Event at Location</a></li>
+                            <li><a href="#">5.15.13 Fundraiser Event at Location</a></li>
 							<li><a href="#">5.21.13 Finance Workshop for Young Couples</a></li>
 						</ul>
 					</div><!--newsWrap-->
 				</div><!--col-lg-8-->
 
-			<div class="col-sm-4 module">
+			<div class="col-md-4 module">
 				<div class="newsWrap">
 					<h1>Resources &amp; Tools</h1>
 						<ul class="highlight">
 							<li><a href="#">Calculators</a></li>
 							<li><a href="#">Reorder Checks</a></li>
-							<li><a href="#">Calculators</a></li>
+                            <li><a href="#">Calculators</a></li>
 						</ul>
 				</div><!--news-->
 			</div><!--col-lg-4-->
-			</div><!--col-lg-12-->
 		</div><!--row bottom-->
 		<div class="row visible-phone">
 			<div class="grpSquare" style="display:none;"><!-- grp --></div>
@@ -243,8 +239,7 @@
 	
 </div><!--footWrap-->
 </div><!--container-->
-</div><!--copy-->
-</div><!--pageslide id-->
+
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -259,10 +254,7 @@
 	
 		});
 	</script>
-    <script src="../js/jquery.pageslide.min.js"></script>
-    <script>
-        $(".open").pageslide();
-    </script>
+
 
 	</body>
 </html>

@@ -257,13 +257,13 @@ input.btn:active,
 	margin: 0 auto;
 	}
 
-ul#nav { 
+#nav ul { 
 	padding-left: 0; 
 	list-style: none; 
 	width: 100%; 
 	margin-bottom: 40px; 
 	}
-ul#nav:after { 
+#nav ul:after { 
 	content: "\0020"; 
 	display: block; 
 	height: 0; 
@@ -271,59 +271,59 @@ ul#nav:after {
 	visibility: hidden; 
 	}
 
-#content ul#nav li { 
+#content #nav ul li { 
 	float: left;  
 	text-align: center; 
 	}
-#content ul#nav.nav-1 li {
+#content #nav ul.nav-1 li {
   width:100%;
   max-width:100%;
 }
-#content ul#nav.nav-2 li {
+#content #nav ul.nav-2 li {
   width:49.8%;
   max-width:49.8%;
 }
-#content ul#nav.nav-3 li {
+#content #nav ul.nav-3 li {
   width:33.133333333333%;
   max-width:33.133333333333%;
 }
-#content ul#nav.nav-4 li {
+#content #nav ul.nav-4 li {
   width:24.8%;
   max-width:24.8%;
 }
-#content ul#nav.nav-5 li {
+#content #nav ul.nav-5 li {
   width:19.8%;
   max-width:19.8%;
 }
-#content ul#nav.nav-6 li {
+#content #nav ul.nav-6 li {
   width:16.466666666667%;
   max-width:16.466666666667%;
 }
-#content ul#nav.nav-7 li {
+#content #nav ul.nav-7 li {
   width:14.085714285714%;
   max-width:14.085714285714%;
 }
-#content ul#nav.nav-8 li {
+#content #nav ul.nav-8 li {
   width:12.3%;
   max-width:12.3%;
 }
-#content ul#nav.nav-9 li {
+#content #nav ul.nav-9 li {
   width:10.911111111111%;
   max-width:10.911111111111%;
 }
-#content ul#nav.nav-10 li {
+#content #nav ul.nav-10 li {
   width:9.8%;
   max-width:9.8%;
 }
-#content ul#nav.nav-11 li {
+#content #nav ul.nav-11 li {
   width:8.8909090909090%;
   max-width:8.8909090909090%;
 }
-#content ul#nav.nav-12 li {
+#content #nav ul.nav-12 li {
   width:8.1333333333333%;
   max-width:8.1333333333333%;
 }
-#content ul#nav a { 
+#content #nav ul a { 
 	display: block; 
 	background: #000;
 	color: #FFF; 
@@ -331,11 +331,13 @@ ul#nav:after {
 	padding: 10px; 
 	border-right: 1px solid #FFF;
 	}
-#content ul#nav a:hover { background: #333; }
-
+#content #nav ul a:hover { background: #333; }
+.old_ie #content #nav ul a:hover { 
+	text-shadow:none;
+	}
 .open {
 	display: none;
-	width: 40px;
+	width: 80px;
 	height: 30px;
 	margin-bottom: 10px;
 	background: url(../images/menu.png) center center no-repeat #333;
@@ -343,9 +345,12 @@ ul#nav:after {
 	-webkit-border-radius: 8px;
 	-border-radius: 8px;
 	box-shadow: inset 0 0 3px #000;
-	text-indent: -999999px;
+	text-indent: 2px;
 	border: 0;
+	font-size:13px;
+	line-height:31px;
 	}
+.open:hover {color:#fff;}
 #pageslide {
 	/* These styles MUST be included. Do not change. */
 	display: none;
@@ -387,7 +392,7 @@ ul#nav:after {
 	max-width:375px;
 	}
 
-
+.old_ie #content h1 {z-index:0; }
 /****************************************************************** 
  * navigation icons on mobile *
  *************************************************************************** */
@@ -476,6 +481,19 @@ ul#nav:after {
 
 
 #loginoverpromo .nav-collapse h1 { float:left;width:20%;margin-top:40px;margin-left:-20px;text-align:left;padding:0;}
+/* edit for your nav item count */
+.old_ie .nav-7 {
+	width:100%;
+	clear:both !important;
+	display:inline-block;
+	
+	text-align:left;
+	}
+.old_ie .nav-7 li {
+	display:inline-block;
+	}
+.old_ie .nav-7 li a {min-height:60px;}
+
 
 /****************************************************************** 
  * utility *
@@ -522,7 +540,7 @@ li.searchArea {
 .uti a:hover, .uti a:active {
 
 	}
-
+.old_ie #nav .uti { display:inline;}
 
 /****************************************************************** 
  * logins *
@@ -630,7 +648,27 @@ background:url(../images/bg_ivory.png) repeat;
 	margin:0;
 	padding:0;
 	}
+.searchArea input.span2 {
+	padding:3px 5px 6px 5px;
+	positon:relative;
+	top:0;
+	vertical-align:top;
+	}
 
+.searchArea input.btn {
+	width:40px;
+	padding:5px !important;
+	position:relative;
+	top:0;
+	vertical-align:top;
+	}
+
+.ie .searchArea input.btn {
+	
+	padding-top:3px; 
+	line-height:normal;
+	padding-bottom:5px;
+	}
 
 
 
@@ -656,7 +694,7 @@ background:url(../images/bg_ivory.png) repeat;
 	padding-right: 0;
 	z-index:100;
 	}
-#fullPromo .container.wideWrap {
+#fullPromo #content {
 	background:url(../images/firstBG.jpg) top center no-repeat; 
 	width:100%; 
 	height:100%; 
@@ -1526,6 +1564,8 @@ sup {font-size:.6em;}/*make sup smaller*/
 
 @media (min-width: 980px) {
 .collapse {display:block;}
+#nav .uti {width:60%; position:absolute; right:0; top:10px;}
+#nav ul.uti li a {background:none !important; color:#600 !important;}
 #parallax .container {width:100% !important;min-width:980px;}
 #parallax .nav, #fullPromo .nav {
 	width:100%;
@@ -1559,7 +1599,14 @@ sup {font-size:.6em;}/*make sup smaller*/
 
 .content {min-height:450px;}
 .backToTopButton {position:fixed; bottom:5px; right: .25%; padding:.4em;  width:22%;z-index:300;}
-
+.container {
+	width:100% !important;
+	min-width:980px; 
+	text-align:left;
+	}
+li.searchArea form {
+	white-space:nowrap;
+	}
 }
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------smaller than desktop group---------------------------------------------------------------------------------------------*/
@@ -1570,7 +1617,7 @@ sup {font-size:.6em;}/*make sup smaller*/
 
 @media (max-width: 979px) {
 /*page slide*/
-#content { width: 748px; }
+#content { width: 98%; }
 /*page slide*/
 
 .login-collapse .loginOB a:active, 
@@ -1649,7 +1696,14 @@ a.badge {
 	height: 0;
 	overflow: hidden;
 	}
-
+.searchArea { 
+	position:absolute;
+	left:10px;
+	white-space:nowrap;
+	}
+.searchArea input {
+	width:80%;
+	}
 .promoTxt {
 	font-size:19px; 
 	line-height:22px;
@@ -1669,12 +1723,7 @@ a.badge {
 .footR {text-align:right;}
 .footL {text-align:left;}
 
-.searchArea input {
-	width:70%; 
-	display:inline-block;
-	min-width:200px;
-	}
-.searchArea a.btn {width:auto !important; max-width:80px; display:inline-block !important;}
+
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1685,12 +1734,33 @@ a.badge {
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 979px) {
 
-
+#nav .uti {width:60%; position:absolute; right:0; top:10px;}
+#nav ul.uti li a {background:none !important; color:#600 !important;}
 body {
 	padding-left: 0;
 	padding-right: 0;
 	}
-
+#nav .uti li {
+	float:none;
+	text-align:center;
+	min-width:30px !important;
+	width: auto !important;
+	max-width:100%;
+	margin-bottom:0;
+	list-style:none;
+	white-space:nowrap;
+	display:inline-block !important;
+	}
+#nav .uti li a {
+	display:inline-block;
+	width:auto !important;
+	margin:0 4px; 
+	padding:0 !important;
+	}
+li.searchArea {
+	
+	
+	}
 
 .searchArea {margin-top:-3px;}
 
@@ -1706,19 +1776,66 @@ body {
 
 @media (max-width: 767px) {
 /*page slide*/
-#content { width: 400px; }
+#content {width: 98%; }
 #content h1 { font-size: 22px; line-height: 30px; background-color: #ccc; color: #FFF; padding: 10px; }
-#content ul#nav { display: none;margin-left:0; }
-#content ul#nav ul, #content ul#nav li li {
+#content #nav ul { 
+	background:none;
+	display: none;
+	margin-left:0; 
+	}
+#content #nav ul ul, #content #nav ul li li {
 	margin-left:0; 
 	list-style:none;
 	padding-left:0;
 	}
-.open { display: block; }
-#pageslide { width: 180px; }
-#pageslide #nav li { width:80%;padding: 10px 0; border-bottom: 1px solid #fff; list-style:none; margin-left:0; }
-#pageslide #nav li a { color: #FFF; border: none; }
-#pageslide #nav li a:hover { text-decoration: underline; }
+.open { display: block; color:#fff; }
+#pageslide { 
+	width: 180px;
+	}
+#pageslide #nav { 
+	background:none; 
+	border: 1px solid rgba(0,0,0,0.1);
+	}
+#pageslide #nav li {
+	padding: 10px 0; 
+	border-bottom: 1px solid rgba(0,0,0,0.3); 
+	list-style:none; 
+	margin-left:0; 
+	}
+#pageslide #nav li a { 
+	background:none;
+	color: #FFF; 
+	border: none;
+	}
+#pageslide #nav li a:hover { 
+	text-decoration: underline; 
+	}
+#pageslide #nav .uti a {
+	color:#fff !important;
+	}
+#pageslide #nav .uti li { 
+	border:none !important;
+	}
+/*page slide*/
+#nav .uti li {
+	margin:10px 18px;
+	}
+
+#nav .uti {
+	width:auto;
+	z-index:300;
+	display:block;
+	text-align:center;
+	white-space:normal;
+	}
+.searchArea { 
+	left:0;
+	float:none !important;
+	white-space:nowrap;
+	}
+.searchArea input {
+	width:50%;
+	}
 /*page slide*/
 /* arrows on promo*/
 .flex-direction-nav {
@@ -1770,7 +1887,7 @@ body {
 	}
 
 /* page slide */
-#content { width: 280px; }
+#content { }
 #content h1 { font-size: 14px; }
 /* page slide */
 

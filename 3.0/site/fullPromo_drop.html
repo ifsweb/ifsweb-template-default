@@ -14,7 +14,8 @@
 	<link href="../css/menu.css" rel="stylesheet">
 	<link href="../css/jumbotron-narrow.css" rel="stylesheet">
 	<link href="../css/_styles.css" type="text/css" rel="stylesheet">
-	<link  href="../css/jquery.pageslide.css" type="text/css" rel="stylesheet" />
+
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -50,37 +51,52 @@
 <!--[if IE 9]><body id="home" class="ie ie9"><![endif]-->
 <!--[if !IE]><!--><body id="home" class="non_ie" style="margin:0;padding:0;"><!--<![endif]-->
 <div id="fullPromo">
-<div id="leftslide">
-
-<div id="content">
-	<h1><a class="open" href="#nav">Menu</a>
+<div class="container wideWrap">
+	<div class="row marginANDpadding0 mastWrap">
+		<div class="wideWrapInner">
+			<div class="col-xs-3">
 				<div class="logo">
-		<a href="#" class=""><img src="../images/logo.png" alt="<!--FI Name-->"/></a>
-	</div><!--logo-->
-	</h1>
-    <div class="" id="nav">
-	<ul class="nav-7 nav-pills">
-		<li><a href="#" class="active">Home</a></li>
-		<li><a href="#">Personal</a></li>
-		<li><a href="#">Business</a></li>
-		<li><a href="#">Loans</a></li>
-		<li><a href="#">About Us</a></li>
-        <li><a href="#">Loans</a></li>
-		<li><a href="#">About Us</a></li>
-        </ul>
-			<ul class="uti">
-				<li><a href="#">Locations</a></li>
-				<li><a href="#">Rates &amp; Fees</a></li>
-				<li><a href="#">Calculators</a></li>
-				<li><a href="#">Contact Us</a></li>
-				<li class="searchArea pull-right">
-					<form><input class="span2" type="text" placeholder="Search">
-					<input class="btn" value="Go"></form>
-				</li>
-			</ul>
-	</div><!--nav id-->
-    <div class="copy">
-	
+				<a href="#" class="brand"><img src="../images/logo.png" alt=""/></a>
+				</div><!--logo-->
+			</div><!--colsx3-->
+<!--mobile menu button-->
+					<div class="visible-xs visible-sm col-xs-9">
+						<a href="#" class="btn btn-mini btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse"><img src="../images/menu.png" alt="Menu"></a>
+					</div><!--hide deskt-->
+<!--desktop utility-->
+				<div class="col-xs-9 pull-right visible-lg visible-md">
+						<ul class="uti">
+							<li><a href="#">Locations</a></li>
+							<li><a href="#">Rates &amp; Fees</a></li>
+							<li><a href="#">Calculators</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li class="searchArea col-xs-5 pull-right">
+								<form><div class="input-group">
+								<input type="text" class="form-control input-sm" placeholder="Search">
+								<span class="input-group-btn">
+									<input type="submit" class="btn" value="Go!" />
+								</span>
+								</div><!-- /input-group -->
+								</form>
+							</li>
+						</ul>
+					</div><!--pullright-->
+		</div><!--wideWrapInner-->
+	</div><!--mastwrap-->
+	<div class="row marginANDpadding0">
+		<div class="wideWrapInner">
+				<div class="nav-collapse collapse">
+					<ul class="nav nav-pills">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Personal</a></li>
+						<li><a href="#">Business</a></li>
+						<li><a href="#">Loans</a></li>
+						<li><a href="#">About Us</a></li>
+					</ul>
+				</div><!-- nav-collapse -->
+		</div><!--wideWrapInner-->
+	</div><!--row-->
+
     
 
     
@@ -192,9 +208,7 @@
         </div><!--wideWrapInner-->
     </div><!--footWrap-->
     
-</div><!--copy-->
-</div><!--pageslide id-->
-</div>
+</div><!--container-->
 </div>
 <!-- Le javascript
 ================================================== -->
@@ -210,10 +224,7 @@
 	
 		});
 	</script>
-    <script src="../js/jquery.pageslide.min.js"></script>
-    <script>
-        $(".open").pageslide();
-    </script>
+
 
 	</body>
 </html>
