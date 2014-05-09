@@ -332,10 +332,12 @@ input.btn:active,
 	border-right: 1px solid #FFF;
 	}
 #content #nav ul a:hover { background: #333; }
-
+.old_ie #content #nav ul a:hover { 
+	text-shadow:none;
+	}
 .open {
 	display: none;
-	width: 40px;
+	width: 80px;
 	height: 30px;
 	margin-bottom: 10px;
 	background: url(../images/menu.png) center center no-repeat #333;
@@ -343,9 +345,12 @@ input.btn:active,
 	-webkit-border-radius: 8px;
 	-border-radius: 8px;
 	box-shadow: inset 0 0 3px #000;
-	text-indent: -999999px;
+	text-indent: 2px;
 	border: 0;
+	font-size:13px;
+	line-height:31px;
 	}
+.open:hover {color:#fff;}
 #pageslide {
 	/* These styles MUST be included. Do not change. */
 	display: none;
@@ -387,7 +392,7 @@ input.btn:active,
 	max-width:375px;
 	}
 
-
+.old_ie #content h1 {z-index:0; }
 /****************************************************************** 
  * navigation icons on mobile *
  *************************************************************************** */
@@ -476,6 +481,19 @@ input.btn:active,
 
 
 #loginoverpromo .nav-collapse h1 { float:left;width:20%;margin-top:40px;margin-left:-20px;text-align:left;padding:0;}
+/* edit for your nav item count */
+.old_ie .nav-7 {
+	width:100%;
+	clear:both !important;
+	display:inline-block;
+	
+	text-align:left;
+	}
+.old_ie .nav-7 li {
+	display:inline-block;
+	}
+.old_ie .nav-7 li a {min-height:60px;}
+
 
 /****************************************************************** 
  * utility *
@@ -522,7 +540,7 @@ li.searchArea {
 .uti a:hover, .uti a:active {
 
 	}
-
+.old_ie #nav .uti { display:inline;}
 
 /****************************************************************** 
  * logins *
@@ -630,7 +648,27 @@ background:url(../images/bg_ivory.png) repeat;
 	margin:0;
 	padding:0;
 	}
+.searchArea input.span2 {
+	padding:3px 5px 6px 5px;
+	positon:relative;
+	top:0;
+	vertical-align:top;
+	}
 
+.searchArea input.btn {
+	width:40px;
+	padding:5px !important;
+	position:relative;
+	top:0;
+	vertical-align:top;
+	}
+
+.ie .searchArea input.btn {
+	
+	padding-top:3px; 
+	line-height:normal;
+	padding-bottom:5px;
+	}
 
 
 
@@ -1561,7 +1599,14 @@ sup {font-size:.6em;}/*make sup smaller*/
 
 .content {min-height:450px;}
 .backToTopButton {position:fixed; bottom:5px; right: .25%; padding:.4em;  width:22%;z-index:300;}
-
+.container {
+	width:100% !important;
+	min-width:980px; 
+	text-align:left;
+	}
+li.searchArea form {
+	white-space:nowrap;
+	}
 }
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------smaller than desktop group---------------------------------------------------------------------------------------------*/
@@ -1651,7 +1696,14 @@ a.badge {
 	height: 0;
 	overflow: hidden;
 	}
-
+.searchArea { 
+	position:absolute;
+	left:10px;
+	white-space:nowrap;
+	}
+.searchArea input {
+	width:80%;
+	}
 .promoTxt {
 	font-size:19px; 
 	line-height:22px;
@@ -1671,12 +1723,7 @@ a.badge {
 .footR {text-align:right;}
 .footL {text-align:left;}
 
-.searchArea input {
-	width:70%; 
-	display:inline-block;
-	min-width:200px;
-	}
-.searchArea a.btn {width:auto !important; max-width:80px; display:inline-block !important;}
+
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1693,7 +1740,27 @@ body {
 	padding-left: 0;
 	padding-right: 0;
 	}
-
+#nav .uti li {
+	float:none;
+	text-align:center;
+	min-width:30px !important;
+	width: auto !important;
+	max-width:100%;
+	margin-bottom:0;
+	list-style:none;
+	white-space:nowrap;
+	display:inline-block !important;
+	}
+#nav .uti li a {
+	display:inline-block;
+	width:auto !important;
+	margin:0 4px; 
+	padding:0 !important;
+	}
+li.searchArea {
+	
+	
+	}
 
 .searchArea {margin-top:-3px;}
 
@@ -1709,19 +1776,66 @@ body {
 
 @media (max-width: 767px) {
 /*page slide*/
-#content { }
+#content {width: 98%; }
 #content h1 { font-size: 22px; line-height: 30px; background-color: #ccc; color: #FFF; padding: 10px; }
-#content #nav ul { display: none;margin-left:0; }
+#content #nav ul { 
+	background:none;
+	display: none;
+	margin-left:0; 
+	}
 #content #nav ul ul, #content #nav ul li li {
 	margin-left:0; 
 	list-style:none;
 	padding-left:0;
 	}
-.open { display: block; }
-#pageslide { width: 180px; }
-#pageslide #nav li { width:80%;padding: 10px 0; border-bottom: 1px solid #fff; list-style:none; margin-left:0; }
-#pageslide #nav li a { color: #FFF; border: none; }
-#pageslide #nav li a:hover { text-decoration: underline; }
+.open { display: block; color:#fff; }
+#pageslide { 
+	width: 180px;
+	}
+#pageslide #nav { 
+	background:none; 
+	border: 1px solid rgba(0,0,0,0.1);
+	}
+#pageslide #nav li {
+	padding: 10px 0; 
+	border-bottom: 1px solid rgba(0,0,0,0.3); 
+	list-style:none; 
+	margin-left:0; 
+	}
+#pageslide #nav li a { 
+	background:none;
+	color: #FFF; 
+	border: none;
+	}
+#pageslide #nav li a:hover { 
+	text-decoration: underline; 
+	}
+#pageslide #nav .uti a {
+	color:#fff !important;
+	}
+#pageslide #nav .uti li { 
+	border:none !important;
+	}
+/*page slide*/
+#nav .uti li {
+	margin:10px 18px;
+	}
+
+#nav .uti {
+	width:auto;
+	z-index:300;
+	display:block;
+	text-align:center;
+	white-space:normal;
+	}
+.searchArea { 
+	left:0;
+	float:none !important;
+	white-space:nowrap;
+	}
+.searchArea input {
+	width:50%;
+	}
 /*page slide*/
 /* arrows on promo*/
 .flex-direction-nav {
