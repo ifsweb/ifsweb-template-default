@@ -14,7 +14,7 @@
     <link href="../css/menu.css" rel="stylesheet">
     <link href="../css/jumbotron-narrow.css" rel="stylesheet">
     <link href="../css/_styles.css" type="text/css" rel="stylesheet">
-	<link  href="../css/jquery.pageslide.css" type="text/css" rel="stylesheet" />
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -71,42 +71,52 @@
 <!--[if IE 9]><body id="home" class="ie ie9"><![endif]-->
 <!--[if !IE]><!--><body id="home" class="non_ie"><!--<![endif]-->
   <div id="parallax"><div id="intro">
-  <div id="leftslide">
-<div id="content">
+    <div class="row mastWrap">
+      <div class="col-xs-3">
+        <div class="logo">
+          <a href="#" class="brand"><img src="../images/logo.png" alt="<!--FI Name-->"/></a>
+        </div><!--logo-->
+      </div><!--colsx3-->
+      <!--mobile menu button-->
+      <div class="visible-xs visible-sm col-xs-8">
+        <a href="#" class="btn btn-mini btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse"><img src="../images/menu.png" alt="Menu"></a>
+      </div><!--hide deskt-->
+      <!--desktop utility-->
+      <div class="nav-collapse collapse">
+      <div class="col-lg-9 pull-right">
+        <ul class="uti">
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Rates &amp; Fees</a></li>
+          <li><a href="#">Calculators</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li class="searchArea col-xs-3 pull-right">
+          <form><div class="input-group">
+            <input type="text" class="form-control input-sm">
+            <span class="input-group-btn">
+              <input type="submit" class="btn" value="Go!" />
+            </span>
+          </div><!-- /input-group --></form>
 
-<h1><a class="open" href="#nav">Menu</a>
-	<div class="logo">
-		<a href="#" class=""><img src="../images/logo.png" alt="<!--FI Name-->"/></a>
-	</div><!--logo-->
-	</h1>
-    <div class="" id="nav">
-	<ul class="nav-7">
-		<li><a href="#" class="active">Home</a></li>
-		<li><a href="#">Personal</a></li>
-		<li><a href="#">Business</a></li>
-		<li><a href="#">Loans</a></li>
-		<li><a href="#">About Us</a></li>
-        <li><a href="#">Loans</a></li>
-		<li><a href="#">About Us</a></li>
+          </li>
         </ul>
-			<ul class="uti">
-				<li><a href="#">Locations</a></li>
-				<li><a href="#">Rates &amp; Fees</a></li>
-				<li><a href="#">Calculators</a></li>
-				<li><a href="#">Contact Us</a></li>
-				<li class="searchArea pull-right">
-					<form><input class="span2" type="text" placeholder="Search">
-					<input class="btn" value="Go"></form>
-				</li>
-			</ul>
-	</div><!--nav id-->
-<div class="copy">
+      </div><!--pullright-->
+        <ul class="nav col-lg-12">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Personal</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Loans</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Rates &amp; Fees</a></li>
+          <li><a href="#">Calculators</a></li>
+          <li><a href="#">Contact Us</a></li>
+          
+        </ul>
+      </div><!-- nav-collapse -->
+      
+      <div class="clearfix"><!--clear--></div>
 
-    
-</div><!--content-->
-</div><!--copy-->
-</div><!--pageslide id-->
-<div class="row">
       <div class="col-md-8">
         <div class="flexslider promoMain" role="img">
           <ul class="slides">
@@ -152,14 +162,15 @@
         </div><!--col-lg-4-->
       
 
- </div><!--row-->
-
     
- 
+    </div><!--mastwrap-->
+
+    <!--alerts text area-->
+    <div class="col-xs-12">
       <div class="alert">
         <p>We will be closed for the 4th Of July weekend. Please see our <a href="/calendar">calendar</a> for more details.</p>
       </div><!--alert-->
-
+    </div><!--row-->
 
 
 
@@ -257,9 +268,6 @@
     </div><!--footWrap-->
     </div><!--intro-->
 </div><!--parallax-->
-</div><!--content-->
-</div><!--copy-->
-</div><!--pageslide id-->
   <!-- Le javascript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
@@ -273,10 +281,7 @@
     });
   </script>
 
-   <script src="../js/jquery.pageslide.min.js"></script>
-    <script>
-        $(".open").pageslide();
-    </script>
+
   </body>
 </html>
 

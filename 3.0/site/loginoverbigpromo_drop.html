@@ -13,7 +13,7 @@
 	<link href="../css/menu.css" rel="stylesheet">
 	<link href="../css/jumbotron-narrow.css" rel="stylesheet">
 	<link href="../css/_styles.css" type="text/css" rel="stylesheet">
-<link  href="../css/jquery.pageslide.css" type="text/css" rel="stylesheet" />
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -49,37 +49,48 @@
 <!--[if !IE]><!--><body id="home" class="non_ie" style="margin:0;padding:0;"><!--<![endif]-->
 <div id="loginoverpromo">
 <div class="container wideWrap">
-<div id="leftslide">
-<div id="content">
+	<div class="row marginANDpadding0 mastWrap navbar-fixed-top">
+		<div class="wideWrapInner">
+			<div class="col-xs-2">
+				<div class="logo">
+				<a href="#" class="brand"><img src="../images/logo.png" alt="<!--FI Name-->"/> </a>
+				</div><!--logo-->
+			</div><!--colsx3-->
+            
+<!--mobile menu button-->
+					<div class="visible-xs visible-sm col-xs-10">
+						<a href="#" class="btn btn-mini btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse"><img src="../images/menu.png" alt="Menu"></a>
+					</div><!--hide deskt-->
+<!--desktop utility-->
+				<div class="nav-collapse collapse">
+				
+					<h1><!--FI Name--></h1>
+                  
+						<ul class="uti">
+                        <li><a href="#" class="phone hidden-md hidden-lg">888.888.8888</a></li>
+							<li><a href="#">Community Links</a></li>
+							<li><a href="#">Hours &amp; Locations</a></li>
+							<li><a href="#">Report Lost/Stolen Cards</a></li>
+							<li><a href="#">Contact Us</a></li>
+							
+						</ul>
+					<div class="clearfix"><!--clearfix--></div>
+					<ul class="nav-justified">
+						<li><a href="#">eBanking</a></li>
+						<li><a href="#">Personal Banking</a></li>
+						<li><a href="#">Business Banking</a></li>
+						<li><a href="#">Lending</a></li>
+						<li><a href="#">Insurance &amp; Investments</a></li>
+						<li class="lastLi"><a href="#">About Us</a></li>
+					</ul>
+				</div><!-- nav-collapse -->
 
-<h1><a class="open" href="#nav">Menu</a>
-	<div class="logo">
-		<a href="#" class=""><img src="../images/logo.png" alt="<!--FI Name-->"/></a>
-	</div><!--logo-->
-	</h1>
-    <div class="" id="nav">
-	<ul class="nav-7">
-		<li><a href="#" class="active">Home</a></li>
-		<li><a href="#">Personal</a></li>
-		<li><a href="#">Business</a></li>
-		<li><a href="#">Loans</a></li>
-		<li><a href="#">About Us</a></li>
-        <li><a href="#">Loans</a></li>
-		<li><a href="#">About Us</a></li>
-        </ul>
-			<ul class="uti">
-				<li><a href="#">Locations</a></li>
-				<li><a href="#">Rates &amp; Fees</a></li>
-				<li><a href="#">Calculators</a></li>
-				<li><a href="#">Contact Us</a></li>
-				<li class="searchArea pull-right">
-					<form><input class="span2" type="text" placeholder="Search">
-					<input class="btn" value="Go"></form>
-				</li>
-			</ul>
-	</div><!--nav id-->
-<div class="copy">
+		</div><!--wideWrapInner-->
+	</div><!--mastwrap-->
+	
 
+    
+    <div class="contentWrap">
         <div class="row marginANDpadding0 top">
             <div class="wideWrapInner">
        
@@ -180,9 +191,6 @@
     
 </div><!--container-->
 </div>
-</div><!--content-->
-</div><!--copy-->
-</div><!--pageslide id-->
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -197,10 +205,7 @@
 	
 		});
 	</script>
-    <script src="../js/jquery.pageslide.min.js"></script>
-    <script>
-        $(".open").pageslide();
-    </script>
+
 
 	</body>
 </html>
