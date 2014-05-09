@@ -1,152 +1,139 @@
 
-li.parentMenu {
-	position: relative;
-}
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
 
-div.subMenu {
-	display: none;
-	font-family: 'Montserrat', sans-serif;
+.subMenu {
 	position: absolute;
-	top:190px; 
+	top:190px;
 	left:11%;
-	height:480px;
+	z-index: 10000;
+	display: none;
 	margin: 0;
 	padding: 0;
 	padding-bottom:20px;
 	width:750px;
-	z-index: 10000;
 	border:1px solid #ccc;
-	background:#fff;
-	vertical-align:top;
-	-webkit-box-shadow:  2px 2px 1px 1px rgba(000, 000, 000, .15);
-	-moz-box-shadow:  2px 2px 1px 1px rgba(000, 000, 000, .15);
-	box-shadow:  2px 2px 1px 1px rgba(000, 000, 000, .15);
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius:4px;
+	background:#fff;
+	-webkit-box-shadow:  2px 2px 1px 1px rgba(000, 000, 000, .15);
+	-moz-box-shadow:  2px 2px 1px 1px rgba(000, 000, 000, .15);
+	box-shadow:  2px 2px 1px 1px rgba(000, 000, 000, .15);
+	vertical-align:top;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navColumn {
+	float:left;
+	padding:1em 1em 20px 1em;
+	width:33%;
+}
+
+.navCol1, .navCol2 {
+	border-right:1px solid #ccc;
+
+}
+
+.subMenu ul {
+	position:relative;
+	top:0;
+	margin: 0;
+	padding: 0;
+	width:90%;
+}
+	.subMenu ul li {
+		margin: 0;
+		padding: 0;
+		list-style-type:none;
+		list-style-image:none;
+		text-align: left;
+	}
+
+
+li.parentMenu {
+	position: relative;
 }
 
 
-div.subMenu a, div.subMenu a:link, div.subMenu a:visited {
-	line-height: 1.5em;
+
+.subMenu a:link,
+.subMenu a:visited,
+.subMenu a:hover,
+.subMenu a:active
+ {
 	text-decoration:none;
+	line-height: 1.5em;
+	display: block;
 
 }
-div.subMenu a:hover, div.subMenu a:active {
+.subMenu a:hover, .subMenu a:active {
 	text-decoration:underline;
 }
 
-div.navColumn {
-	float:left;
-	width:30%;
-	max-width:205px;
-}
 
-
-div.subMenu ul {
-	padding: 0;
-	margin: 0;
-	position:relative;
-	top:0;
-	width:90%;
-}
-div.subMenu ul li {
-	padding: 0;
-	margin: 0;
-	list-style-image:none;
-	list-style-type:none;
-	text-align: left;	
-}
-	
-.level_one {
-	font-weight: bold;
-	display: block;
-	text-decoration: none;
-	font-size: 18px;
-	text-decoration: none;
+a.level_one {
 	border-top:1px solid #ccc;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 120%;
 }
 
-a.level_one:link,  a.level_one:visited {
-	color:#000;
-	padding:4px;
+a.level_one:link,
+a.level_one:visited {
 	margin:4px 0;
-	padding:.5em 2%;
 	margin:.5em 0;
+	padding:4px;
+	padding:.5em 2%;
+	color:#000;
 }
 
-a.level_one:hover, a.level_one:active {
-
-	text-decoration:none !important;
-	color:#fff;
+a.level_one:hover,
+a.level_one:active {
 	background-color:#f8981e;
+	color:#fff;
+	text-decoration:none;
 }
 
 
-
-
-.level_two {
-	border-top:1px solid #ebebeb;
-	display: block;
-	padding:.5em 2%;
+a.level_two {
 	margin:.5em 0;
+	padding:.5em 2%;
+	border-top:1px solid #ebebeb;
 	text-decoration: none;
 	font-size: 14px;
 }
 
-a.level_two:link,  a.level_two:visited {
+a.level_two:link,
+a.level_two:visited {
 	color:#000;
 }
 
-a.level_two:hover, a.level_two:active {
-	text-decoration:none !important;
-	color:#fff;
+a.level_two:hover,
+a.level_two:active {
 	background-color:#f8981e;
+	color:#fff;
+	text-decoration:none !important;
 }
 
-#menu_communities, #menu_open, #menu_rewards {
-	width:30%;
-}
 
-.navCol1 {
-	margin-left:2%;
-	padding:1em 1% 20px 1%;
-	border-right:1px solid #ccc;
-	/*make columns same height*/
-	min-height:430px;
-	max-height:430px;
-
-}
-
-.navCol2 {
-	
-	margin-left:1%;
-	border-right:1px solid #ccc;
-	padding:1em 1% 20px 1%;
-	/*make columns same height*/
-	min-height:430px;
-	max-height:430px;
-}
-.navCol3 {
-	margin-left:1%;
-	padding:1em 1% 20px 1%;
-	/*make columns same height*/
-	min-height:430px;
-	max-height:430px;
-
-	}
 
 .dhtmlpromo {
-	background:#f8981e;
+	z-index:400;
 	display:block;
 	clear:both;
-	z-index:400;
 	padding:20px 20px;
+	background:#f8981e;
 	color:#fff;
 	font-size:24px;
 	}
-.dhtmlpromo p {margin:10px 0;}
+.dhtmlpromo p {
+	margin:10px 0;
+}
+
 .dhtmlpromo a.btn {
-	padding:4px 10px;
 	margin-left:15px;
+	padding:4px 10px;
 	}
