@@ -6,7 +6,8 @@ body {
 	padding: 0;
 	font-family:  Arial, sans-serif;
 	font-size: 14px;
-	line-height: 20px;
+	/*line-height: 20px;*/
+	/* please do not use line-height on body as it causes errors when calculating the height of elements */
 	color: #333333;
 	text-align:center;
 	background-color: #ffffff;
