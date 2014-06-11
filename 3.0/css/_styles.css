@@ -1,6 +1,7 @@
 /****************************************************************** 
  * override base, body, h1, links and btns *
  *************************************************************************** */
+html {height:100%;}
 body {
 	margin: 0;
 	padding: 0;
@@ -11,6 +12,7 @@ body {
 	color: #333333;
 	text-align:center;
 	background-color: #ffffff;
+	height:100%;
 }
 
 a {
