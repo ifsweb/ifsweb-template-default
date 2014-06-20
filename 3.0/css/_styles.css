@@ -24,11 +24,7 @@ a:focus {
 	color: #222222;
 	text-decoration: underline;
 }
-.img-rounded {
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	}
+
 h1,
 h2,
 h3,
@@ -37,7 +33,7 @@ h5,
 h6 {
 	margin: 10px 0;
 	font-family: inherit;
-	font-weight: bold;
+	font-weight: 600;
 	line-height: 20px;
 	color: inherit;
 	text-rendering: optimizelegibility;
@@ -87,7 +83,7 @@ h6 {
 	vertical-align: middle;
 	cursor: pointer;
 	color: #111111;
-	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	text-shadow: none;
 	background-color: #f5f5f5;
 	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
@@ -157,19 +153,29 @@ input.btn:active,
 /****************************************************************** 
  * containers or wrappers *
  *************************************************************************** */
-#parallax .mastWrap {background:url(../images/bg_blacktran.png) top left repeat-x;height:100px;max-width:100%;}
+#parallax .mastWrap {
+	background:url(../images/bg_blacktran.png) top left repeat-x;
+	height:100px;
+	max-width:100%;
+	}
 #fixedtop .mastWrap, #loginoverpromo .mastWrap  {
 	background:#363636;
 	
 	}
-.contentWrap .top {
 
-	padding-top:0;
-	text-align:left;
+#fixedtop .contentWrap , 
+.contentWrapBack, 
+#fixedtop .alert {
+	margin-top:60px;
+	} /* clear fixed top nav when on */
+#loginoverpromo .contentWrap {
+	margin-top:180px;
+	margin-bottom:30px;
+	} /* clear fixed top nav when on */
+#loginoverpromo .contentWrapBack {
+	margin:0;
+	margin-top:180px;
 	}
-#fixedtop .contentWrap , .contentWrapBack, #fixedtop .alert {margin-top:60px;} /* clear fixed top nav when on */
-#loginoverpromo .contentWrap {margin-top:180px;margin-bottom:30px;} /* clear fixed top nav when on */
-#loginoverpromo .contentWrapBack {margin:0;margin-top:180px;}
 .row.contentWrapBack div {
     -webkit-transition: width 0.3s ease, margin 0.3s ease;
     -moz-transition: width 0.3s ease, margin 0.3s ease;
@@ -177,6 +183,12 @@ input.btn:active,
     transition: width 0.3s ease, margin 0.3s ease;
 	
 }
+.contentWrap .top {
+	}
+.contentWrap .middle {
+	}
+.contentWrap .bottom {
+	}
 #trig {
     margin: 10px;
 }
@@ -190,21 +202,10 @@ input.btn:active,
     width: 0;
     margin-left: 0;
 }
-.contentWrap .middle {
 	
-	text-align:left;
-	}
-.contentWrap .bottom {
-	
-	}	
-.border-bottom {
-	padding-bottom: 16px;
-	border-bottom: 1px #f4f4f2 solid;
-	}
 
 .footWrap {
-	background-color:#efefef;
-	color:#fff;
+
 	}
 .contentWrap ol, .contentWrap ul {
 	list-style: none;
@@ -343,7 +344,7 @@ input.btn:active,
 	width: 80px;
 	height: 30px;
 	margin-bottom: 10px;
-	background: url(../images/menu.png) center center no-repeat #333;
+	background:#c00;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
 	-border-radius: 8px;
@@ -659,23 +660,25 @@ padding-bottom:50px;
 	-webkit-box-shadow: inset 0 0 15px 5px #1d5087;
 	}
 .topBar {
-	
-padding:0 0 5px 0;}
+	padding:0 0 5px 0;
+	}
 
 #toplogin .loginArea {
 	width:auto;
 	position:absolute;
 	top:-20px;
 	right:10px;
-	
-display:block;
-margin-left:0;
-margin-right:0;
-padding:3px 5px 10px 5px;
-text-align:left;
+	display:block;
+	margin-left:0;
+	margin-right:0;
+	padding:3px 5px 10px 5px;
+	text-align:left;
 	}
 
-#toplogin .loginArea img {width:22px;display:inline-block;}
+#toplogin .loginArea img {
+	width:22px;
+	display:inline-block;
+	}
 #toplogin .loginOB {
 	margin: 0;
 	position:relative;
@@ -795,7 +798,7 @@ text-align:left;
 
 .wideWrapInner {
 	margin: 0 auto;
-	max-width:960px;
+	max-width:1100px;
 	}
 
 .moduleWrapper1 {
@@ -828,7 +831,7 @@ text-align:left;
 #fullPromo .moduleWrapper1 {
 	
 	background:url(../images/white.png) repeat;
-margin-bottom:60px;
+	margin-bottom:60px;
 }
 .moduleWrapper2 {
 	text-align: left;
@@ -1046,7 +1049,11 @@ margin-bottom:60px;
 /****************************************************************** 
  * STYLING *
  *************************************************************************** */
-
+.img-rounded {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	}
 
 /* ----------------------------------------------------------------------------------------------------------------PROMO IMGS-------------------------------------------------------- */
 .promoMainImageSize {
@@ -1426,7 +1433,7 @@ span.marginANDpadding1 {
 	}
 
 .content ul ul li {
-	background: url(../images/bullet2.png) no-repeat 0 .1em;
+	background: url(../images/bullet2.png) no-repeat 0 .4em;
 }
 
 .contentImg { /* ensure that there is a width and height attribute on the image in case the WYSIWYG editor assigns a snippet's image a width or height of 0 */
@@ -1501,25 +1508,13 @@ img.ehl {margin-top:-3px;}
 
 
 /****************************************************************** 
- * forms *
+ * forms - use bootstrap form-control form-group classes instead *
  *************************************************************************** */
-label {
-	display: block;
-	margin: 2px 0 0 0;
-	}
-
-	
-.appfield1 {
-
-	box-shadow: 0 5px 5px #ddd inset;
-}
-
-
 
 
 
 /****************************************************************** 
- * tables *
+ * tables use table-striped and table-hovered for bootstrap features*
  *************************************************************************** */
 table { 
 	vertical-align:top;
@@ -1527,7 +1522,7 @@ table {
 	box-shadow: 3px 0 5px 0 rgba(180,153,84,0.2);
 	width:100%;
 	}
-
+table table, form table {box-shadow:none;-webkit-box-shadow:none;}
 .tableheader {
 	background:#e7d693 ;
 	color: #443128;
@@ -1587,10 +1582,22 @@ th a.btn {margin:5px 0;font-size:10px; line-height:11px;padding:4px !important; 
 	text-align:right; 
 	vertical-align:top;
 	-webkit-box-shadow: 3px 0 5px 0 rgba(180,153,84,0.2);
-	box-shadow: 3px 0 5px 0 rgba(180,153,84,0.2);}
-table ul {vertical-align:top; margin:0;padding:0;}
-table li {text-align:left; margin-left:0 !important; background:none !important;padding-left:0px !important; border-bottom:1px solid #eee;}
+	box-shadow: 3px 0 5px 0 rgba(180,153,84,0.2);
+	}
+table ul {
+	vertical-align:top; 
+	margin:0;
+	padding:0;
+	}
+table li {
+	text-align:left; 
+	margin-left:0 !important; 
+	background:none !important;
+	padding-left:0px !important; 
+	border-bottom:1px solid #eee;
+	}
 .altTd {
+	
 	border-left:1px solid #ece7d2;
 	border-right:1px solid #ece7d2;
 	
@@ -1600,14 +1607,14 @@ table li {text-align:left; margin-left:0 !important; background:none !important;
 /****************************************************************** 
  * etc formatting other *
  *************************************************************************** */
-sup {font-size:.6em;}/*make sup smaller*/
-.faqQ { 
-	font-weight: bold;
+.faqQ {
+	font-weight: 600;
 	}
 
 .faqQ { }
 .faqA { }
-	
+.sup {font-size:.6em;}/*make sup smaller*/
+
 .xsmall {
 	font-size:.8em; 
 	}
@@ -1624,12 +1631,7 @@ sup {font-size:.6em;}/*make sup smaller*/
 	font-size:1.2em;
 	}
 
-.special3 {
-	}
-.special2 {
-	}
-.special1 {
-	}
+
 
 .disclaimer {
 	color: #7e7e7e;
@@ -1650,362 +1652,6 @@ sup {font-size:.6em;}/*make sup smaller*/
   float:right;
   margin:0 0 10px 10px;
 }
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------SECTION 980 plus DESKTOP ONLY-----------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-@media (min-width: 980px) {
-.collapse {display:block;}
-#nav .uti {width:60%; position:absolute; right:0; top:10px;}
-#nav ul.uti li a {background:none !important; color:#600 !important;}
-#parallax .container {width:100% !important;min-width:980px;}
-#parallax .nav, #fullPromo .nav {
-	width:100%;
-	clear:both;
-	display:inline-block;
-	text-align:left;
-	}
-.nav li, #fullPromo .nav li {
-	display:inline-block; 
-	width:auto;
-	text-align:left;
-	margin-bottom:8px;
-	}
-#parallax .nav li li, #fullPromo .nav li li {
-	display:block; 
-	text-align:left;
-	margin-bottom:8px;
-	list-style:none;
-	}
-
-
-#parallax .nav-collapse.collapse.in, #loginoverpromo .nav-collapse.collapse.in, #fullPromo  .nav-collapse.collapse.in {
-	
-	height:auto !important; /* setting explicit height to activate animated slide */
-	width:100%;
-	}
-.login-collapse.collapse {
-	height: auto !important;
-	overflow: visible !important;
-	}
-
-.content {min-height:450px;}
-.backToTopButton {position:fixed; bottom:5px; right: .25%; padding:.4em;  width:22%;z-index:300;}
-.container {
-	width:100% !important;
-	min-width:980px; 
-	text-align:left;
-	}
-li.searchArea form {
-	white-space:nowrap;
-	}
-}
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------smaller than desktop group---------------------------------------------------------------------------------------------*/
-/*------------------------------------------------SECTION 979 and below ------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-@media (max-width: 979px) {
-/*page slide*/
-#content { width: 98%; }
-/*page slide*/
-
-.login-collapse .loginOB a:active, 
-.login-collapse .loginOB a:hover {
-	text-decoration:none; 
-	
-	}
-body {
-	padding-top: 0;
-	}
-a.badge {
-	margin-right:10px;
-	padding:6px !important;
-	}
-.loginOB row {margin:10px auto !important;}
-.nav {
-	width:100%;
-	clear:both;
-	display:block;
-	text-align:left;
-	}
-.nav li {
-	display:block; 
-	text-align:left;
-	margin-bottom:8px;
-	}
-.nav li li {
-	display:block; 
-	text-align:left;
-	margin-bottom:8px;
-	list-style:none;
-	}
-
-.flexslider {
-	margin-bottom:35px !important;
-	}
-#fullPromo .flexslider {clear:both; margin-top:30px; margin-bottom:100px;}
-#fullPromo .promoTxt {position:relative; margin-top:180px;bottom:0; }
-#fullPromo .loginOB {clear:both;}
-.nav-collapse.collapse.in {
-	margin-top:5px;
-	background:#fff;
-	border-top:5px solid #333;
-	height:480px !important; /* setting explicit height to activate animated slide */
-	width:100%;
-	}
-.login-collapse.collapse.in {
-	margin-top:5px;
-	height:135px !important; /* setting explicit height to activate animated slide */
-	width:100%;
-	background:#fff;
-	}
-.login-collapse.collapse.in .loginArea {
-	background:none;
-	}
-.login-collapse {
-	margin-top:5px;
-	height: 0 !important;
-	}
-
-.login-collapse {
-	clear: left;
-	}
-
-.login-collapse {
-	float: none;
-	margin: 0 0 10px;
-	}
-
-.login-collapse li {
-	float: none;
-	}
-
-.login-collapse,
-.login-collapse.collapse {
-	height: 0;
-	overflow: hidden;
-	}
-.searchArea { 
-	position:absolute;
-	left:10px;
-	white-space:nowrap;
-	}
-.searchArea input {
-	width:80%;
-	}
-.promoTxt {
-	font-size:19px; 
-	line-height:22px;
-	margin-left:3%;
-	background:#f7f7f7;
-	}
-.footWrap {margin-top:10px;}
-.footWrap ul {
-	display:block;
-	min-height:1.6em;
-	}
-.footWrap li {
-	display:inline;
-	float:left; 
-	margin-right:10px;
-	}
-.footR {text-align:right;}
-.footL {text-align:left;}
-
-
-}
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------SECTION 768-979 tablet portrait --------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media (min-width: 768px) and (max-width: 979px) {
-
-#nav .uti {width:60%; position:absolute; right:0; top:10px;}
-#nav ul.uti li a {background:none !important; color:#600 !important;}
-body {
-	padding-left: 0;
-	padding-right: 0;
-	}
-#nav .uti li {
-	float:none;
-	text-align:center;
-	min-width:30px !important;
-	width: auto !important;
-	max-width:100%;
-	margin-bottom:0;
-	list-style:none;
-	white-space:nowrap;
-	display:inline-block !important;
-	}
-#nav .uti li a {
-	display:inline-block;
-	width:auto !important;
-	margin:0 4px; 
-	padding:0 !important;
-	}
-li.searchArea {
-	
-	
-	}
-
-.searchArea {margin-top:-3px;}
-
-
-}
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------SECTION 768 and below -------------------large phone------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-@media (max-width: 767px) {
-/*page slide*/
-#content {width: 98%; }
-#content h1 { font-size: 22px; line-height: 30px; background-color: #ccc; color: #FFF; padding: 10px; }
-#content #nav ul { 
-	background:none;
-	display: none;
-	margin-left:0; 
-	}
-#content #nav ul ul, #content #nav ul li li {
-	margin-left:0; 
-	list-style:none;
-	padding-left:0;
-	}
-.open { display: block; color:#fff; }
-#pageslide { 
-	width: 180px;
-	}
-#pageslide #nav { 
-	background:none; 
-	border: 1px solid rgba(0,0,0,0.1);
-	}
-#pageslide #nav li {
-	padding: 10px 0; 
-	border-bottom: 1px solid rgba(0,0,0,0.3); 
-	list-style:none; 
-	margin-left:0; 
-	}
-#pageslide #nav li a { 
-	background:none;
-	color: #FFF; 
-	border: none;
-	}
-#pageslide #nav li a:hover { 
-	text-decoration: underline; 
-	}
-#pageslide #nav .uti a {
-	color:#fff !important;
-	}
-#pageslide #nav .uti li { 
-	border:none !important;
-	}
-/*page slide*/
-#nav .uti li {
-	margin:10px 18px;
-	}
-
-#nav .uti {
-	width:auto;
-	z-index:300;
-	display:block;
-	text-align:center;
-	white-space:normal;
-	}
-.searchArea { 
-	left:0;
-	float:none !important;
-	white-space:nowrap;
-	}
-.searchArea input {
-	width:50%;
-	}
-/*page slide*/
-/* arrows on promo*/
-.flex-direction-nav {
-	
-	}
-/*vertical spacing between column groups */
-.mastWrap, .contentWrap .middle, .contentWrap .top, .contentWrap .bottom, .footWrap {
-	padding-top:0;
-	margin-top:0;
-	margin-bottom:0;
-	}
-.module {
-	padding:.5em 15px;
-	text-align:left;
-	min-height:50px !important;
-	}
-.module ul {margin:0;}
-.loginOB {margin:0;padding:0;}
-.border-bottom {
-	margin:5px 0;
-	padding:0; 
-	}
-.ncua {display:none;}
-.footL, .footL ul, 
-.footR {
-	text-align:center; 
-	margin:0 auto; 
-	width:auto;
-	display:block;
-	}
-.footWrap ul {float:none;}
-.footR li, .footL li {margin:0;float:none; text-align:center; width:100%;}
-.footR li a {margin:.4em 11px;}
-.footL li a {display:inline-block; margin-bottom:.4em;}
-}
-
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------SECTION 480 and below ----------------android phones-------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media (max-width: 480px) {
-
-.login-collapse {
-	-webkit-transform: translate3d(0, 0, 0);
-	}
-
-/* page slide */
-#content { }
-#content h1 { font-size: 14px; }
-/* page slide */
-
-}
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------SECTION 320 and below ------------small phones------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media (max-width: 320px) {
-
-}
-
-@media (max-width: 240px) {
-
-}
-
-
-
-
-
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------SECTIONINTERNET EXPLORER DESKTOP ONLY---------------------------------------------------------------------------------*/
@@ -2222,6 +1868,338 @@ li.searchArea {
 .old_ie .col-xs-12, .old_ie .col-sm-12, .old_ie .col-md-12, .old_ie .col-lg-12 {
   width: 100%;
 }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 980 plus DESKTOP ONLY-----------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 980px) {
+.collapse {display:block;}
+#nav .uti {width:60%; position:absolute; right:0; top:10px;}
+#nav ul.uti li a {background:none !important; color:#600 !important;}
+#parallax .container {width:100% !important;min-width:980px;}
+#parallax .nav, #fullPromo .nav {
+	width:100%;
+	clear:both;
+	display:inline-block;
+	text-align:left;
+	}
+.nav li, #fullPromo .nav li {
+	display:inline-block; 
+	width:auto;
+	text-align:left;
+	margin-bottom:8px;
+	}
+#parallax .nav li li, #fullPromo .nav li li {
+	display:block; 
+	text-align:left;
+	margin-bottom:8px;
+	list-style:none;
+	}
+
+
+#parallax .nav-collapse.collapse.in, #loginoverpromo .nav-collapse.collapse.in, #fullPromo  .nav-collapse.collapse.in {
+	
+	height:auto !important; /* setting explicit height to activate animated slide */
+	width:100%;
+	}
+.login-collapse.collapse {
+	height: auto !important;
+	overflow: visible !important;
+	}
+
+.content {min-height:450px;}
+.backToTopButton {position:fixed; bottom:5px; right: .25%; padding:.4em;  width:22%;z-index:300;}
+.container {
+	width:100% !important;
+	min-width:980px; 
+	text-align:left;
+	}
+li.searchArea form {
+	white-space:nowrap;
+	}
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------smaller than desktop group---------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 979 and below ------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 979px) {
+/*page slide*/
+#content { width: 100%; }
+/*page slide*/
+
+
+.nav {
+	width:100%;
+	clear:both;
+	display:block;
+	text-align:left;
+	}
+.nav li {
+	display:block; 
+	text-align:left;
+	margin-bottom:8px;
+	}
+.nav li li {
+	display:block; 
+	text-align:left;
+	margin-bottom:8px;
+	list-style:none;
+	}
+
+.flexslider {
+	
+	}
+#fullPromo .flexslider {clear:both; margin-top:30px; margin-bottom:100px;}
+#fullPromo .promoTxt {position:relative; margin-top:180px;bottom:0; }
+#fullPromo .loginOB {clear:both;}
+.nav-collapse.collapse.in {
+	margin-top:5px;
+	background:#fff;
+	border-top:5px solid #333;
+	height:480px !important; /* setting explicit height to activate animated slide */
+	width:100%;
+	}
+.login-collapse.collapse.in {
+	margin-top:5px;
+	height:135px !important; /* setting explicit height to activate animated slide */
+	width:100%;
+	background:#fff;
+	}
+.login-collapse.collapse.in .loginArea {
+	background:none;
+	}
+.login-collapse {
+	margin-top:5px;
+	height: 0 !important;
+	}
+
+.login-collapse {
+	clear: left;
+	}
+
+.login-collapse {
+	float: none;
+	margin: 0 0 10px;
+	}
+
+.login-collapse li {
+	float: none;
+	}
+
+.login-collapse,
+.login-collapse.collapse {
+	height: 0;
+	overflow: hidden;
+	}
+.searchArea { 
+	position:absolute;
+	left:10px;
+	white-space:nowrap;
+	}
+.searchArea input {
+
+	}
+.promoTxt {
+	font-size:19px; 
+	line-height:22px;
+	margin-left:3%;
+	}
+.footWrap {margin-top:10px;}
+.footWrap ul {
+	display:block;
+	min-height:1.6em;
+	}
+.footWrap li {
+	display:inline;
+	float:left; 
+	margin-right:10px;
+	}
+.footR {text-align:right;}
+.footL {text-align:left;}
+
+
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 768-979 tablet portrait --------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 979px) {
+
+#nav .uti {width:60%; position:absolute; right:0; top:10px;}
+#nav ul.uti li a {background:none !important; color:#600 !important;}
+body {
+	padding-left: 0;
+	padding-right: 0;
+	}
+#nav .uti li {
+	float:none;
+	text-align:center;
+	min-width:30px !important;
+	width: auto !important;
+	max-width:100%;
+	margin-bottom:0;
+	list-style:none;
+	white-space:nowrap;
+	display:inline-block !important;
+	}
+#nav .uti li a {
+	display:inline-block;
+	width:auto !important;
+	margin:0 4px; 
+	padding:0 !important;
+	}
+
+
+
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 768 and below -------------------large phone------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media (max-width: 767px) {
+/*page slide*/
+#content {width: 100%; }
+#content h1 {  }
+#content #nav ul { 
+	background:none;
+	display: none;
+	margin-left:0; 
+	}
+#content #nav ul ul, #content #nav ul li li {
+	margin-left:0; 
+	list-style:none;
+	padding-left:0;
+	}
+.open { display: block; color:#fff; }
+#pageslide { 
+	width: 180px;
+	}
+#pageslide #nav { 
+	background:none; 
+	border: 1px solid rgba(0,0,0,0.1);
+	}
+#pageslide #nav li {
+	padding: 10px 0; 
+	border-bottom: 1px solid rgba(0,0,0,0.3); 
+	list-style:none; 
+	margin-left:0; 
+	}
+#pageslide #nav li a { 
+	background:none;
+	color: #FFF; 
+	border: none;
+	}
+#pageslide #nav li a:hover { 
+	text-decoration: underline; 
+	}
+#pageslide #nav .uti a {
+	color:#fff !important;
+	}
+#pageslide #nav .uti li { 
+	border:none !important;
+	}
+/*page slide*/
+#nav .uti li {
+	margin:10px 18px;
+	}
+
+#nav .uti {
+	width:auto;
+	z-index:300;
+	display:block;
+	text-align:center;
+	white-space:normal;
+	}
+.searchArea { 
+	left:0;
+	float:none !important;
+	white-space:nowrap;
+	}
+.searchArea input {
+
+	}
+/*page slide*/
+/* arrows on promo*/
+.flex-direction-nav {
+	
+	}
+/*vertical spacing between column groups */
+.mastWrap, .contentWrap .middle, .contentWrap .top, .contentWrap .bottom, .footWrap {
+
+	}
+.module {
+	padding:.5em 15px;
+	text-align:left;
+	min-height:10px !important;
+	}
+.module ul {margin:0;}
+.loginOB {margin:0;padding:0;}
+
+.ncua {display:none;}
+.footL, .footL ul, 
+.footR, .footR ul {
+	text-align:center; 
+	margin:0 auto; 
+	width:auto;
+	display:block;
+	}
+.footWrap ul {float:none;}
+.footR li, .footL li {margin:0;float:none; text-align:center; width:100%;}
+
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 480 and below ----------------android phones-------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 480px) {
+
+.login-collapse {
+	-webkit-transform: translate3d(0, 0, 0);
+	}
+
+/* page slide */
+#content { }
+#content h1 {  }
+/* page slide */
+
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------SECTION 320 and below ------------small phones------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 320px) {
+
+}
+
+@media (max-width: 240px) {
+
+}
+
+
+
+
+
 
 
 
