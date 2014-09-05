@@ -1,0 +1,25 @@
+<script type="text/javascript">var promoCount = parseInt("14");</script>
+<script type="text/javascript">var promoTimeSm = parseInt("10") * 1000; var fadeLengthSm = parseInt("1") * 1000; var animationSm = 'slide'; var randomizedSm = ('false' == "true"); var slideshow = ( promoTimeSm == 0 ) ? false : true; (function() { var $window = $(window), flexslider; function getGridSize() { return 2.5; } $window.load(function() { $('.slider').flexslider({ "animation" : animation, "slideshow" : slideshow, "slideshowSpeed" : promoTimeSm, "animationDuration" : fadeLengthSm, "directionNav" : true, "controlNav" : false, "randomize" : randomizedSm, "animationLoop" : true, "itemWidth" : 100, "itemMargin" : 0, "minItems" : getGridSize(), "maxItems" : getGridSize(), "prevText" : '<img src="../images/btn_prev_off.png" alt="Previous" />', "nextText" : '<img src="../images/btn_next_off.png" alt="Next" />' }); }); /* not working $window.resize(function() { var gridSize = getGridSize(); flexslider.vars.minItems = gridSize; flexslider.vars.maxItems = gridSize; }); */ }());</script>
+				<div class="slider promoSmall">
+					<ul class="slides highlight">
+						<li><a href="#">
+							<div class="smallIcon"><img src="../images/icon_compass.png" alt="" /></div>
+							<h1>Trust Services</h1></a>
+						</li>
+						<li><a href="#">
+							<div class="smallIcon"><img src="../images/icon_money.png" alt="" /></div>
+							<h1>Investments</h1></a>
+						</li>
+						<li><a href="#">
+							<div class="smallIcon"><img src="../images/icon_business.png" alt="" /></div>
+							<h1>Business Banking</h1></a>
+						</li>
+						<li>
+							<a href="#"><div class="smallIcon"><img src="../images/icon_cards.png" alt="" /></div>
+							<h1>Lorem Ipsum</h1></a>
+						</li>
+						<li>
+							<div class="grpSquare" ><!-- grp inside small promotion scroller --><script src="/mstinc/grp/js/grp.js" type="text/javascript">/* GRP */</script> </div>
+						</li>
+					</ul>
+				</div><!--flexslidersmall-->
