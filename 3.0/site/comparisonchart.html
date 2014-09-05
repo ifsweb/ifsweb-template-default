@@ -35,23 +35,8 @@
 
 	<script type="text/javascript" src="../js/rollovers.js"></script>
 	<script type="text/javascript" src="../js/jquery.js"></script>
-	<!-- scroll to top fade in and out code-->
-    <script>
-$(function() {
-	$(".backToTopButton").hide();
-	$(window).scroll(function() {
-		if($(this).scrollTop()>400){
-			$('.backToTopButton').fadeIn();
-		} else { 
-			$('.backToTopButton').fadeOut()
-		}	
-	});
-	$('.backToTopButton').click(function(){
-		$('body,html').animate({scrollTop:0},800);
-		return false;
-	});		
-})
-</script>
+
+   
     
 </head>
 
@@ -62,99 +47,6 @@ $(function() {
 <!--[if IE 9]><body id="back" class="ie ie9"><![endif]-->
 <!--[if !IE]> --><body id="back" class="non_ie"><!-- <![endif]-->
 
-<div class="container" id="fixedtop">
-	<div class="row mastWrap navbar-fixed-top">
-    <div class="container">
-			<div class="col-xs-3">
-				<div class="logo">
-				<a href="#" class="brand"><img src="../images/logo.png" alt="<!--FI Name-->"/></a>
-				</div><!--logo-->
-			</div><!--colsx3-->
-<!--mobile menu button-->
-					<div class="visible-xs visible-sm col-xs-9">
-						<span class="sr-only">Toggle navigation</span>
-						<a href="#" class="btn btn-mini btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse"><img src="../images/menu.png" alt="Menu"></a>
-					</div><!--hide deskt-->
-<!--desktop utility-->
-				<div class="col-xs-9 pull-right visible-lg visible-md">
-						<ul class="uti">
-							<li><a href="#">Locations</a></li>
-							<li><a href="#">Rates &amp; Fees</a></li>
-							<li><a href="#">Calculators</a></li>
-							<li><a href="#">Contact Us</a></li>
-							<li class="searchArea col-xs-3 pull-right">
-								<div class="input-group">
-								<input type="text" class="form-control input-sm">
-								<span class="input-group-btn">
-									<input type="submit" class="btn" value="Go!" />
-								</span>
-								</div><!-- /input-group -->
-								
-							</li>
-						</ul>
-					</div><!--pullright-->
-<!--main nav - drops on phone with utility appended--><div class="clearfix"><!--clearfix--></div>
-					<div class="row visible-md visible-lg">
-						<ul class="nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#">Personal</a></li>
-							<li><a href="#">Business</a></li>
-							<li><a href="#">Loans</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Resources</a>
-								<ul class="uti visible-xs visible-s">
-									<li><a href="#">Locations</a></li>
-									<li><a href="#">Rates &amp; Fees</a></li>
-									<li><a href="#">Calculators</a></li>
-									<li><a href="#">Contact Us</a></li>
-									<li class="searchArea pull-right">
-										<div class="input-group">
-											<label class="sr-only" for="search">Search</label><input type="text"  placeholder="Enter search words" class="form-control">
-											<span class="input-group-btn">
-												<input class="btn btn-default" type="button" value="Go!" />
-											</span>
-										</div><!--inputgroup-->
-									</li>
-								</ul>
-							</li>
-							</ul>
-					</div><!--row -->
-                    </div><!--container-->
-                    
-				<div class="nav-collapse collapse">
-						<ul class="nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#">Personal</a></li>
-							<li><a href="#">Business</a></li>
-							<li><a href="#">Loans</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Resources</a></li>
-									<li><a href="#">Locations</a></li>
-									<li><a href="#">Rates &amp; Fees</a></li>
-									<li><a href="#">Calculators</a></li>
-									<li><a href="#">Contact Us</a></li>
-									<li class="searchArea">
-										<div class="input-group">
-											<label class="sr-only" for="search">Search</label>
-											<input type="text" placeholder="Enter search words" class="form-control">
-											<span class="input-group-btn">
-												<input class="btn btn-default" type="button" value="Go!" />
-											</span>
-										</div>
-									</li>
-							</ul>
-					</div><!-- nav-collapse -->
-</div><!--mastwrap-->
-<div class="hidden-sm">
-	<a href="#" class="backToTopButton">Back to top</a>
-</div><!--hide phone back top top-->
-<div class="row contentWrapBack">
-
-    <div class="row marginANDpadding0">
-     <div class="hed"><img src="../images/hed.jpg" /></div>
-     </div>
-      <div class="row marginANDpadding0">
-     <div class="col-md-10 marginANDpadding0">
 				<div class="content" role="main">
 					<h1>Checking Comparison</h1>
 					
@@ -298,58 +190,8 @@ $(function() {
                         </tr>
                     </table>
                     </div><!--content-->
-			</div><!--colmd9-->
 		
-            <div class="col-md-2  marginANDpadding0">
-				<ul class="nav nav-stacked">
-                <a href="index.html" class="btn">Account Login</a>
-					<li><a href="#">Lorem</a></li>
-					<li><a href="#">Lorem</a></li>
-					<li><a href="#">Lorem</a></li>
-					<li><a href="#">Lorem</a></li>
-					<li><a href="#">Lorem</a></li>
-					<li><a href="#">Lorem</a></li>
-				</ul>
-			</div><!--colmd3-->
-	</div><!--row-->
-	
-	
 
-
-<div class="row footWrap">
-
-			<div class="col-lg-6">
-				<div class="footL">
-					<ul>
-						<li>
-							<a href="#"><img src="http://diwebdev3.com/mstinc/web/images/fdic_57x19_k_75.png" alt="FDIC" /></a>
-							
-							<a href="#" class="hidden-xs"><img src="http://diwebdev3.com/mstinc/web/images/ncua_351x32_k_75.png" alt="NCUA" /></a>
-							<a href="#" class="visible-xs"><img src="http://diwebdev3.com/mstinc/web/images/ncua_140x109_k_100.png" alt="NCUA" /></a>
-							
-							<a href="#"><img src="http://diwebdev3.com/mstinc/web/images/ehl_40x35_k_75.png" alt="Equal Housing Lender" /></a>
-						</li>
-					</ul>
-				</div><!---footL-->
-			</div><!--col-lg-6-->
-
-			<div class="col-lg-6">
-				<div class="footR">
-					<ul>
-						<li>
-							<a href="#">Sitemap</a>
-							<a href="#">About Us</a>
-							<a href="#">Privacy</a>
-							<a href="#">Newsletter</a>
-							<a href="#">Disclosures</a>
-							<a href="#"><img src="http://diwebdev3.com/mstinc/web/images/logo_100x22.png" width="100" height="22" border="0" alt="" /></a>
-						</li>
-					</ul>
-				</div><!--footr-->
-			</div><!--col-lg-6-->
-	
-</div><!--footWrap-->
-</div><!--container-->
 
 <!-- Le javascript
 ================================================== -->
