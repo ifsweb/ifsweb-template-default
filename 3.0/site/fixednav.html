@@ -57,6 +57,7 @@
 <div id="content">
 
 <div class="row mastWrap navbar-fixed-top">
+<div class="col-xs-12">
 	<h1><a class="open" href="#nav">Menu</a>
 	<div class="logo">
 		<a href="#" class=""><img src="../images/logo.png" alt="<!--FI Name-->"/></a>
@@ -76,21 +77,18 @@
 				<li><a href="#">Locations</a></li>
 				<li><a href="#">Rates &amp; Fees</a></li>
 				<li><a href="#">Calculators</a></li>
-				<li><a href="#">Contact Us</a></li>
-				<li class="searchArea pull-right">
+				<li class="lastLi"><a href="#">Contact Us</a></li>
+				<li class="searchArea">
 					<form><input class="span2" type="text" placeholder="Search">
 					<input class="btn" value="Go"></form>
 				</li>
 			</ul>
 	</div><!--nav id-->
 	</div><!--fixed-->
+    </div><!--col-->
+    </div><!--row-->
 <div class="copy">
-<!--alerts text area-->
-<div class="row">
-	<div class="alert">
-		<p>We will be closed for the 4th Of July weekend. Please see our <a href="/calendar">calendar</a> for more details.</p>
-	</div><!--alert-->
-</div><!--row-->
+
 
 
 
@@ -141,6 +139,7 @@
 							<div class="loginCol clearfix">
 								<a href="#">Sign Up</a>&nbsp;<a href="#">Get App</a>&nbsp;
 								<span class="loginForgot"><a href="#">Forgotten Password?</a></span>
+                                <a href="#">Sign In as a Business</a>
 							</div><!-- loginCol -->
 					
 					</div><!--loginOB-->
@@ -150,10 +149,17 @@
 	
 
 </div><!--top-->
-		
-		<div class="row middle">
+		<!--alerts text area-->
+<div class="row"><div class="col-xs-12">
+	<div class="alert">
+		<p>We will be closed for the 4th Of July weekend. Please see our <a href="/calendar">calendar</a> for more details.</p>
+	</div><!--alert--></div><!--col12-->
+</div><!--row-->
+		<div class="row textPromotions">
+        <div class="col-sm-3"><h1>ATM Finder</h1></div>
+        <div class="col-sm-9">
 				<script type="text/javascript">var promoCount = parseInt("14");</script>
-				<script type="text/javascript">var promoTimeSm = parseInt("10") * 1000; var fadeLengthSm = parseInt("1") * 1000; var animationSm = 'slide'; var randomizedSm = ('false' == "true"); var slideshow = ( promoTimeSm == 0 ) ? false : true; (function() { var $window = $(window), flexslider; function getGridSize() { return 3; } $window.load(function() { $('.slider').flexslider({ "animation" : animation, "slideshow" : slideshow, "slideshowSpeed" : promoTimeSm, "animationDuration" : fadeLengthSm, "directionNav" : true, "controlNav" : false, "randomize" : randomizedSm, "animationLoop" : true, "itemWidth" : 280, "itemMargin" : 0, "minItems" : getGridSize(), "maxItems" : getGridSize(), "prevText" : '<img src="../images/btn_prev.png" alt="Previous" />', "nextText" : '<img src="../images/btn_next.png" alt="Next" />' }); }); /* not working $window.resize(function() { var gridSize = getGridSize(); flexslider.vars.minItems = gridSize; flexslider.vars.maxItems = gridSize; }); */ }());</script>
+				<script type="text/javascript">var promoTimeSm = parseInt("10") * 1000; var fadeLengthSm = parseInt("1") * 1000; var animationSm = 'slide'; var randomizedSm = ('false' == "true"); var slideshow = ( promoTimeSm == 0 ) ? false : true; (function() { var $window = $(window), flexslider; function getGridSize() { return 2; } $window.load(function() { $('.slider').flexslider({ "animation" : animation, "slideshow" : slideshow, "slideshowSpeed" : promoTimeSm, "animationDuration" : fadeLengthSm, "directionNav" : true, "controlNav" : false, "randomize" : randomizedSm, "animationLoop" : true, "itemWidth" : 150, "itemMargin" : 0, "minItems" : getGridSize(), "maxItems" : getGridSize(), "prevText" : '<img src="../images/btn_prev.png" alt="Previous" />', "nextText" : '<img src="../images/btn_next.png" alt="Next" />' }); }); /* not working $window.resize(function() { var gridSize = getGridSize(); flexslider.vars.minItems = gridSize; flexslider.vars.maxItems = gridSize; }); */ }());</script>
 				<div class="slider promoSmall">
 					<ul class="slides highlight">
 						<li>
@@ -174,7 +180,16 @@
 						</li>
 					</ul>
 				</div><!--flexslidersmall-->
+                </div><!--col-->
 		</div><!--row middle-->
+        <div class="row middle">
+		<div class="col-sm-3">
+						<a href="#" class="btn">Free Mobile Apps</a></div>
+		<div class="col-sm-3"><a href="#" class="btn">Mobile Remote Deposit</a></div>
+         <div class="col-sm-3"><a href="#" class="btn">Community</a></div>
+		<div class="col-sm-3"><a href="#" class="btn">Ag Loans</a></div>
+                       
+        </div><!--row-->
 		<div class="row bottom">
 			<div class="">
 				<div class="col-sm-8 module">
@@ -245,6 +260,7 @@
 </div><!--container-->
 </div><!--copy-->
 </div><!--pageslide id-->
+</div>
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -266,13 +282,4 @@
 
 	</body>
 </html>
-
-
-
-
-
-
-
-
-
 
