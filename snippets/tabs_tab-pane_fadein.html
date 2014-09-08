@@ -1,0 +1,29 @@
+<ul class="nav nav-tabs" role="tablist" id="myTab">
+	<li class="active"><a href="#news" role="tab" data-toggle="tab">News</a></li>
+	<li><a href="#rates" role="tab" data-toggle="tab">Rates</a></li>
+	<li><a href="#messages" role="tab" data-toggle="tab">Messages</a></li>
+	<li><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+</ul>
+
+<div class="tab-content">
+	<div class="tab-pane fade active" id="news">...</div>
+	<div class="tab-pane fade" id="rates">...</div>
+	<div class="tab-pane fade" id="messages">...</div>
+	<div class="tab-pane fade" id="settings">...</div>
+</div>
+
+add Togglable tabs with tab.js
+
+<script> //examples
+ $('#myTab a[href="#news"]').tab('show') // Select tab by name
+$('#myTab a:first').tab('show') // Select first tab
+$('#myTab a:last').tab('show') // Select last tab
+
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
+
+
+read here:http://getbootstrap.com/javascript/#tabs
