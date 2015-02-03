@@ -1,0 +1,474 @@
+
+
+<% DIML PageType = OnlineForm %>
+<% load "AXIS.cfg" %>
+<% if Options %>
+# For HB Logging
+	<% assign FormName = "sd" %>
+
+# User Email Options
+# Ways to send the info to the FI
+	<% assign FIDeliveryMethod = "EMAIL"  %>
+
+# When do the users have access to this form: 'HB', 'WEB_SITE', or 'HB,WEB_SITE'
+	<% if web.staging = "true" %>
+		<% assign AllowedModes = "HB,WEB_SITE"  %>
+	<% else %>
+		<% assign AllowedModes = "HB,WEB_SITE"  %>
+	<% endif %>
+
+# Message to send when DI validates that a user is currently logged into HB
+	<% assign HBValidationMessage = "DI validates that user '" + web.userNumber + "' is logged in."  %>
+
+#this code will prevent 'bots' from spamming the FI
+<% if cookie.sendform = "true" %>
+
+<% if web.important_info = "" %>
+
+# User Email Options
+	<% assign SendUserEmail = "FALSE" %>
+	<% assign User_Subject  = "Thanks for signing our online form" %>
+	<% assign User_Message  = "Your form was submitted. We will be contacting you soon. Thank you." %>
+	<% assign User_From = "" %>
+#	<% assign User_ReplyTo = "" %>
+
+# FI Email Options
+	<% if web.staging = "true" %>
+			<% assign SendPGPEncrypted = "FALSE" %>
+			<% assign newFI_address = "webtesting@digitalinsight.com" %>
+	<% else %>
+		<% if web.fullName = "ditest" %>
+				<% assign SendPGPEncrypted = "FALSE" %>
+				<% assign newFI_address = "webtesting@digitalinsight.com" %>
+		<% else %>
+			<% assign SendPGPEncrypted = "FALSE" %>
+			<% assign newFI_address = "a@a.com" %>
+		<% endif %>    
+	<% endif %>    
+	<% assign SendFIEmail           = "TRUE" %>
+	<% assign FI_Address            = newFI_address %>
+	<% assign FI_ReplyTo            = web.email %>
+	<% assign FI_Subject            = "__config.AXIS.LABELS.FI_NAME__ form submission from __web.fullName__" %>
+	<% assign FI_AttachmentMessage  = "You have received an online form submission from your website.  To view it, simply open the enclosed attachment." %>
+
+# FI Email Delivery Options
+	<% assign SendEncrypted         = SendPGPEncrypted %>
+	<% assign PGP_ID = "<!-- DIML -->" %>
+	<% assign PGP_PATH = "/u/web/.pgp" %>
+	<% assign SendAsAttachment      = "TRUE" %>
+	<% assign SendAsHTML            = "TRUE" %>
+
+<% else %>
+    <% assign SendUserEmail = "FALSE" %>
+    <% assign SendFIEmail   = "FALSE" %>
+    <% assign SendEncrypted = "FALSE" %>
+<% endif %>
+<% else %>
+    <% assign SendUserEmail = "FALSE" %>
+    <% assign SendFIEmail   = "FALSE" %>
+    <% assign SendEncrypted = "FALSE" %>
+<% endif %>
+	
+# Return HTML color Options
+	<% assign ReturnHTMLSelected  = "#003366" %>
+	<% assign ReturnHTMLNotSelected = "#EEEEEE" %>
+<% endif %>
+
+<% if Display %>
+
+# Set to FALSE if you do not want to use the validation test link
+<% assign ShowValTestLink = "TRUE" %>
+# Set to FALSE to disable validation field highlighting, TRUE to enable
+<% assign ShowValidationHighlighting = "FALSE" %>
+
+<html>
+<head>
+	<title>a</title>
+
+<% if web.currentState != "submit" %>
+<script src="/mstinc/js/jquery-1_7_1.js" type="text/javascript">/* */</script>
+<script src="/mstinc/js/wc_validate_v1-4.js" type="text/javascript">/* */</script>
+<script src="/mstinc/web/js/global.js" type="text/javascript">/* */</script>
+
+<script type="text/javascript">
+var staging = <% if web.staging = "true" %>true<% else %>false<% endif %>;
+
+// unobtrusive style switching
+$(function(){
+<% if ShowValTestLink="TRUE" %>
+	if (document.location.toString().indexOf('/staging/')>-1 || staging){
+		$('.validationTestLink').show();
+		$('.bValidationTestLink').show();
+	}
+<% endif %>
+
+	$('.appfield1')
+		.focus(function()\{$(this).addClass("appfield2").removeClass("appfield1");})
+		.blur(function()\{$(this).addClass("appfield1").removeClass("appfield2");});
+	$('.validationForm')
+		.submit(validate);
+	$('.validationTestLink').click(function(){validate(true); return false;});
+	$('.bValidationTestLink').click(function(){document.forms\[0\].submit(); return false;});
+
+	// in-field validation; add these class names to get the validation
+	$("input.phoneVal").change(function(){valPhone(this, 'Phone Number')});
+	$("input.moneyVal").change(function(){formatMoney(this, true)});
+	$("input.ssnVal").change(function(){valSSN(this, 'Social Security Number')});
+	$("input.dateVal").change(function(){valDate(this, 'Date');});
+	
+	// pre-fills 'state' select boxes containing the class "statePrefill" with the web.state value
+ 	var state_for_prefill = "__web.state__";
+ 	if (state_for_prefill.length == 2)
+ 	{
+ 		$("select.statePrefill").each(function(){
+ 			$("option\[value='" + state_for_prefill + "'\]",this).attr("selected", true);
+ 		});
+ 	}
+	
+});
+
+//Secure Redirect
+uri = document.location.href;
+newUri = false;
+/* make sure we're at https: */
+if(/^http:/.test(uri)){
+	uri = uri.replace(/^http/,'https');
+	newUri = true;
+}
+/* make sure the 'www' is there
+ * commented out for testing *
+if(!/^https:\/\/www\./.test(uri)){
+	uri = uri.replace(/^https:\/\//,'https://www.');
+	newUri = true;
+}/* */
+
+/* redirect */
+if(newUri)document.location.replace(uri);
+
+MstIncGlobal.cookie("sendform","true");
+	
+function blockBots() {
+	f=document.forms\[0\];
+	
+	if (MstIncGlobal.cookie("sendform")!="true")
+	{
+		alert("You must allow this form to set a cookie to submit this form.");
+		return false;
+	}
+	
+<% if web.staging != "true" %>
+	if (f.elements\["important_info"\].value != "")
+	{
+		alert("Do not autopopulate this form");
+		return false;
+	}
+<% endif %>
+	
+	return true;
+}
+
+
+function validate(justTesting) 
+{
+	if (!blockBots()) return false;	
+	f=document.forms\[0\];
+	valid = true;
+	fieldList = "";
+	numericlist= "";
+	focusField = null;
+
+	failedValFieldCounter = 0;
+	/* uncomment next 2 lines if using the Field Validation Counter *
+	maxValFields = 25;
+	if (document.forms\[0\].fullName.value == 'ditest' || (typeof(justTesting)=='boolean' && justTesting)) maxValFields = 9999999; // debugging and for QA
+	/*  */
+		
+//----------------------------All Validation Edits Go Below---------------------------------
+<% if web.noVal != "true" %>
+
+	
+
+<% endif %>
+//----------------------------All Validation Edits Go Above---------------------------------
+
+	//evaluate results of validation
+	if (!valid)
+	{
+		
+		msg = "\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\n\\n";
+		msg += "Your form was not submitted because the\\n"; 
+		msg += "following fields have errors or were not filled in.\\n\\n";
+		msg += "Please correct these errors and re-submit.\\n";
+		msg += "\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\\n\\n\\n";
+		msg += fieldList;
+
+		alert(msg);
+		
+		focusField.focus();
+	}
+	return valid;
+}
+</script>
+	<% endif %>
+
+<% if web.currentState != "submit" %>
+    <script type="text/javascript">document.cookie = "sendform=true";</script>
+    <style type="text/css">
+#assumes the hidden field has a class of 'important_info_field'
+       .important_info_field {
+         visibility: hidden; height: 0;
+       }
+    </style>
+<% endif %>
+	
+<style type="text/css">
+<% include "@wc_styles.css" %>
+
+/* ================================================================================================= */
+/* == REMOVE FROM DIML FILE (START) ================================================================ */
+/* ================================================================================================= */
+
+	/* !!!!!!!!
+	 * Place the following styles in wc_styles.css or delete if already added from another form.
+	 * These styles must be in wc_styles.css so the confirmation page can use them as well.
+	 * !!!!!!!!
+	 */
+	body{
+		background-color:transparent;
+	}
+	h2.main_page_title{
+		text-align: center;
+	}
+	.col1{
+		text-align: right;
+		vertical-align: top;
+		padding-top: .5em;
+	/*	font-size: 10pt; /* uncomment if needed */
+	}
+	.col2{
+		vertical-align: top;
+	/*	font-size: 10pt; /* uncomment if needed */
+	}
+	.selected{
+		color: #000099;
+		font-weight: bold;
+	}
+	
+	/* validation test link (appears in top right) - move this to wc_styles.css or delete */
+	.validationTestLink{ display: block; width: 100px; height: 1.5em; position: fixed; top:0; right:0; border: 3px double black; text-align: center; background-color: white; }
+	.bValidationTestLink{ display: block; width: 130px; height: 1.5em; position: fixed; top:1.5em; right:0; border: 3px double black; text-align: center; background-color: white; }
+	* html .validationTestLink{ position: absolute; }
+	*:first-child+html .validationTestLink{ position: absolute; }
+	* html .bValidationTestLink{ position: absolute; }
+	*:first-child+html .bValidationTestLink{ position: absolute; }
+	
+	p#stagingForm { margin: 0;padding: 3px 0; position: fixed; bottom: 0px; right: 0px; width: 200px; height: 20px; text-align: center; 
+		background-color: #72B12C; color: #ffffff; font-weight: bold; border-top-left-radius: 7px; -moz-border-radius-topleft: 7px; 
+		-webkit-border-top-left-radius: 7px; }
+
+/* ================================================================================================= */
+/* == REMOVE FROM DIML FILE (END) ================================================================== */
+/* ================================================================================================= */
+	
+	
+	/* 
+	 * Keep these styles in this form's CSS.  Do not move these to wc_styles.css
+	 * Also, copy the following styles to the confirmation page styles (below form HTML)
+	 */
+	.col1{
+		width: 40%; /* adjust as needed */
+	}
+	.doubleCell{
+		padding: 0 15%;
+	}
+	<% if web.staging = "true" %>	body { background: transparent url(/mstinc/web/images/staging_form_bg.png) repeat left top !important; } <% endif %>
+
+</style>
+</head>
+<body>
+
+<% if ShowValTestLink="TRUE" %>
+<!-- For validation testing.  Only appears in Staging -->
+<a class="validationTestLink" href="#" style="display:none;">test validation</a>
+<a class="bValidationTestLink" href="#" style="display:none;">bypass validation</a>
+<% endif %>
+
+<% if web.staging = "true" %><p id="stagingForm">You are on Web Staging!!</p><% endif %>
+
+# For FI Email.  Limits the width of the attached submission results.
+<% if web.currentState = "submit" %>
+<div style="text-align: center;"><div style="width: 525px; margin: auto; text-align: left;">
+<% endif %>
+
+	<% if HomeBanking %>
+	<!-- message for HB users -->
+	<% endif %>
+	
+<form action="OnlineForm.cgi" name="sd" method="post" class="validationForm">
+
+<h2 class="main_page_title">a</h2>
+<hr />
+<div style="text-align:center;" class="required">* indicates a required field</div>
+<hr />
+<br />
+
+<!-- html header ends here -->
+
+<!--*******************************CONTENT***********************************************-->
+
+<table border="0" width="100%" cellspacing="0" cellpadding="4">
+
+<!-- === add form fields for 'initial form' and 'FI email' here (delete this line) === -->
+
+</table>
+
+<!--*******************************END CONTENT*******************************************-->
+
+<!-- html footer begins here -->
+<hr /><div style="text-align:center;" class="required">* indicates a required field</div><hr />
+<% if web.staging != "true" %><% if web.currentState != "submit" %><input type="text" name="important_info" class="important_info_field" value="" /><% endif %><% endif %>
+<!-- keep -->
+	<div style="text-align:center;">
+	<p>
+	[__HBValidationMessage__]
+	</p>
+	<p>
+<% if web.currentState != "submit" %>
+	<input type="image" src="btn_submit.gif" value="Submit" onclick="top.scrollTo(0,0);" />
+#	&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onclick="document.forms\[0\].reset(); top.scrollTo(0,0);"><img src="btn_reset.gif" border="0" alt="Reset" /></a>
+<% endif %>
+	<input type="hidden" name="currentState" value="submit" />
+	<input type="hidden" name="form" value="__web.form__" />
+	<input type="hidden" name="staging" value="__web.staging__" />
+	</p>
+	</div>
+	
+	</form>
+<!-- keep -->
+
+<% if web.currentState = "submit" %></div></div><% endif %>
+
+</body>
+</html>
+
+<% endif %>
+
+<% if VerificationScreen %>
+<html>
+	<head>
+		<title>a Submitted - Thank You</title>
+<style type="text/css">
+<% include "@wc_styles.css" %>
+
+	.col1{
+		width: 40%; /* adjust as needed */
+	}
+	.doubleCell{
+		padding: 0 15%;
+	}
+<% if web.staging = "true" %>	body { background: transparent url(/mstinc/web/images/staging_form_bg.png) repeat left top !important; } <% endif %>
+	
+	.selected{
+		color: #000099;
+		font-weight: bold;
+	}
+
+</style>
+	</head>
+	<body>
+
+<% if web.staging = "true" %><p id="stagingForm">You are on Web Staging!!</p><% endif %>
+
+<!-- begin verification screen text -->
+<h2 class="main_page_title">a</h2>
+<% if cookie.sendform = "true" %>
+<% if web.important_info = "" %>
+
+<p>
+	The following information has been submitted.  
+	Please <a href="javascript:self.print()">print</a> this screen for your records.
+</p>
+
+<hr />
+<div style="text-align:center;" class="required">* indicates a required field</div>
+<hr />
+
+
+<!--**************************CONTENT***************************************************-->
+
+<table border="0" width="100%" cellspacing="0" cellpadding="4">
+
+<!-- === place output of 'Confirmation Screen Generator' here === -->
+
+</table>
+
+<!--**************************END CONTENT***********************************************-->
+
+
+<hr />
+<div style="text-align:center;" class="required">* indicates a required field</div>
+<hr />
+
+<% else %>
+    <p>Your a has not been submitted.  Please do not use scripts to fill out form elements.</p>
+    <p style="text-align: center;"><a href="#" onclick="history.go(-1);">Back</a></p>
+     <% endif %>
+<% else %>
+    <p>Your a has not been submitted.  Please enable cookies in your browser and try again.</p>
+    <p style="text-align: center;"><a href="#" onclick="history.go(-1);">Back</a></p>
+<% endif %>
+
+
+	</body>
+</html>
+<% endif %>
+
+<% if TimeOut %>
+	<html>
+	<head>
+		<title>Home Banking Time Out</title>
+	</head>
+	<body bgcolor="#EEEEEE">
+	<div align="center">
+	<!-- begin hb timeout -->
+		Your Home banking session has timed out. Please close this window and log in again.<br />
+<!-- keep -->
+		<a href="#" onClick="self.close()">close</a><br />
+<!-- keep -->
+	<!-- end hb timeout -->
+	</div>
+	</body>
+	</html>
+<% endif %>
+
+<% if Error %>
+	<html>
+	<head>
+		<title>Application Error</title>
+	</head>
+	<body bgcolor="#EEEEEE">
+	<div align="center">
+	<!-- begin application error text -->
+		An error has occured. Please call your Financial Institution with this reference number: <i><b>__ERROR_REF__</b></i><br />
+	<!-- end application error text -->
+		<p>
+<!-- keep -->
+		<a href="#" onClick="self.close()">close</a><br />
+<!-- keep -->
+	</body>
+	</html>
+<% endif %>
+
+<% if PlainText %>
+The following was submitted from your site's online form
+
+# === Overwrite this with plaintext output ===
+
+#keep
+[__HBValidationMessage__]
+
+[	Date Submitted: __TIME_STAMP("%B %d, %Y")__
+	Time Submitted: __TIME_STAMP("%H:%M:%S")__		]
+#keep
+<% endif %>
+

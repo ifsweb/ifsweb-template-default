@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title><!-- your fi --></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--webfont comment the header/body fonts for qa Raleway with DiNot used on navigation and numbers-->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,600' rel='stylesheet' type='text/css'>
+	<!-- css styles -->
+	<link href="../css/bootstrap.css" type="text/css" rel="stylesheet" >
+	<link href="../css/_styles.css" type="text/css" rel="stylesheet">
+	<link  href="../css/jquery.pageslide.css" type="text/css" rel="stylesheet" />
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="../images/apple-touch-icon-144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72.png">
+	<link rel="apple-touch-icon" href="../images/apple-touch-icon-57.png">
+	<link rel="shortcut icon" href="../images/favicon.png">
+
+	<script type="text/javascript" src="../js/rollovers.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+<!-- scroll to top fade in and out code-->
+    <script>
+$(function() {
+	$(".backToTopButton").hide();
+	$(window).scroll(function() {
+		if($(this).scrollTop()>400){
+			$('.backToTopButton').fadeIn();
+		} else { 
+			$('.backToTopButton').fadeOut()
+		}	
+	});
+	$('.backToTopButton').click(function(){
+		$('body,html').animate({scrollTop:0},800);
+		return false;
+	});		
+})
+</script>
+</head>
+
+<!--[if lt IE 7]><body id="back" class="ie ie6 old_ie"><![endif]-->
+<!--[if IE 7]><body id="back" class="ie ie7 old_ie"><![endif]-->
+<!--[if IE 8]><body id="back" class="ie ie8 old_ie"><![endif]-->
+<!--[if IE 9]><body id="back" class="ie ie9"><![endif]-->
+<!--[if !IE]><!--><body id="back" class="non_ie"><!--<![endif]-->
+
+
+<a href="#" class="backToTopButton"><img src="../images/backtotop.png" alt="Return to top of page" /></a>
+
+<div class="content" role="main">
+					<h1>Page title (h1)</h1>
+					<h2>Heading 2 (h2)</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipicing elit. Cras pharetra <a href="#">posuere justo</a>. Suspendisse potenti. Donec nec quam. Class aptent taciti sociosqu ad itora torquent per corulia nostra, per. Donec trum purus at eros. In eu liberero magna. Nam est. Curabitur elementum leo ac nulla. Aliquam nec arcu sit amet purus mattis placerat. Suspendisse potenti. Quisque scelerisque mattis justo. Nunc tincidunt nisl sit amet tellus. Cras varius mollis nunc.</p>
+					<h2>Heading 2 (h2)</h2>
+					<ul>
+						<li><a href="#">First Line Item</a></li>
+						<li><a href="#">Second Line Item</a>
+                            <ul class="dash">
+                                <li><a href="#">First Line Item</a></li>
+                                <li><a href="#">Second Line Item</a></li>
+                            </ul>
+						</li>
+						<li><a href="#">Third Line Item</a></li>
+					</ul>
+                    
+					<hr />
+                    
+                    <label>Field label</label>
+                    <input type="text" name="form1" class="appfield1" />
+                   
+                    <input type="submit" class="btn" name="Submit" />
+                    
+                    <hr />
+                    
+                    <a href="#" class="btn">Back to Top</a> <a href="#" class="btn">Apply</a> <a href="#" class="btn">Submit</a> <a href="#" class="btn">Reset</a> 
+                    <hr />
+                    
+                    <h3>Heading 3 (h3) </h3>
+                    <table border="0" cellspacing="0" cellpadding="4" class="table-hover">
+                        <tr>
+                            <td class="tableheader" colspan="3">Table Header</td>
+                        </tr>
+                        <tr>
+                            <th width="50%">First th</th>
+                            <th>Second th</th>
+                            <th>Third th</th>
+                        </tr>
+                        <tr>
+                            <td class="tablecontent1" width="50%">data in tablecontent1</td>
+                            <td class="tablecontent1">data</td>
+                            <td class="tablecontent1">data</td>
+                        </tr>
+                        <tr>
+                            <td class="tablecontent2" width="50%">data in tablecontent2</td>
+                            <td class="tablecontent2">data</td>
+                            <td class="tablecontent2"><img src="../images/check.png"  alt="Yes" /></td>
+                        </tr>
+                        <tr>
+                            <td class="tablecontent1" width="50%">data in tablecontent1</td>
+                            <td class="tablecontent1"><img src="../images/check.png"  alt="Yes" /></td>
+                            <td class="tablecontent1">data</td>
+                        </tr>
+                        <tr>
+                            <td class="tablecontent2" width="50%">data in tablecontent2</td>
+                            <td class="tablecontent2"><img src="../images/check.png"  alt="Yes" /></td>
+                            <td class="tablecontent2">data</td>
+                        </tr>
+                        <tr>
+                            <th>First th</th>
+                            <th>Second th</th>
+                            <th>Third th</th>
+                        </tr>
+                        <tr>
+                            <td class="tablecontent1" width="50%">Donec blandit vestibulum tellus.</td>
+                            <td class="tablecontent1">data</td>
+                            <td class="tablecontent1">data</td>
+                        </tr>
+                        <tr>
+                            <td class="tablecontent2" width="50%">Nullam gravida dolor ac augue. Praesent tellus libero, tempor vel, viverra quis, mattis at, ipsum. Pellentesque suscipit, wisi vitae dapibus semper, lectus lectus aliquam ipsum, id iaculis turpis orci nec nunc. Nam justo est, elementum non, fringilla at, ultrices sit amet, erat. Ut nec ipsum at tellus trum scelerisque. Sed sed justo. Sed fringilla massa. Pellentesque habitant tristique senectus et netus et fames ac turmis egestas. Etiam condimentum erat quis dias. Cras non dolor eget arcu consectetuer nonummy. Aenean at massa. </td>
+                            <td class="tablecontent2">data</td>
+                            <td class="tablecontent2">100000</td>
+                        </tr>
+                        <tr>
+                            <td class="tablecontent1" width="50%">Lorem ipsum dolor sit amet, consectetuer adipicing elit</td>
+                            <td class="tablecontent1">data</td>
+                            <td class="tablecontent1">data</td>
+                        </tr>
+                        <tr>
+                            <td class="tablecontent2" width="50%">Donec blandit vestibulum tellus.</td>
+                            <td class="tablecontent2">data</td>
+                            <td class="tablecontent2">data</td>
+                        </tr>
+                    </table>
+                    </div><!--content-->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.min.js">/* */</script>
+	<script type="text/javascript">
+		$(function() { 
+			// IE shim for placeholder. See jquery_placeholder.js 
+			$('input').placeholder();
+			
+	
+		});
+	</script>
+    <script src="../js/jquery.pageslide.min.js"></script>
+    <script>
+        $(".open").pageslide();
+    </script>
+
+	</body>
+</html>

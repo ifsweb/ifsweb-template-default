@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title><!-- your fi --></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--webfont comment the header/body fonts for qa Raleway with DiNot used on navigation and numbers-->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,600' rel='stylesheet' type='text/css'>
+	<!-- css styles -->
+	<link href="../css/bootstrap.css" type="text/css" rel="stylesheet" >
+	<link href="../css/_styles.css" type="text/css" rel="stylesheet">
+	<link  href="../css/jquery.pageslide.css" type="text/css" rel="stylesheet" />
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="../images/apple-touch-icon-144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72.png">
+	<link rel="apple-touch-icon" href="../images/apple-touch-icon-57.png">
+	<link rel="shortcut icon" href="../images/favicon.png">
+
+	<script type="text/javascript" src="../js/rollovers.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+<!-- scroll to top fade in and out code-->
+    <script>
+$(function() {
+	$(".backToTopButton").hide();
+	$(window).scroll(function() {
+		if($(this).scrollTop()>400){
+			$('.backToTopButton').fadeIn();
+		} else { 
+			$('.backToTopButton').fadeOut()
+		}	
+	});
+	$('.backToTopButton').click(function(){
+		$('body,html').animate({scrollTop:0},800);
+		return false;
+	});		
+})
+</script>
+</head>
+
+<!--[if lt IE 7]><body id="home" class="ie ie6 old_ie"><![endif]-->
+<!--[if IE 7]><body id="home" class="ie ie7 old_ie"><![endif]-->
+<!--[if IE 8]><body id="home" class="ie ie8 old_ie"><![endif]-->
+<!--[if IE 9]><body id="home" class="ie ie9"><![endif]-->
+<!--[if !IE]><!--><body id="home" class="non_ie"><!--<![endif]-->
+<div class="container wideWrap">
+<div id="fullPromo">
+<div id="leftslide">
+
+<div id="content">
+
+	<div class="logo">
+		<a href="index.html" class=""><img src="../images/logo.png" class="hidden-xs" alt="<!-- your fi -->"/><img src="../images/logo_mobile.png" class="hidden-lg hidden-md hidden-sm" alt="<!-- your fi -->"/></a>
+		<div class="openBtn"><a href="#nav" class="open"><img src="../images/menu.gif" class="hidden-xs" alt="Navigation" /><img src="../images/menu.png"  class="hidden-lg hidden-md hidden-sm" alt="Navigation" /></a></div><!--open-->
+	</div><!--logo--> 
+
+<div class="" id="nav">
+	<div class="close"><a href="index.html#">x</a></div><!-- dev please make close button work on slide-->
+	<ul class="dinotBold">
+				<!-- dev please have all main nav collapsed at entry just showing one open-->
+				<li><a href="#open1" class=""><img src="../images/nav_close.png" alt="expand" /></a> <a href="#">Personal Banking</a>
+					<ul id="open1">
+						<li><a href="back.html">Checking</a></li>
+						<li><a href="back.html">Savings</a></li>
+						<li><a href="back.html">Certificate of Deposit</a></li>
+						<li><a href="back.html">Individual Retirement Accounts</a></li>
+						<li><a href="back.html">Online Banking</a></li>
+					</ul>
+				</li>
+				<li><a href="#open"><img src="../images/nav_down.png" alt="expand"/></a> <a href="#">Business Services</a></li>
+				<li><a href="#open"><img src="../images/nav_down.png" alt="expand"/></a> <a href="#">Mortgage Lending</a></li>
+				<li><a href="#open"><img src="../images/nav_down.png" alt="expand"/></a> <a href="#">About Us</a></li>
+				<li><a href="#"><img src="../images/nav_down.png"  alt="expand"/></a> <a href="#">Convenience Services</a></li>
+				<li class="uti"><img src="../images/nav_nodrop.png" alt="go"/> <a href="#">Calculators</a></li>
+				<li class="uti"><img src="../images/nav_nodrop.png" alt="go"/> <a href="#">Contact Us</a></li>
+				<li class="uti"><img src="../images/nav_nodrop.png" alt="go"/> <a href="#">Rates &amp; Fees</a></li>
+				<li class="uti"><img src="../images/nav_nodrop.png" alt="go"/> <a href="#">Employment</a></li>
+				<li class="uti"><img src="../images/nav_nodrop.png" alt="go"/> <a href="#">Site Map</a></li>
+				<li class="visible-md visible-sm visible-xs">
+					<div class="mobileLogins">
+						<a href="#" >Download App<br> at Google Play</a><!--detect device with appropriate link-->
+						<a href="#">Login to<br />Mobile Banking</a>
+					</div><!--loginOB-->
+				</li><!--row visible-phone-->
+
+			</ul>
+	</div><!--nav id-->
+<div class="copy">
+ 
+<div class="wideWrap border2">
+<div class="contentWrap">
+
+
+<div class="row top">
+	<div class="inner">
+	<div class="col-xs-12">
+
+	<div class="rightBar">
+		<div class="loginArea">
+			<div class="loginOB">
+				<h1>Login</h1>
+					<form class=" form-horizontal" role="form">
+						<div class="form-group">
+							<label class="sr-only" for="user">User</label>
+							<input type="text" class="form-control" placeholder="Username">
+						</div><!--form-group-->
+						<div class="form-group password">
+							<label class="sr-only" for="pass">Password</label>
+							<input type="password" class="form-control" placeholder="Password">
+							<div class="input-group-btn">
+								<input type="image" class="btn" src="../images/arrow.png" alt="Go" />
+							</div><!--form-group-btn-->
+						</div><!--form-group-->  
+					</form>
+					<div class="loginCol clearfix">
+						<a href="#" class="signup">+ Sign up</a>
+						<a href="#" class="forgot">Forgot Password ?</a>
+					</div><!-- loginCol -->
+			</div><!--loginOB-->
+		</div><!--loginArea module1-->
+	
+		<div class="ad1"><h1>Best Kept Secret</h1><h2>in area, town</h2><h1 class="black">since <span class="dinotBold">1000</span></h1></div><!--ad1-->
+		<div class="ad2"><h1 class="black">Now open in</h1><h1>Many Cities</h1></div><!--ad1-->
+		<div class="alert" style="display:none">
+			<h1>Alert:</h1><p>We will be closed for the 4th Of July weekend. Please see our <a href="/calendar">calendar</a> for more details.</p>
+		</div><!--alert-->
+		<div class="grpSquare" style="display:none"><!-- grs placeholder image - please replace with real campaign-->
+			<script src="/mstinc/grp/js/grp.js" type="text/javascript">/* GRP */</script> 
+		</div><!--grpcampaign-->
+	</div><!--rightbar-->
+	</div><!--col12-->
+	</div><!--inner-->
+</div><!--row top-->
+
+<a href="#" class="backToTopButton"><img src="../images/backtotop.png" alt="Return to top of page" /></a>
+
+<div class="row ratesWrap">
+	<div class="inner">
+		<div class="downArrow"><img src="../images/orangedownarrow.png" alt="" /></div>
+<div class="dinotBold">
+	<div class="col-sm-4">
+		<div class="rates">
+			<h1>.35</h1>
+			<div class="ratePercent"><div class="orange">%</div><span>APY</span></div>
+			<h2>Savings Account</h2>
+			<p class="dinot"><a href="#">OPEN</a><a href="#">LEARN MORE</a></p>
+		</div><!--rates-->
+	</div><!--col-->
+	<div class="col-sm-4">
+		<div class="rates">
+			<h1>1.35</h1>
+			<div class="ratePercent"><div class="orange">%</div><span>APY</span></div>
+			<h2>3yr Certificate of Deposit</h2>
+			<p class="dinot"><a href="#">OPEN</a><a href="#">LEARN MORE</a></p>
+		</div><!--rates-->
+	</div><!--col-->
+	<div class="col-sm-4">
+		<div class="rates">
+			<h1>.15</h1>
+			<div class="ratePercent"><div class="orange">%</div><span>APY</span></div>
+			<h2>Interest Checking</h2>
+			<p class="dinot"><a href="#">OPEN</a><a href="#">LEARN MORE</a></p>
+		</div><!--rates-->
+	</div><!--col-->
+</div><!--dinot-->
+	</div><!--inner-->
+</div><!--middle-->
+
+
+<div class="row business">
+	<div class="inner">
+		<div class="downArrow"><img src="../images/aquadownarrow.png" alt="" /></div>
+
+	<h1>BUSINESS SERVICES</h1>
+	<h2>Remote Deposit, Mobile Banking, Custom Loans.<br>
+	Our relationships will return quick decisions</h2>
+	<p>SELECT YOUR BUSINESS TYPE TO LEARN MORE</p>
+	<div class="types">
+		<div class="busType">
+				<div class="busImg"><div class="BusText">BRIDAL SHOPS</div><div class="busGlow"> <!-- glow effect--></div><img src="../images/business1.jpg" alt="Bridal Shops"/></div>
+			</div><!--bustype-->
+			<div class="busType">
+				<div class="busImg"><div class="BusText">RETAIL STORES</div><div class="busGlow"> <!-- glow effect--></div><img src="../images/business2.jpg" alt="Retail Stores" /></div>
+			</div><!--bustype-->
+			<div class="busType">
+				<div class="busImg"><div class="BusText">REALTORS</div><div class="busGlow"> <!-- glow effect--></div><img src="../images/business3.jpg" alt="Realtors" /></div>
+			</div><!--bustype-->
+			<div class="busType">
+				<div class="busImg"><div class="BusText">PROFESSIONALS</div><div class="busGlow"> <!-- glow effect--></div><img src="../images/business4.jpg" alt="Professionals" /></div>
+			</div><!--bustype-->
+		</div><!--types-->
+	</div><!--inner-->
+</div><!--business-->
+
+
+<div class="row middle">
+
+<div class="inner">
+<div class="downArrow"><img src="../images/aquadownarrow.png" alt="" /></div>
+
+	<h1>HOME LOANS</h1>
+	<h2>Home Equity Lines of Credit, Fixed and ARM Loans.<br>
+	Our relationships will return quick decisions</h2>
+	<div class="col-sm-4">
+		<div class="promoSmall">
+		<a href="#">
+			<div class="col-xs-4"><img src="../images/loans1.png" alt="Fixed Mortgages" /></div>
+				<div class="col-xs-8"><div class="promoTxt">
+					<h1>Fixed Mortgages</h1>
+					<p>Lorem ipsum domo si louer</p>
+					<span class="orange">LEARN MORE</span>
+				</div><!--promotext--></div>
+			</a>
+		</div><!--promosm-->
+	</div><!--col-->
+	<div class="col-sm-4">
+		<div class="promoSmall">
+			<a href="#">
+			<div class="col-xs-4"><img src="../images/loans2.png" alt="HELOC" /></div>
+				<div class="col-xs-8"><div class="promoTxt">
+					<h1>Home Equity Line of Credit</h1>
+					<p>Lorem ipsum domo si louer</p>
+					<span class="orange">GET STARTED</span>
+				</div><!--promotext--></div>
+			</a>
+		</div><!--promosm-->
+	</div><!--col-->
+	<div class="col-sm-4">
+			<div class="promoSmall">
+				<a href="#">
+				<div class="col-xs-4"><img src="../images/loans3.png" alt="Apply" /></div>
+				<div class="col-xs-8"><div class="promoTxt">
+					<h1>Apply for your loan today!</h1>
+					<p>Lorem ipsum domo si louer</p>
+					<span class="orange">APPLY NOW</span>
+				</div><!--promotext--></div>
+				</a>
+			</div><!--promosm-->
+		</div><!--col-->
+
+		</div><!--col12-->
+	</div><!--inner-->
+</div><!--middle-->
+
+
+<div class="row footWrap">
+
+			<div class="inner">
+				<div class="footL dinot">
+					<p><img src="../images/phone.png" alt="Call"/>(888) 000-0000 <a href="mailto:"><img src="../images/email.png" alt="Email" />Email Us</a></p>
+					<p><img src="../images/mail.png" alt="Mail"/>Mail to:
+						123 Main Street, Anytown, ST 00000</p>
+					<p>Routing #00000000</p>
+				</div><!---footL-->
+				<div class="footR dinot">
+					<a href="#" class="di"><img src="http://diwebdev3.com/mstinc/web/images/logo_100x22.png" width="100" height="22" border="0" alt="Digital Insight" /></a>
+					<a href="#"><img src="http://diwebdev3.com/mstinc/web/images/fdic_57x19_k_75.png" alt="FDIC" /></a>
+					<a href="#"><img src="http://diwebdev3.com/mstinc/web/images/ehl_40x35_k_75.png" alt="Equal Housing Lender" /></a>
+					<br><a href="#">Privacy</a> &nbsp; <a href="#">Security</a>
+				</div><!--footr-->
+			<div class="text-center">
+						<a href="#"><img src="../images/icon_appstore.png" /></a>
+						<a href="#"><img src="../images/icon_googleplay.png" /></a>
+						<a href="#"><img src="../images/icon_amazonapps.png" /></a>
+				</div>
+			</div><!--inner-->
+	
+</div><!--footWrap-->
+</div><!--contentwrap-->
+</div><!--widewrap-->
+</div><!-- copy-->
+</div><!--container-->
+</div><!--leftslide-->
+</div><!--fullpromo-->
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.min.js">/* */</script>
+	<script type="text/javascript">
+		$(function() { 
+			// IE shim for placeholder. See jquery_placeholder.js 
+			$('input').placeholder();
+			
+	
+		});
+	</script>
+    <script src="../js/jquery.pageslide.min.js"></script>
+    <script>
+        $(".open").pageslide();
+    </script>
+
+	</body>
+</html>
