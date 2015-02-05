@@ -922,7 +922,44 @@ img.ehl {margin-top:-3px;}
 	width:22px;
 	display:inline;
 	}
+/********  landing page *****************/
+.categoryBorder {
+	position:relative;
+	border-left:1px solid #414141;
+	display:block; 
+	width:100%;
+	height:100%;
+}
+.categoryBorder:first-child {border-left:none;}
 
+.categoryTxt {
+	position:relative;
+	width:90%;
+	margin:0 auto; 
+	min-height:188px;
+	height:188px; 
+	max-height:188px; 
+	overflow:hidden;
+	}
+.categoryTxt h3 {padding-bottom:0;}
+
+.categoryTxt p {
+	padding:0; 
+	max-height:80px;
+	overflow:hidden;
+	position:relative; 
+	z-index:1;
+	line-height:normal;
+	}
+
+.more {
+	position:absolute; 
+	z-index:110; 
+	bottom:0;
+	right:0; 
+	background:#fff;
+	display:block;
+	}
 /****************************************************************** 
  * forms - use bootstrap form-control form-group classes instead *
  *************************************************************************** */
@@ -1375,6 +1412,24 @@ width:100%;min-height:250px;
 .container {max-width:100%;overflow:hidden;}
 .content table img {width:90%; max-width:33px;}
 .loginArea .form-group input.btn {width:100%; min-width:30px;max-width:34px;}
+.categoryTxt {
+	
+	min-height:178px;
+	height:178px; 
+	max-height:178px; 
+	border-bottom:1px solid #eee;
+	padding-bottom:6px;
+	}
+.categoryTxt h3 {margin-top:20px;}
+
+.categoryTxt p {
+	padding:0; 
+	max-height:80px;
+	overflow:hidden;
+	position:relative; 
+	z-index:1;
+	line-height:normal;
+	}
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1428,6 +1483,7 @@ h2 {font-size:28px;}
 	width:20%;
 	min-width:340px;
 	}
+
 }
 @media (max-width: 767px) {
 h1 {font-size:38px;}
@@ -1510,6 +1566,25 @@ h2 br {display:none !important;}
 
 @media (max-width: 539px) {
 .loginArea .form-group.password input {width:90%;}
+.categoryTxt {
+	border-bottom:1px solid #eee;
+	min-height:178px;
+	height:178px; 
+	max-height:178px; 
+	padding-bottom:6px;
+	
+	}
+.categoryTxt h3 {margin-top:20px;}
+
+.categoryTxt p {
+	padding:0; 
+	max-height:80px;
+	overflow:hidden;
+	position:relative; 
+	z-index:1;
+	line-height:normal;
+	}
+
 	}
 @media (max-width: 442px) { 
 .loginOB {width:96%;margin:0 auto;}

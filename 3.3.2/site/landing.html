@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title><!-- your fi --></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--webfont comment the header/body fonts for qa Raleway with DiNot used on navigation and numbers-->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,600' rel='stylesheet' type='text/css'>
+	<!-- css styles -->
+	<link href="../css/bootstrap.css" type="text/css" rel="stylesheet" >
+	<link href="../css/_styles.css" type="text/css" rel="stylesheet">
+	<link  href="../css/jquery.pageslide.css" type="text/css" rel="stylesheet" />
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="../images/apple-touch-icon-144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72.png">
+	<link rel="apple-touch-icon" href="../images/apple-touch-icon-57.png">
+	<link rel="shortcut icon" href="../images/favicon.png">
+
+	<script type="text/javascript" src="../js/rollovers.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+<!-- scroll to top fade in and out code-->
+    <script>
+$(function() {
+	$(".backToTopButton").hide();
+	$(window).scroll(function() {
+		if($(this).scrollTop()>400){
+			$('.backToTopButton').fadeIn();
+		} else { 
+			$('.backToTopButton').fadeOut()
+		}	
+	});
+	$('.backToTopButton').click(function(){
+		$('body,html').animate({scrollTop:0},800);
+		return false;
+	});		
+})
+</script>
+</head>
+
+<!--[if lt IE 7]><body id="back" class="ie ie6 old_ie"><![endif]-->
+<!--[if IE 7]><body id="back" class="ie ie7 old_ie"><![endif]-->
+<!--[if IE 8]><body id="back" class="ie ie8 old_ie"><![endif]-->
+<!--[if IE 9]><body id="back" class="ie ie9"><![endif]-->
+<!--[if !IE]><!--><body id="back" class="non_ie"><!--<![endif]-->
+
+
+
+<div class="content" role="main">
+
+								                 
+	<!-- Begin FI Content -->
+	
+	<h1>Landing Page Title</h1>
+
+
+
+												         <div class="col-sm-6 col-md-4 col-lg-3">
+	<div class="categoryBorder">
+		<div class="categoryTxt">
+			<h3>Personal Checking Accounts</h3>
+
+			<div class="teaser"><p>Convenient and customizable solutions to complement your financial goals.</p></div>	
+			<div class="more"><a href="/wcnewsite/personalbanking/checking">Learn more</a></div>
+		</div><!-- categoryTxt-->
+	</div><!--categoryBorder-->
+</div><!--colbreak-->
+<script type="text/javascript" charset="utf-8">
+jQuery.get("/wcnewsite/personalbanking/checking", function( data ) {
+		var teaser = $(data).find(".teaser");
+		//console.log(teaser);
+		//document.write(teaser);
+		$("#checking_container").append(teaser.html());
+		});
+</script>
+<div class="col-sm-6 col-md-4 col-lg-3">
+	<div class="categoryBorder">
+		<div class="categoryTxt">
+			<h3><a href="/wcnewsite/personalbanking/savings">Savings</a></h3>
+			<div class="teaser"><p>Convenient and customizable solutions to complement your financial goals.</p></div>	
+			<div class="more "><a href="/wcnewsite/personalbanking/savings">Learn more</a></div>
+		</div><!-- categoryTxt-->
+	</div><!--categoryBorder-->
+</div><!--colbreak-->
+<script type="text/javascript" charset="utf-8">
+jQuery.get("/wcnewsite/personalbanking/savings", function( data ) {
+		var teaser = $(data).find(".teaser");
+		//console.log(teaser);
+		//document.write(teaser);
+		$("#savings_container").append(teaser.html());
+		});
+</script>
+<div class="col-sm-6 col-md-4 col-lg-3">
+	<div class="categoryBorder">
+		<div class="categoryTxt">
+			<h3><a href="/wcnewsite/personalbanking/cd">CDs</a></h3>
+			<div class="teaser"><p>Convenient and customizable solutions to complement your financial goals.</p></div>	
+			<div class="more gillSansBold"><a href="/wcnewsite/personalbanking/cd">Learn more</a></div>
+		</div><!-- categoryTxt-->
+	</div><!--categoryBorder-->
+</div><!--colbreak-->
+<script type="text/javascript" charset="utf-8">
+jQuery.get("/wcnewsite/personalbanking/cd", function( data ) {
+		var teaser = $(data).find(".teaser");
+		//console.log(teaser);
+		//document.write(teaser);
+		$("#cd_container").append(teaser.html());
+		});
+</script>
+<div class="col-sm-6 col-md-4 col-lg-3">
+	<div class="categoryBorder">
+		<div class="categoryTxt">
+			<h3><a href="/wcnewsite/personalbanking/ira">IRAs</a></h3>
+			<div class="teaser"><p>Convenient and customizable solutions to complement your financial goals.</p></div>	
+			<div class="more gillSansBold"><a href="/wcnewsite/personalbanking/ira">Learn more</a></div>
+		</div><!-- categoryTxt-->
+	</div><!--categoryBorder-->
+</div><!--colbreak-->
+<script type="text/javascript" charset="utf-8">
+jQuery.get("/wcnewsite/personalbanking/ira", function( data ) {
+		var teaser = $(data).find(".teaser");
+		//console.log(teaser);
+		//document.write(teaser);
+		$("#ira_container").append(teaser.html());
+		});
+</script>
+<div class="col-sm-6 col-md-4 col-lg-3">
+	<div class="categoryBorder">
+		<div class="categoryTxt">
+			<h3><a href="/wcnewsite/personalbanking/lending">Lending Services</a></h3>
+			<div class="teaser"><p>Convenient and customizable solutions to complement your financial goals.</p></div>	
+			<div class="more gillSansBold"><a href="/wcnewsite/personalbanking/lending">Learn more</a></div>
+		</div><!-- categoryTxt-->
+	</div><!--categoryBorder-->
+</div><!--colbreak-->
+<script type="text/javascript" charset="utf-8">
+jQuery.get("/wcnewsite/personalbanking/lending", function( data ) {
+		var teaser = $(data).find(".teaser");
+		//console.log(teaser);
+		//document.write(teaser);
+		$("#lending_container").append(teaser.html());
+		});
+</script>
+<div class="col-sm-6 col-md-4 col-lg-3">
+	<div class="categoryBorder">
+		<div class="categoryTxt">
+			<h3><a href="/wcnewsite/personalbanking/cards">Credit Cards</a></h3>
+			<div class="teaser"><p>Convenient and customizable solutions to complement your financial goals.</p></div>	
+			<div class="more gillSansBold"><a href="/wcnewsite/personalbanking/cards">Learn more</a></div>
+		</div><!-- categoryTxt-->
+	</div><!--categoryBorder-->
+</div><!--colbreak-->
+<script type="text/javascript" charset="utf-8">
+jQuery.get("/wcnewsite/personalbanking/cards", function( data ) {
+		var teaser = $(data).find(".teaser");
+		//console.log(teaser);
+		//document.write(teaser);
+		$("#cards_container").append(teaser.html());
+		});
+</script>
+<div class="col-sm-6 col-md-4 col-lg-3">
+	<div class="categoryBorder">
+		<div class="categoryTxt">
+			<h3><a href="/wcnewsite/personalbanking/safedeposit">Safe Deposit Boxes</a></h3>
+			<div class="teaser"><p>Convenient and customizable solutions to complement your financial goals.</p></div>	
+			<div class="more gillSansBold"><a href="/wcnewsite/personalbanking/safedeposit">Learn more</a></div>
+		</div><!-- categoryTxt-->
+	</div><!--categoryBorder-->
+</div><!--colbreak-->
+<script type="text/javascript" charset="utf-8">
+jQuery.get("/wcnewsite/personalbanking/safedeposit", function( data ) {
+		var teaser = $(data).find(".teaser");
+		//console.log(teaser);
+		//document.write(teaser);
+		$("#safedeposit_container").append(teaser.html());
+		});
+</script>
+<div class="col-sm-6 col-md-4 col-lg-3">
+	<div class="categoryBorder">
+		<div class="categoryTxt">
+			<h3><a href="/wcnewsite/personalbanking/online">Online and Mobile Banking</a></h3>
+			<div class="teaser"><p>Convenient and customizable solutions to complement your financial goals.</p></div>	
+			<div class="more gillSansBold"><a href="/wcnewsite/personalbanking/online">Learn more</a></div>
+		</div><!-- categoryTxt-->
+	</div><!--categoryBorder-->
+</div><!--colbreak-->
+<script type="text/javascript" charset="utf-8">
+jQuery.get("/wcnewsite/personalbanking/online", function( data ) {
+		var teaser = $(data).find(".teaser");
+		//console.log(teaser);
+		//document.write(teaser);
+		$("#online_container").append(teaser.html());
+		});
+</script>
+<div class="col-sm-6 col-md-4 col-lg-3">
+	<div class="categoryBorder">
+		<div class="categoryTxt">
+			<h3><a href="/wcnewsite/personalbanking/other">Other Services</a></h3>
+			<div class="teaser"><p>Convenient and customizable solutions to complement your financial goals.</p></div>	
+			<div class="more gillSansBold"><a href="/wcnewsite/personalbanking/other">Learn more</a></div>
+		</div><!-- categoryTxt-->
+	</div><!--categoryBorder-->
+</div><!--colbreak-->
+<script type="text/javascript" charset="utf-8">
+jQuery.get("/wcnewsite/personalbanking/other", function( data ) {
+		var teaser = $(data).find(".teaser");
+		//console.log(teaser);
+		//document.write(teaser);
+		$("#other_container").append(teaser.html());
+		});
+</script>
+
+
+<script type="text/javascript" charset="utf-8">
+jQuery(function() {
+		$('.categoryBorder').each(function(){
+			var offset = $(this).offset();
+			if( offset.left < 170 ){
+			$(this).css("border-left", "none");
+			}
+			});
+		});
+</script>
+											</div><!--content-->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.min.js">/* */</script>
+	<script type="text/javascript">
+		$(function() { 
+			// IE shim for placeholder. See jquery_placeholder.js 
+			$('input').placeholder();
+			
+	
+		});
+	</script>
+    <script src="../js/jquery.pageslide.min.js"></script>
+    <script>
+        $(".open").pageslide();
+    </script>
+
+	</body>
+</html>
