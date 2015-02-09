@@ -1023,7 +1023,44 @@ img.ehl {margin-top:-3px;}
  * forms - use bootstrap form-control form-group classes instead *
  *************************************************************************** */
 
+/********  landing page *****************/
+.categoryBorder {
+	position:relative;
+	border-left:1px solid #414141;
+	display:block; 
+	width:100%;
+	height:100%;
+}
+.categoryBorder:first-child {border-left:none;}
 
+.categoryTxt {
+	position:relative;
+	width:90%;
+	margin:0 auto; 
+	min-height:188px;
+	height:188px; 
+	max-height:188px; 
+	overflow:hidden;
+	}
+.categoryTxt h3 {padding-bottom:0;}
+
+.categoryTxt p {
+	padding:0; 
+	max-height:80px;
+	overflow:hidden;
+	position:relative; 
+	z-index:1;
+	line-height:normal;
+	}
+
+.more {
+	position:absolute; 
+	z-index:110; 
+	bottom:0;
+	right:0; 
+	background:#fff;
+	display:block;
+	}
 
 /****************************************************************** 
  * tables use table-striped and table-hovered for bootstrap features*
