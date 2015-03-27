@@ -1,0 +1,2258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DESIGN PREVIEW</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--webfont comment the header/body fonts for qa-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    
+	<!-- css styles -->
+	<!--webfont comment the header/body fonts for qa-->
+   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,600,700' rel='stylesheet' type='text/css'>
+	<!-- css styles -->
+	<link href="../css/bootstrap.css" type="text/css" rel="stylesheet" >
+	<link href="../css/flexslider.css" rel="stylesheet">
+	<link href="../css/menu.css" rel="stylesheet">
+	<link href="../css/_styles.css" type="text/css" rel="stylesheet">
+	<link  href="../css/jquery.pageslide.css" type="text/css" rel="stylesheet" />
+    
+    
+	<!-- COMMENT OUT THIS SECTION FOR DESIGN -->
+    <style>
+		strong {
+			font-size: 140%;
+			color: rgba(9,3,83,1.00);
+			line-height: 2.3em;
+			margin: 20px 4px;
+			padding: 1% 4%;
+			background: rgba(0,0,0,.05);
+			}
+		.grid h4 {
+		margin-top: 25px;
+		}
+		.grid .row {
+		margin-bottom: 20px;
+		}
+		.grid .row .row {
+		margin-top: 10px;
+		margin-bottom: 0;
+		}
+		.grid [class*="col-"] {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background-color: #eee;
+		background-color: rgba(86,61,124,.15);
+		border: 1px solid #ddd;
+		border: 1px solid rgba(86,61,124,.2);
+		}
+		.grid hr {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		}
+
+		
+	</style>
+    
+    
+	<script type="text/javascript" src="../js/rollovers.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.flexslider').flexslider({
+				controlNav : true,
+				directionNav: false,
+				'prevText'            : '<img src="images/btn_prev.png" alt="Previous" />',
+				'nextText'            : '<img src="images/btn_next.png" alt="Next" />'
+			});
+  		});
+	
+	</script>
+    
+</head>
+
+<body>
+
+<div class="copy">
+
+
+<div class="wideWrap border2">
+
+<div class="contentWrap back">
+<div class="hidden-sm">
+	<a href="#" class="backToTopButton"><img src="../images/backtotop.png"/></a>
+</div><!--hide phone back top top-->
+
+	
+	<div class="row contentBg">
+		<div class="inner">
+
+			<div class="col-md-12"> 
+    <div class="container">
+
+      <!-- Navbar
+      ================================================== -->
+      <div class="bs-docs-section clearfix">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="navbar">Navbar</h1>
+            </div>
+
+            <div class="">
+              <div class="navbar navbar-default">
+                <div class="navbar-header">
+                  <button data-target=".navbar-responsive-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a href="#" class="navbar-brand">Brand</a>
+                </div>
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Active</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                      <a data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Dropdown header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="navbar-form navbar-left">
+                    <input type="text" placeholder="Search" class="form-control col-lg-8">
+                  </form>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                      <a data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            <div class="btn btn-primary btn-xs" id="source-button" style="display: none;">&lt; &gt;</div></div>
+
+            <div class="">
+              <div class="navbar navbar-inverse">
+                <div class="navbar-header">
+                  <button data-target=".navbar-inverse-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a href="#" class="navbar-brand">Brand</a>
+                </div>
+                <div class="navbar-collapse collapse navbar-inverse-collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Active</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                      <a data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Dropdown header</li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="navbar-form navbar-left">
+                    <input type="text" placeholder="Search" class="form-control col-lg-8">
+                  </form>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                      <a data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- /example -->
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Buttons
+      ================================================== -->
+      <div class="bs-docs-section">
+        <div class="page-header">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 id="buttons">Buttons</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+
+            <p class="">
+              <a class="btn btn-default" href="#">Default</a>
+              <a class="btn btn-primary" href="#">Primary</a>
+              <a class="btn btn-success" href="#">Success</a>
+              <a class="btn btn-info" href="#">Info</a>
+              <a class="btn btn-warning" href="#">Warning</a>
+              <a class="btn btn-danger" href="#">Danger</a>
+              <a class="btn btn-link" href="#">Link</a>
+            </p>
+
+            <p class="">
+              <a class="btn btn-default disabled" href="#">Default</a>
+              <a class="btn btn-primary disabled" href="#">Primary</a>
+              <a class="btn btn-success disabled" href="#">Success</a>
+              <a class="btn btn-info disabled" href="#">Info</a>
+              <a class="btn btn-warning disabled" href="#">Warning</a>
+              <a class="btn btn-danger disabled" href="#">Danger</a>
+              <a class="btn btn-link disabled" href="#">Link</a>
+            </p>
+
+
+            <div style="margin-bottom: 15px;">
+              <div style="margin: 0;" class="btn-toolbar">
+               
+                
+              </div>
+            </div>
+
+            <p class="">
+              <a class="btn btn-primary btn-lg" href="#">Large button</a>
+              <a class="btn btn-primary" href="#">Default button</a>
+              <a class="btn btn-primary btn-sm" href="#">Small button</a>
+              <a class="btn btn-primary btn-xs" href="#">Mini button</a>
+            </p>
+
+          </div>
+          <div class="col-lg-6">
+
+            <p class="">
+              <a class="btn btn-default btn-lg btn-block" href="#">Block level button</a>
+            </p>
+
+
+            <div style="margin-bottom: 15px;" class="">
+              <div class="btn-group btn-group-justified">
+                <a class="btn btn-default" href="#">Left</a>
+                <a class="btn btn-default" href="#">Middle</a>
+                <a class="btn btn-default" href="#">Right</a>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 15px;" class="">
+              <div class="btn-toolbar">
+                <div class="btn-group">
+                  <a class="btn btn-default" href="#">1</a>
+                  <a class="btn btn-default" href="#">2</a>
+                  <a class="btn btn-default" href="#">3</a>
+                  <a class="btn btn-default" href="#">4</a>
+                </div>
+
+                <div class="btn-group">
+                  <a class="btn btn-default" href="#">one</a>
+                  <a class="btn btn-default" href="#">two</a>
+                  <a class="btn btn-default" href="#">three</a>
+                </div>
+
+                <div class="btn-group">
+                  <a class="btn btn-default" href="#">one</a>
+                  <div class="btn-group">
+                    <a data-toggle="dropdown-menu" class="btn btn-default dropdown-toggle" href="#">
+                      Dropdown
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Dropdown link</a></li>
+                      <li><a href="#">Dropdown link</a></li>
+                      <li><a href="#">Dropdown link</a></li>
+                     </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="btn-group-vertical">
+                  <a class="btn btn-default" href="#">Button</a>
+                  <a class="btn btn-default" href="#">Button</a>
+                  <a class="btn btn-default" href="#">Button</a>
+                  <a class="btn btn-default" href="#">Button</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Typography
+      ================================================== -->
+      <div class="bs-docs-section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="type">Typography</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Headings -->
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="">
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+              <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="">
+              <h2>Example body text</h2>
+              <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+              <p><small>This line of text is meant to be treated as fine print.</small></p>
+              <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+              <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+              <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+            </div>
+
+          </div>
+          <div class="col-lg-4">
+            <div class="">
+              <h2>Emphasis classes</h2>
+              <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+              <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+              <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+              <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
+
+          </div>
+        </div>
+  <div class="row">
+  <div class="col-sm-3">
+	<div class="well">
+		<h2 class="muted">Platinum</h2>
+		<p><span class="label label-primary">POPULAR</span></p>
+		       
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+		<hr>
+		<h3>$5999 Minimum Deposit</h3>
+		<hr>
+		<p><a class="btn btn-large" href="#"><i class="icon-ok"></i> Start account</a></p>
+	</div>
+</div>
+<div class="col-sm-3">
+	<div class="well">
+		<h2 class="text-warning">Bronze</h2>
+		<p><span class="label label-success">POPULAR</span></p>
+		 
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+		<hr>
+		<h3>$100 Minimum Deposit</h3>
+		<hr>
+		<p><a class="btn btn-success btn-large" href="#"><i class="icon-ok"></i> Start account</a></p>
+	</div>
+</div>
+<div class="col-sm-3">
+	<div class="well">
+		<h2 class="text-info">Silver</h2>
+		<p><span class="label label-info">BUDGET</span></p>
+		       
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+		<hr>
+		<h3>No minimum deposit</h3>
+		<hr>
+      <p><a class="btn btn-large" href="#"><i class="icon-ok"></i> Open Account</a></p>
+	</div>
+</div>
+<div class="col-sm-3">
+	<div class="well">
+		<h2 class="text-info">Free</h2>
+		<p><span class="label label-warning">BUDGET</span></p>
+		       
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+		<hr>
+		<h3>No minimum deposit</h3>
+		<hr>
+      <p><a class="btn btn-large" href="#"><i class="icon-ok"></i> Open Account</a></p>
+	</div>
+</div>
+</div><!--row-fluid-->
+        <!-- Blockquotes -->
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 id="type-blockquotes">Blockquotes</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="">
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+              </blockquote>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="">
+              <blockquote class="pull-right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::     1 BACK TO TOP     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      -->
+     
+      
+      
+      
+      <div class="bs-docs-section">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="tables">Tables</h1>
+            </div>
+
+            <div class="">
+              <table class="table table-striped table-hover ">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Column heading</th>
+                    <th>Column heading</th>
+                    <th>Column heading</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                  </tr>
+                  <tr class="info">
+                    <td>3</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                  </tr>
+                  <tr class="success">
+                    <td>4</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                  </tr>
+                  <tr class="danger">
+                    <td>5</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                  </tr>
+                  <tr class="warning">
+                    <td>6</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                  </tr>
+                  <tr class="active">
+                    <td>7</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                    <td>Column content</td>
+                  </tr>
+                </tbody>
+              </table> 
+            </div><!-- /example -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Forms
+      ================================================== -->
+      <div class="bs-docs-section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="forms">Forms</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="well">
+              <form class="form-horizontal">
+                <fieldset>
+                  <legend>Legend</legend>
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                    <div class="col-lg-10">
+                      <input type="text" placeholder="Email" id="inputEmail" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label" for="inputPassword">Password</label>
+                    <div class="col-lg-10">
+                      <input type="password" placeholder="Password" id="inputPassword" class="form-control">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Checkbox
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label" for="textArea">Textarea</label>
+                    <div class="col-lg-10">
+                      <textarea id="textArea" rows="3" class="form-control"></textarea>
+                      <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label">Radios</label>
+                    <div class="col-lg-10">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios">
+                          Option one is this
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios">
+                          Option two can be something else
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-lg-2 control-label" for="select">Selects</label>
+                    <div class="col-lg-10">
+                      <select id="select" class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                      <br>
+                      <select class="form-control" multiple="">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <button class="btn btn-default">Cancel</button>
+                      <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4 col-lg-offset-1">
+
+              <form class="">
+                <div class="form-group">
+                  <label for="focusedInput" class="control-label">Focused input</label>
+                  <input type="text" value="This is focused..." id="focusedInput" class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label for="disabledInput" class="control-label">Disabled input</label>
+                  <input type="text" disabled="" placeholder="Disabled input here..." id="disabledInput" class="form-control">
+                </div>
+
+                <div class="form-group has-warning">
+                  <label for="inputWarning" class="control-label">Input warning</label>
+                  <input type="text" id="inputWarning" class="form-control">
+                </div>
+
+                <div class="form-group has-error">
+                  <label for="inputError" class="control-label">Input error</label>
+                  <input type="text" id="inputError" class="form-control">
+                </div>
+
+                <div class="form-group has-success">
+                  <label for="inputSuccess" class="control-label">Input success</label>
+                  <input type="text" id="inputSuccess" class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputLarge" class="control-label">Large input</label>
+                  <input type="text" id="inputLarge" class="form-control input-lg">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputDefault" class="control-label">Default input</label>
+                  <input type="text" id="inputDefault" class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label for="inputSmall" class="control-label">Small input</label>
+                  <input type="text" id="inputSmall" class="form-control input-sm">
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label">Input addons</label>
+                  <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default">Button</button>
+                    </span>
+                  </div>
+                </div>
+              </form>
+
+          </div>
+        </div>
+      </div>
+
+
+      
+      <!--
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::     2 BACK TO TOP     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      -->
+      
+      
+      
+      
+      <div class="bs-docs-section">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="nav">Navs</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 id="nav-tabs">Tabs</h2>
+            <div class="">
+              <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#main">Main</a></li>
+                <li><a data-toggle="tab" href="#profile">Profile</a></li>
+                <li class="disabled"><a>Disabled</a></li>
+                <li class="dropdown">
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                    Dropdown <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a data-toggle="tab" href="#dropdown1">Action</a></li>
+                    <li class="divider"></li>
+                    <li><a data-toggle="tab" href="#dropdown2">Another action</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div id="main" class="tab-pane fade active in">
+                  <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                </div>
+                <div id="profile" class="tab-pane fade">
+                  <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                </div>
+                <div id="dropdown1" class="tab-pane fade">
+                  <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+                </div>
+                <div id="dropdown2" class="tab-pane fade">
+                  <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+                </div>
+              </div>
+            </div>
+            
+            <br />
+            <div class="clearfix"></div>
+            <br />
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 id="nav-tabs">Tabs w/Menus</h2>
+            <div class=" tabDrops">
+              <ul class="nav nav-tabs">
+                <li><a data-toggle="tab" href="#firstDrop">First</a></li>
+                <li><a data-toggle="tab" href="#secondDrop">Second</a></li>
+                <li><a data-toggle="tab" href="#thirdDrop">Third</a></li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div id="firstDrop" class="tab-pane">
+                  <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                </div>
+                <div id="secondDrop" class="tab-pane">
+                  <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                </div>
+                <div id="thirdDrop" class="tab-pane">
+                  <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+                </div>
+              </div>
+            </div>
+            
+            <br />
+            <div class="clearfix"></div>
+            <br />
+          	
+          <!-- tabs left -->
+          <div class="tabbable tabs-left">
+            <ul class="nav nav-tabs">
+              <li><a href="#a" data-toggle="tab">One</a></li>
+              <li class="active"><a href="#b" data-toggle="tab">Two</a></li>
+              <li><a href="#c" data-toggle="tab">Twee</a></li>
+            </ul>
+            <div class="tab-content">
+             <div class="tab-pane active" id="a">Lorem ipsum dolor sit amet, charetra varius quam sit amet vulputate. 
+             Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero.</div>
+             <div class="tab-pane" id="b">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+             Aliquam in felis sit amet augue.</div>
+             <div class="tab-pane" id="c">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+             Quisque mauris augue, molestie tincidunt condimentum vitae. </div>
+            </div>
+          </div>
+          </div>
+          <!-- /tabs -->
+      
+          <div class="col-lg-4">
+            <h2 id="nav-pills">Pills</h2>
+            <div class="">
+              <ul class="nav nav-pills">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li class="disabled"><a href="#">Disabled</a></li>
+                <li class="dropdown">
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                    Dropdown <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <br>
+            <div class="">
+              <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li class="disabled"><a href="#">Disabled</a></li>
+                <li class="dropdown">
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                    Dropdown <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h2 id="nav-breadcrumbs">Breadcrumbs</h2>
+            <div class="">
+              <ul class="breadcrumb">
+                <li class="active">Home</li>
+              </ul>
+
+              <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Library</li>
+              </ul>
+
+              <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li class="active">Data</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-4">
+            <h2 id="pagination">Pagination</h2>
+            <div class="">
+              <ul class="pagination">
+                <li class="disabled"><a href="#">«</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+
+              <ul class="pagination pagination-lg">
+                <li class="disabled"><a href="#">«</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+
+              <ul class="pagination pagination-sm">
+                <li class="disabled"><a href="#">«</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h2 id="pager">Pager</h2>
+            <div class="">
+              <ul class="pager">
+                <li><a href="#">Previous</a></li>
+                <li><a href="#">Next</a></li>
+              </ul>
+
+              <ul class="pager">
+                <li class="previous disabled"><a href="#">← Older</a></li>
+                <li class="next"><a href="#">Newer →</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Indicators
+      ================================================== -->
+      <div class="bs-docs-section">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="indicators">Indicators</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Alerts</h2>
+            <div class="">
+              <div class="alert alert-dismissable alert-warning">
+                <button data-dismiss="alert" class="close" type="button">×</button>
+                <h4>Warning!</h4>
+                <p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a class="alert-link" href="#">vel scelerisque nisl consectetur et</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="">
+              <div class="alert alert-dismissable alert-danger">
+                <button data-dismiss="alert" class="close" type="button">×</button>
+                <strong>Oh snap!</strong> <a class="alert-link" href="#">Change a few things up</a> and try submitting again.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="">
+              <div class="alert alert-dismissable alert-success">
+                <button data-dismiss="alert" class="close" type="button">×</button>
+                <strong>Well done!</strong> You successfully read <a class="alert-link" href="#">this important alert message</a>.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="">
+              <div class="alert alert-dismissable alert-info">
+                <button data-dismiss="alert" class="close" type="button">×</button>
+                <strong>Heads up!</strong> This <a class="alert-link" href="#">alert needs your attention</a>, but it's not super important.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <h2>Labels</h2>
+            <div style="margin-bottom: 40px;" class="">
+              <span class="label label-default">Default</span>
+              <span class="label label-primary">Primary</span>
+              <span class="label label-success">Success</span>
+              <span class="label label-warning">Warning</span>
+              <span class="label label-danger">Danger</span>
+              <span class="label label-info">Info</span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h2>Badges</h2>
+            <div class="">
+              <ul class="nav nav-pills">
+                <li class="active"><a href="#">Home <span class="badge">42</span></a></li>
+                <li><a href="#">Profile <span class="badge"></span></a></li>
+                <li><a href="#">Messages <span class="badge">3</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      
+      <!--
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::     3 BACK TO TOP     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      -->
+      <div
+      class="text-center"
+      style="background: rgba(0,0,0,.05);
+      	margin: 50px auto;
+      	padding: 40px 20px;
+      	border: 1px solid rgba(125,125,125,.5);
+      	border-left: none;
+      	border-right: none;
+      ">
+      	<a name="section3"></a>
+      	<a href="#top" class="btn btn-default">Back to top</a>
+      	<a href="#section4" class="btn btn-default pull-right">Next &raquo;</a>
+      	<a href="#section2" class="btn btn-default pull-right">&laquo; Previous</a>
+      </div>
+      
+      
+      
+     
+
+      <!-- Containers
+      ================================================== -->
+      <div class="bs-docs-section">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="container">Containers</h1>
+            </div>
+            <div class="">
+              <div class="jumbotron">
+                <h1>Jumbotron</h1>
+                <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      
+      <!--
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::     4 BACK TO TOP     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      -->
+      <div
+      class="text-center"
+      style="background: rgba(0,0,0,.05);
+      	margin: 50px auto;
+      	padding: 40px 20px;
+      	border: 1px solid rgba(125,125,125,.5);
+      	border-left: none;
+      	border-right: none;
+      ">
+      	<a name="section4"></a>
+      	<a href="#top" class="btn btn-default">Back to top</a>
+      	<a href="#section5" class="btn btn-default pull-right">Next &raquo;</a>
+      	<a href="#section3" class="btn btn-default pull-right">&laquo; Previous</a>
+      </div>
+      
+      
+      
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>List groups</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <span class="badge">14</span>
+                  Cras justo odio
+                </li>
+                <li class="list-group-item">
+                  <span class="badge">2</span>
+                  Dapibus ac facilisis in
+                </li>
+                <li class="list-group-item">
+                  <span class="badge">1</span>
+                  Morbi leo risus
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="">
+              <div class="list-group">
+                <a class="list-group-item active" href="#">
+                  Cras justo odio
+                </a>
+                <a class="list-group-item" href="#">Dapibus ac facilisis in
+                </a>
+                <a class="list-group-item" href="#">Morbi leo risus
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="">
+              <div class="list-group">
+                <a class="list-group-item" href="#">
+                  <h4 class="list-group-item-heading">List group item heading</h4>
+                  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                </a>
+                <a class="list-group-item" href="#">
+                  <h4 class="list-group-item-heading">List group item heading</h4>
+                  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Panels</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Basic panel
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-heading">Panel heading</div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Panel content
+                </div>
+                <div class="panel-footer">Panel footer</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel primary</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+
+              <div class="panel panel-success">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel success</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+
+              <div class="panel panel-warning">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel warning</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="">
+              <div class="panel panel-danger">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel danger</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Panel info</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Wells</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="">
+              <div class="well">
+                Look, I'm in a well!
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="">
+              <div class="well well-sm">
+                Look, I'm in a small well!
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="">
+              <div class="well well-lg">
+                Look, I'm in a large well!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dialogs
+      ================================================== -->
+      <div class="bs-docs-section">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="tables">Dialogs</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Modals</h2>
+            <div class="">
+              <div class="modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                      <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>One fine body…</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+                      <button class="btn btn-primary" type="button">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="btn btn-primary btn-xs" id="source-button" style="display: none;">&lt; &gt;</div></div>
+          </div>
+          <div class="col-lg-6">
+            <h2>Popovers</h2>
+            <div class="">
+              <button data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="left" data-toggle="popover" data-container="body" class="btn btn-default" type="button" data-original-title="" title="">Left</button>
+
+              <button data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="top" data-toggle="popover" data-container="body" class="btn btn-default" type="button" data-original-title="" title="">Top</button>
+
+              <button data-content="Vivamus
+              sagittis lacus vel augue laoreet rutrum faucibus." data-placement="bottom" data-toggle="popover" data-container="body" class="btn btn-default" type="button" data-original-title="" title="">Bottom</button>
+
+              <button data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-placement="right" data-toggle="popover" data-container="body" class="btn btn-default" type="button" data-original-title="" title="">Right</button>
+            </div>
+            <h2>Tooltips</h2>
+            <div class="">
+              <button data-original-title="Tooltip on left" title="" data-placement="left" data-toggle="tooltip" class="btn btn-default" type="button">Left</button>
+
+              <button data-original-title="Tooltip on top" title="" data-placement="top" data-toggle="tooltip" class="btn btn-default" type="button">Top</button>
+
+              <button data-original-title="Tooltip on bottom" title="" data-placement="bottom" data-toggle="tooltip" class="btn btn-default" type="button">Bottom</button>
+
+              <button data-original-title="Tooltip on right" title="" data-placement="right" data-toggle="tooltip" class="btn btn-default" type="button">Right</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="source-modal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h4 class="modal-title">Source Code</h4>
+            </div>
+            <div class="modal-body">
+              <pre></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::     5 BACK TO TOP     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      -->
+      <div
+      class="text-center"
+      style="background: rgba(0,0,0,.05);
+      	margin: 50px auto;
+      	padding: 40px 20px;
+      	border: 1px solid rgba(125,125,125,.5);
+      	border-left: none;
+      	border-right: none;
+      ">
+      	<a name="section5"></a>
+      	<a href="#top" class="btn btn-default">Back to top</a>
+      	<a href="#section6" class="btn btn-default pull-right">Next &raquo;</a>
+      	<a href="#section4" class="btn btn-default pull-right">&laquo; Previous</a>
+      </div>
+
+
+    </div>
+
+
+<div class="container grid">
+
+      <div class="page-header">
+        <h1>Bootstrap grid examples</h1>
+        <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+      </div>
+
+      <h3>Three equal columns</h3>
+      <p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
+      <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+
+      <h3>Three unequal columns</h3>
+      <p>Get three columns <strong>starting at desktops and scaling to large desktops</strong> of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.</p>
+      <div class="row">
+        <div class="col-md-3">.col-md-3</div>
+        <div class="col-md-6">.col-md-6</div>
+        <div class="col-md-3">.col-md-3</div>
+      </div>
+
+      <h3>Two columns</h3>
+      <p>Get two columns <strong>starting at desktops and scaling to large desktops</strong>.</p>
+      <div class="row">
+        <div class="col-md-8">.col-md-8</div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+
+      <h3>Full width, single column</h3>
+      <p class="text-warning">No grid classes are necessary for full-width elements.</p>
+
+      <hr>
+
+      <h3>Two columns with two nested columns</h3>
+      <p>Per the documentation, nesting is easy&mdash;just put a row of columns within an existing column. This gives you two columns <strong>starting at desktops and scaling to large desktops</strong>, with another two (equal widths) within the larger column.</p>
+      <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
+      <div class="row">
+        <div class="col-md-8">
+          .col-md-8
+          <div class="row">
+            <div class="col-md-6">.col-md-6</div>
+            <div class="col-md-6">.col-md-6</div>
+          </div>
+        </div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+
+      <hr>
+
+      <h3>Mixed: mobile and desktop</h3>
+      <p>The Bootstrap 3 grid system has four tiers of classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
+      <p><strong>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.</strong></p>
+      <div class="row">
+        <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">.col-xs-6</div>
+        <div class="col-xs-6">.col-xs-6</div>
+      </div>
+
+      <hr>
+
+      <h3>Mixed: mobile, tablet, and desktop</h3>
+      <p></p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-8">.col-xs-12 .col-sm-6 .col-lg-8</div>
+        <div class="col-xs-6 col-lg-4">.col-xs-6 .col-lg-4</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+      </div>
+
+      <hr>
+
+      <h3>Column clearing</h3>
+      <p><a href="http://getbootstrap.com/css/#grid-responsive-resets">Clear floats</a> at specific breakpoints to prevent awkward wrapping with uneven content.</p>
+      <div class="row">
+        <div class="col-xs-6 col-sm-3">
+          .col-xs-6 .col-sm-3
+          <br>
+          Resize your viewport or check it out on your phone for an example.
+        </div>
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+
+        <!-- Add the extra clearfix for only the required viewport -->
+        <div class="clearfix visible-xs"></div>
+
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+      </div>
+
+      <hr>
+
+      <h3>Offset, push, and pull resets</h3>
+      <p>Reset offsets, pushes, and pulls at specific breakpoints.</p>
+      <div class="row">
+        <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+        <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+        <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+      </div>
+
+
+      
+      <!--
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::     6 BACK TO TOP     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      -->
+      <div
+      class="text-center"
+      style="background: rgba(0,0,0,.05);
+      	margin: 50px auto;
+      	padding: 40px 20px;
+      	border: 1px solid rgba(125,125,125,.5);
+      	border-left: none;
+      	border-right: none;
+      ">
+      	<a name="section6"></a>
+      	<a href="#top" class="btn btn-default">Back to top</a>
+      	<a href="#section7" class="btn btn-default pull-right">Next &raquo;</a>
+      	<a href="#section5" class="btn btn-default pull-right">&laquo; Previous</a>
+      </div>
+
+
+
+
+
+<div style="padding: 50px;max-width: 960px; border: 1px solid rgba(0,0,0,.07); background: rgba(0,0,0,.03);border-radius: 12px; margin: 40px auto;">
+
+<h1 style="border-bottom: 1px solid rgba(0,0,0,.1);padding-bottom: 12px; color:rgba(13,12,87,1.00); font-size: 50px;">.classes</h1>
+
+<h3>.container</h3>
+
+<ul>
+	<li>sets fixed width to an element (which changes depending on a screen size to other fixed values, so it's still responsive) on all screen sizes except xs - on xs, the width is calculated automatically (this behaviour can be changed)</li>
+	<li>a fixed width responsive website should be wrapped in .container (or just the content without menu, whatever - it's up to you)</li>
+	<li>.container can't be nested!</li>
+</ul>
+
+<h3>.container-fluid</h3>
+
+<ul>
+	<li>sets 100% width, margin-left and margin-right: auto, padding-left and padding-right: 15px</li>
+	<li>a full screen website should be wrapped in .container-fluid</li>
+	<li>.container-fluid can't be nested!</li>
+</ul>
+
+<h3>.row</h3>
+
+<ul>
+	<li>creates horizontal groups of columns (which usually have width classes, see below)</li>
+	<li>must be within .container to ensure correct padding and alignment</li>
+	<li>only columns (block elements with width classes) may be immediate children of rows</li>
+	<li>sets margin-left and margin-right: -15px</li>
+</ul>
+
+<h3>.pull-right</h3>
+
+<h3>.pull-left</h3>
+
+<ul>
+	<li>sets float to either left or right</li>
+</ul>
+
+<h3>.wrap</h3>
+
+<ul>
+	<li>sets clear: both and width: 100%</li>
+</ul>
+
+<h3>.center-block</h3>
+
+<ul>
+	<li>sets margin-left and margin-right to auto</li>
+</ul>
+
+<ul>
+	<li>sets width of a column (specified in %) on large screens (≥1200px)</li>
+</ul>
+
+<h3>.col-xs-offset-* (.col-xs-offset-1, .col-xs-offset-2, .col-xs-offset-3 ... up to -12)</h3>
+
+<h3>.col-sm-offset-* (.col-sm-offset-1, .col-sm-offset-2, .col-sm-offset-3 ... up to -12)</h3>
+
+<h3>.col-md-offset-* (.col-md-offset-1, .col-md-offset-2, .col-md-offset-3 ... up to -12)</h3>
+
+<h3>.col-lg-offset-* (.col-lg-offset-1, .col-lg-offset-2, .col-lg-offset-3 ... up to -12)</h3>
+
+<ul>
+	<li>sets offset (margin-left) by specified number of columns (eg. set .col-sm-offset-3 class to a column to move it by three columns on small screens)</li>
+</ul>
+
+<h3>.col-xs-pull-* (.col-xs-pull-1, .col-xs-pull-2 ... up to -12)</h3>
+
+<h3>.col-sm-pull-* (.col-sm-pull-1, .col-sm-pull-2 ... up to -12)</h3>
+
+<h3>.col-md-pull-* (.col-md-pull-1, .col-md-pull-2 ... up to -12)</h3>
+
+<h3>.col-lg-pull-* (.col-lg-pull-1, .col-lg-pull-2 ... up to -12)</h3>
+
+<ul>
+	<li>sets left position in % as it is with columns (e.g. left: 75% with -pull-9)</li>
+</ul>
+
+<h3>.col-xs-push-* (.col-xs-push-1, .col-xs-push-2 ... up to -12)</h3>
+
+<h3>.col-sm-push-* (.col-sm-push-1, .col-sm-push-2 ... up to -12)</h3>
+
+<h3>.col-md-push-* (.col-md-push-1, .col-md-push-2 ... up to -12)</h3>
+
+<h3>.col-lg-push-* (.col-lg-push-1, .col-lg-push-2 ... up to -12)</h3>
+
+<ul>
+	<li>sets right position in % as it is with columns (e.g. right: 25% with -push-3)</li>
+</ul>
+
+<h2>Bootstrap Visibility Classes</h2>
+
+<ul>
+	<li>you can apply all as many of these classes on a single element as you wish and this mixing gives you even more possibilities for your layout</li>
+</ul>
+
+<h3>.clearfix</h3>
+
+<ul>
+	<li>obvious, clear: both</li>
+	<li>often combined with classes below</li>
+</ul>
+
+<h3>.visible-xs-block and .visible-xs</h3>
+
+<h3>.visible-sm-block and .visible-sm</h3>
+
+<h3>.visible-md-block and .visible-md</h3>
+
+<h3>.visible-lg-block and .visible-lg</h3>
+
+<ul>
+	<li>displays element (sets display: block property) only on screens with specified size and hides it (sets display: none) on screens of other sizes automatically</li>
+	<li>often combined with .clearfix so that clearfix is effective only on the selected screen size</li>
+</ul>
+
+<h3>.visible-xs-inline-block</h3>
+
+<h3>.visible-sm-inline-block</h3>
+
+<h3>.visible-md-inline-block</h3>
+
+<h3>&nbsp;</h3>
+
+<h3>.visible-lg-inline-block</h3>
+
+<ul>
+	<li>displays element (sets display: inline-block property) only on screens with specified size and hides it (sets display: none) on screens of other sizes automatically</li>
+</ul>
+
+<h3>.visible-xs-inline</h3>
+
+<h3>.visible-sm-inline</h3>
+
+<h3>.visible-md-inline</h3>
+
+<h3>.visible-lg-inline</h3>
+
+<ul>
+	<li>displays element (sets display: block property) only on screens with specified size and hides it (sets display: none) on screens of other sizes automatically</li>
+</ul>
+
+<h3>.hidden-xs</h3>
+
+<h3>.hidden-sm</h3>
+
+<h3>.hidden-md</h3>
+
+<h3>.hidden-lg</h3>
+
+<ul>
+	<li>hides element (sets display: none property) only on screens with specified size and hides it (sets display: none) on screens of other sizes automatically</li>
+</ul>
+
+<h3>.visible-print-block</h3>
+
+<ul>
+	<li>displays element (sets display: block) in print (pre)view</li>
+</ul>
+
+<h3>.visible-print-inline</h3>
+
+<ul>
+	<li>displays element (sets display: inline) in print (pre)view</li>
+</ul>
+
+<h3>.visible-print-inline-block</h3>
+
+<ul>
+	<li>displays element (sets display: inline-block) in print (pre)view</li>
+</ul>
+
+<h3>.hidden-print</h3>
+
+<ul>
+	<li>hides element (sets display: none) in print (pre)view</li>
+</ul>
+
+<h2>Bootstrap Typography Classes</h2>
+
+<ul>
+	<li>default font-size of &lt;body&gt; a &lt;p&gt; elements is 14px, line-height 1.428; &lt;p&gt; also has margin-bottom of half of its line-height (20px with 14px font), therefore 10px by default</li>
+	<li>all elements like b, big, code, em, i, mark, small, strong, sub, sup, ins, del, s, u, abbr, address and blockquote (and small and cite inside) are properly styled</li>
+	<li>vast majority of these classes are most often set to either paragraph, strong or em elements</li>
+</ul>
+
+<h3>.page-header</h3>
+
+<ul>
+	<li>class for a wrapping div of a heading</li>
+	<li>adds some margin, padding and border-bottom</li>
+</ul>
+
+<h3>.lead</h3>
+
+<ul>
+	<li>for highlighting an element</li>
+	<li>sets element's font-size to 21px, font-weight: 300, line-height: 1.4 and margin-bottom: 20px</li>
+</ul>
+
+<h3>.text-left</h3>
+
+<h3>.text-center</h3>
+
+<h3>.text-right</h3>
+
+<h3>.text-justify</h3>
+
+<ul>
+	<li>aligns texts, usually paragraphs, with text-align CSS property</li>
+</ul>
+
+<h3>.text-nowrap</h3>
+
+<ul>
+	<li>keeps the whole text with this class on a single line, no wrapping occurs because of white-space: nowrap CSS property of this class</li>
+</ul>
+
+<h3>.text-lowercase</h3>
+
+<h3>.text-uppercase</h3>
+
+<h3>.text-capitalize</h3>
+
+<ul>
+	<li>sets text-transform CSS property to make all characters inside the element with this class lowercase, uppercase or capitalized</li>
+</ul>
+
+<h3>.text-muted</h3>
+
+<ul>
+	<li>makes text grey</li>
+</ul>
+
+<h3>.text-primary</h3>
+
+<ul>
+	<li>makes text blue</li>
+</ul>
+
+<h3>.text-success</h3>
+
+<ul>
+	<li>makes text green</li>
+</ul>
+
+<h3>.text-info</h3>
+
+<ul>
+	<li>makes text dark blue</li>
+</ul>
+
+<h3>.text-warning</h3>
+
+<ul>
+	<li>makes text dark yellow</li>
+</ul>
+
+<h3>.text-danger</h3>
+
+<ul>
+	<li>makes text red</li>
+</ul>
+
+<h2>Bootstrap Lists' Classes</h2>
+
+<h3>.list-unstyled</h3>
+
+<ul>
+	<li>removes list-style and margin-left on list items</li>
+	<li>doesn't apply for nested lists (if needed, the nested list has to have .list-unstyled class as well)</li>
+</ul>
+
+<h3>.list-inline</h3>
+
+<ul>
+	<li>places list items on a single line (with display: inline-block and padding)</li>
+</ul>
+
+<h3>.dl-horizontal</h3>
+
+<ul>
+	<li>class for a definition list (&lt;dl&gt;)</li>
+	<li>sets nice styles for &lt;dt&gt; and &lt;dd&gt; within the definition list (text align, font-weight)</li>
+</ul>
+
+<h3>.list-group</h3>
+
+<ul>
+	<li>class for the parent element (usually &lt;ul&gt;, but can be &lt;div&gt; as well) of list items</li>
+	<li>list items have to have .list-group-item class</li>
+</ul>
+
+<h3>.list-group-item</h3>
+
+<ul>
+	<li>class for .list-group children elements</li>
+	<li>for a nicer look of the list items</li>
+	<li>usually on &lt;li&gt;, but can be &lt;a&gt; as well</li>
+</ul>
+
+<h3>.list-group-item-heading</h3>
+
+<ul>
+	<li>for a heading within .list-group-item, often &lt;h4&gt; or similar low-level heading</li>
+</ul>
+
+<h3>.list-group-item-text</h3>
+
+<ul>
+	<li>for text within .list-group-item, often in the paragraph tag or just in a span</li>
+</ul>
+
+<h2>Bootstrap Tables' Classes</h2>
+
+<h3>.table</h3>
+
+<ul>
+	<li>for an ordinary table</li>
+	<li>table heading has only border-bottom and &lt;td&gt;s have only border-top</li>
+</ul>
+
+<h3>.table-striped</h3>
+
+<ul>
+	<li>every odd line will be darker for a nicer look (using :nth-child selector)</li>
+	<li>table heading &lt;th&gt; has only border-bottom and &lt;td&gt;s have only border-top</li>
+	<li>should be combined with .table class</li>
+</ul>
+
+<h3>.table-bordered</h3>
+
+<ul>
+	<li>table with borders all around</li>
+	<li>should be combined with .table class</li>
+</ul>
+
+<h3>.table-hover</h3>
+
+<ul>
+	<li>class for a table</li>
+	<li>adds hover/focus effect on the table's tbody rows</li>
+	<li>should be combined with .table class</li>
+</ul>
+
+<h3>.table-condensed</h3>
+
+<ul>
+	<li>should be combined with .table class</li>
+	<li>for an ordinary table with half cell padding, so rows are not that high</li>
+</ul>
+
+<h3>.table-responsive</h3>
+
+<ul>
+	<li>class for a wrapper (! mostly div) of a table to keep it responsive in the way that scrollbar appears on extra small devices</li>
+</ul>
+
+<h3>.active</h3>
+
+<h3>.success</h3>
+
+<h3>.info</h3>
+
+<h3>.warning</h3>
+
+<h3>.danger</h3>
+
+<ul>
+	<li>classes for either &lt;tr&gt; or just &lt;td&gt;</li>
+	<li>sets background color for all &lt;td&gt; in a table row (or just one &lt;td&gt;) to grey (active) / green (success) / blue (info) / yellow (warning) / red (danger)</li>
+</ul>
+
+<h2>Bootstrap Forms' Classes</h2>
+
+<ul>
+	<li>don't forget that even form elements can be in the Bootstrap grid, so don't be afraid to use .row inside a form and then col-*-* wrappers</li>
+</ul>
+
+<h3>.form-group</h3>
+
+<ul>
+	<li>when creating vertical forms, it's a class for its wrapper (mostly div) of each label and its input, adds some margin-bottom</li>
+</ul>
+
+<h3>.form-control</h3>
+
+<ul>
+	<li>for every form element (input, textarea...), gives it 100% width</li>
+	<li>to make it narrower, use a narrower wrapper (row and col-*-* divs)</li>
+</ul>
+
+<h3>.form-control-static</h3>
+
+<ul>
+	<li>for a paragraph that replaces a form element (input...)</li>
+</ul>
+
+<h3>.form-horizontal</h3>
+
+<ul>
+	<li>for horizontal forms where label is on the same line as input</li>
+	<li>you have to use column classes (like col-xs-10) for each label and its input (or whateveer it is)</li>
+	<li>still combined with .form-group wrapper and .form-control classes</li>
+</ul>
+
+<h3>.form-inline</h3>
+
+<ul>
+	<li>for a single line form (but still vertical on extra small screens)</li>
+	<li>often used with the placeholder attribute to not need labels</li>
+	<li>labels of inline forms should get .sr-only class to be positioned so that they can't be seen (but they won't get display: none or visibility: hidden property)</li>
+</ul>
+
+<h3>.input-lg</h3>
+
+<h3>.input-sm</h3>
+
+<ul>
+	<li>makes a form element like input or select either bigger or smaller than default</li>
+</ul>
+
+<h3>.input-group-lg</h3>
+
+<h3>.input-group-sm</h3>
+
+<ul>
+	<li>classes for .input-group (see further)</li>
+	<li>always used together with .input-group class</li>
+</ul>
+
+<h3>.input-group</h3>
+
+<ul>
+	<li>class for a wrapper of .input-group-addon or .input-group-btn</li>
+	<li>used instead of form-group when the classes above are used</li>
+</ul>
+
+<h3>.input-group-addon</h3>
+
+<ul>
+	<li>class for a span that serves as a wrapper for either .glyphicon or a radio/checkbox input</li>
+	<li>adds your choice (glyphicon...) on the inner edge of an input field with grey background</li>
+	<li>the span with this class can be either before or after input, depends where you want the icon to show (the left or right side of the input)</li>
+	<li>must be within .input-group</li>
+</ul>
+
+<h3>.input-group-btn</h3>
+
+<ul>
+	<li>class for a span that serves as a wrapper for a button that looks like it was within a form input</li>
+	<li>the span with this class can be either before or after input, depends where you want the button to show (left or right side of the input)</li>
+	<li>contains &lt;button&gt; (the button can also include .dropdown-toggle class, span with .caret class and data-toggle="dropdown" attribute for even more complicated buttons)</li>
+	<li>must be within .input-group</li>
+</ul>
+
+<h3>.caret</h3>
+
+<ul>
+	<li>class for an empty span that creates a dropdown arrow</li>
+</ul>
+
+<h3>.help-block</h3>
+
+<ul>
+	<li>class for a span that serves as a help text for users</li>
+	<li>has to be placed right after an input of a form</li>
+</ul>
+
+<h3>.has-success</h3>
+
+<h3>.has-warning</h3>
+
+<h3>.has-error</h3>
+
+<ul>
+	<li>classes for wrapping divs with .form-group class</li>
+	<li>colours the label, input and .help-block span inside to green/yellow/red</li>
+	<li>the label within the wrapper with one of these classes has to have .control-label class to be coloured as well</li>
+</ul>
+
+<h3>.has-feedback</h3>
+
+<ul>
+	<li>class for the wrapping divs with .form-group class when you also use glyphicon for the input within the wrapper</li>
+</ul>
+
+<p>To disable input, use disabled="disabled" or readonly="readonly",<br>
+	To disable whole fieldset, wrap form-groups to fieldset with disabled="disabled"</p>
+
+<h2>Bootstrap Image Classes</h2>
+
+<ul>
+	<li>images should have .img-responsive or .thumbnail to be responsive and be wrapped in a column wrapper (like col-xs-3...)</li>
+</ul>
+
+<h3>.img-rounded</h3>
+
+<ul>
+	<li>img class that provides little border-radius</li>
+</ul>
+
+<h3>.img-circle</h3>
+
+<ul>
+	<li>img class that provides 50% border-radius making the img circle shaped</li>
+</ul>
+
+<h3>.img-thumbnail</h3>
+
+<ul>
+	<li>img class that provides a 1px solid grey border, 4px padding, white background, display: inline-block property and fast CSS3 transition</li>
+</ul>
+
+<h3>.thumbnail</h3>
+
+<ul>
+	<li>class for a wrapping div (or &lt;a&gt; in case of gallery) of an image, adds some styles (border, padding, background, transition) and set's the image max-width: 100%, height: auto; display: block; and margin-left and margin-right: auto</li>
+</ul>
+
+<h3>.img-responsive</h3>
+
+<ul>
+	<li>img class that makes any image responsive (scaling to the parent element) as it has max-width: 100% and height: auto</li>
+	<li>may not work if placed in a floating element!</li>
+</ul>
+
+<h3>.caption</h3>
+
+<ul>
+	<li>class for a div inside .thumbnail element (a or div) that may include h3, p, a (also buttons) for a proper margin/padding</li>
+</ul>
+
+<h3>.media</h3>
+
+<ul>
+	<li>class for a div (or li, whatever) that may contain an image, a heading, some &lt;small&gt; text and paragraphs</li>
+	<li>ensures proper image margin/padding</li>
+	<li>heading inside should also have media-heading attribute and should be (together with paragraphs) wrapped in a .media-body wrapper</li>
+	<li>any image within should have .pull-left or .pull-right class to float</li>
+</ul>
+
+<h3>.media-list</h3>
+
+<ul>
+	<li>class for a list (ul, ol) that contains .media inside</li>
+	<li>ensures better margin/padding</li>
+</ul>
+
+<h3>.glyphicon</h3>
+
+<ul>
+	<li>base class for glyphicons (font-based icons), sets font, its styles and positioning</li>
+	<li>should be used on a span</li>
+</ul>
+
+<h3>.glyphicon-* (replace the star with any name of a <a href="http://getbootstrap.com/components/#glyphicons">glyphicon from this list</a>)</h3>
+
+<ul>
+	<li>sets picture via font and :before CSS3 selector with content of the font</li>
+	<li>must be used together with .glyphicon class to show proper image</li>
+	<li>should be used on a span</li>
+</ul>
+
+<h2>Bootstrap Embed Classes</h2>
+
+<h3>.embed-responsive</h3>
+
+<ul>
+	<li>general class for responsive embedding wrapper</li>
+</ul>
+
+<h3>.embed-responsive-4by3</h3>
+
+<h3>.embed-responsive-16by9</h3>
+
+<ul>
+	<li>specific class for the embed wrapper with ratio already set</li>
+	<li>used together with .embed-responsive class</li>
+</ul>
+
+<h3>.embed-responsive-item</h3>
+
+<ul>
+	<li>used on the iframe or whatever it is inside the wrapper</li>
+</ul>
+
+<h2>Bootstrap Navigation Classes</h2>
+
+<h3>.nav</h3>
+
+<ul>
+	<li>the basic class for every navigation structure (&lt;ul&gt;), removes any list-style, left padding and bottom margin</li>
+	<li>also sets display: block and position relative for its &lt;li&gt; children</li>
+	<li>must be set on every navigation</li>
+</ul>
+
+<h3>.active</h3>
+
+<ul>
+	<li>class for a list item (nav item, li) that makes it look active / current</li>
+</ul>
+
+<h3>.nav-tabs</h3>
+
+<ul>
+	<li>class for navigation structure that gives it a tab style (proper borders + float: left)</li>
+</ul>
+
+<h3>.nav-pills</h3>
+
+<ul>
+	<li>class for navigation structure that gives it a pills style (background on active nav item)</li>
+</ul>
+
+<h3>.nav-stacked</h3>
+
+<ul>
+	<li>makes vertical pills navigation</li>
+	<li>used together with .nav-pills (and .nav of course)</li>
+</ul>
+
+<h3>.dropdown</h3>
+
+<ul>
+	<li>class for an</li>
+	<li>nav item to make it dropdown</li>
+	<li>needs additional classes elsewhere to work (see below)</li>
+</ul>
+
+<h3>.dropdown-toggle</h3>
+
+<ul>
+	<li>class for an &lt;a&gt; which is within &lt;li class="dropdown"&gt; to make a dropdown menu</li>
+	<li>needs additional classes elsewhere to work (see below)</li>
+</ul>
+
+<h3>.dropdown-menu</h3>
+
+<ul>
+	<li>class for an &lt;ul&gt; which is within &lt;a class="dropdown-toggle"&gt; to make a dropdown menu</li>
+	<li>provides proper displaying and hiding</li>
+	<li>the most important dropdown menu class</li>
+	<li>needs .dropdown and .dropdown-toggle classes on parent elements (see above)</li>
+</ul>
+
+<h3>.nav-justified</h3>
+
+<ul>
+	<li>class for an &lt;ul&gt;, together with .nav-tabs or .nav-pills creates a navigation with centered text and links' parent elements of the same width</li>
+</ul>
+
+<h3>.disabled</h3>
+
+<ul>
+	<li>class for &lt;li&gt; in a navigation</li>
+	<li>disables the link inside VISUALLY and also adds a special mouse cursor, but the link remains active - you need to remove the href attribute of the &lt;a&gt; to completely disable the link</li>
+</ul>
+
+<h2>Bootstrap Navbar Classes</h2>
+
+<ul>
+	<li>the difference between nav and navbar classes is the fact that navbar can collapse the whole nav (the nav can't do it on its own)</li>
+</ul>
+
+<h3>.navbar</h3>
+
+<ul>
+	<li>basic class for a navigation wrapper (usually &lt;nav&gt;), sets border, bottom margin, min-height and position: relative</li>
+	<li>if it's not supposed to be fixed, can be placed anywhere in .container or .container-fluid</li>
+</ul>
+
+<h3>.navbar-default</h3>
+
+<ul>
+	<li>sets other basic styles for a navigation wrapper (background gradient and box-shadow) and also its items (including .active class on &lt;li&gt;s)</li>
+	<li>for dark colours, see .navbar-inverse below</li>
+</ul>
+
+<h3>.navbar-inverse</h3>
+
+<ul>
+	<li>variation of navbar-default but with dark colours</li>
+	<li>never use navbar-default and navbar-inverse on one element as it doesn't make any sense</li>
+</ul>
+
+<h3>.navbar-brand</h3>
+
+<ul>
+	<li>sets styles for special hyperlinks and other "simple text" in a menu (float: left, bigger font size, some padding, text-shadow...)</li>
+</ul>
+
+<h3>.navbar-fixed-top</h3>
+
+<h3>.navbar-fixed-bottom</h3>
+
+<ul>
+	<li>additional class to .navbar that makes the navigation fixed at the top (or bottom) of the page as you scroll</li>
+	<li>used together with .navbar and also .navbar default (just to keep the nice look)</li>
+	<li>you should add some top or bottom padding to your &lt;body&gt; to not let the navbar overflow your content</li>
+</ul>
+
+<h3>.navbar-static-top</h3>
+
+<ul>
+	<li>removes top, right and left border and also border-radius of your navigation</li>
+</ul>
+
+<h3>.breadcrumb</h3>
+
+<ul>
+	<li>class for &lt;ul&gt; that serves as breadcrumbs</li>
+	<li>gives breadcrumbs a cool look</li>
+</ul>
+
+<h3>.pagination</h3>
+
+<ul>
+	<li>class for &lt;ul&gt; that serves as pagination</li>
+	<li>properly styles &lt;li&gt; within this pagination also with .disabled and .active classes (keep in mind that .disabled doesn't remove link's functionality)</li>
+</ul>
+
+<h3>.pagination-lg</h3>
+
+<h3>.pagination-sm</h3>
+
+<ul>
+	<li>used on &lt;ul&gt; together with .pagination, makes pagination either bigger or smaller than default</li>
+</ul>
+
+<h3>.pager</h3>
+
+<ul>
+	<li>used on &lt;ul&gt;, styles "Previous" and "Next" links to look better with a grey border</li>
+	<li>its list items can have .previous, .next and also disabled classes for even better styling</li>
+</ul>
+
+<h3>.next</h3>
+
+<h3>.previous</h3>
+
+<ul>
+	<li>used on &lt;li&gt; within &lt;ul class="pager"&gt;, adds arrows to the links</li>
+</ul>
+
+<hr>
+</div>
+
+
+
+      
+      <!--
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::   7  BACK TO TOP     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+      -->
+      <div
+      class="text-center"
+      style="background: rgba(0,0,0,.05);
+      	margin: 50px auto;
+      	padding: 40px 20px;
+      	border: 1px solid rgba(125,125,125,.5);
+      	border-left: none;
+      	border-right: none;
+      ">
+      	<a name="section7"></a>
+      	<a href="#top" class="btn btn-default">Back to top</a>
+      	<a href="#section8" class="btn btn-default pull-right">Next &raquo;</a>
+      	<a href="#section6" class="btn btn-default pull-right">&laquo; Previous</a>
+      </div>
+
+
+
+    </div>
+
+</div></div></div></div>
+
+
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.min.js">/* */</script>
+	<script type="text/javascript">
+		$(function() { 
+			// IE shim for placeholder. See jquery_placeholder.js 
+			$('input').placeholder();
+			// enables tooltips 
+			$('[data-toggle="tooltip"]').tooltip();
+			// enables popovers 
+			$('[data-toggle="popover"]').popover();
+		})
+	</script>
+  
+
+</body>
+
+</html>
