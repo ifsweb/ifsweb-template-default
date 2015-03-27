@@ -1,0 +1,106 @@
+
+<div class="mastWrap">
+      
+        <video autoplay loop preload="auto">
+          <source src="/video/homepage.mp4" type="video/mp4">
+          <source src="/video/homepage.ogv" type="video/ogg">
+          <source src="/video/homepage.webm" type="video/webm">
+        </video>
+        <img src="../images/snowshoe.jpg" border="0" alt="" title="">
+      
+  </div><!--mastwrap-->
+  
+  
+  /*add to css for masthead background video clip:*/
+  
+.mastWrap {
+	display: block;
+	position: relative;
+	z-index: 12;
+	overflow: hidden;
+}
+
+.mastWrap video {
+	display: none;
+	position: absolute;
+	z-index: 13;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: scale(1.8);
+	-webkit-transform: scale(1.8);
+}
+
+.mastWrap video+img {
+	width: 100%;
+	display: block;
+}
+
+.no-video .mastWrap video,
+.appleios .mastWrap video {
+	display: none;
+}
+
+.no-video .mastWrap video+img,
+.appleios .mastWrap video+img {
+	display: block;
+}
+
+.mastWrap .content {
+	background-size: cover;
+	-ms-behavior: url(/library/js/polyfill/backgroundsize.min.htc);
+	background-repeat: no-repeat;
+}
+
+.mastWrap h1 {
+	text-shadow: 3px 3px 0 black;
+	text-shadow: 3px 3px 0 0 black;
+	color: white;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	font-weight: 900;
+	font-family: caecilia;
+	text-transform: uppercase;
+	max-width: 680px;
+	padding: 0 1em;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+}
+@media (min-width: 64.0625em) {
+
+.mastWrap {
+	position: relative;
+	background-size: cover;
+	-ms-behavior: url(/library/js/polyfill/backgroundsize.min.htc);
+}
+
+.mastWrap:before {
+	display: block;
+	content: " ";
+	width: 100%;
+	padding-top: 42.85714%;
+}
+
+.mastWrap>.content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.mastWrap video {
+	display: block;
+}
+
+.mastWrap video+img {
+	display: none;
+}
+
+}
