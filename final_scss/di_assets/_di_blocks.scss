@@ -1,0 +1,74 @@
+/* Scss Document */
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::   BLOCK ROWS   ::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.block {
+	background: rgba(0,0,0,.02);
+	border: 1px solid rgba(0,0,0,.035);
+	padding-top: 12px;
+	padding-bottom: 12px;
+	}
+.block:hover,
+.block:active,
+.block:focus {
+	background: rgba(0,0,0,.03);
+	border: 1px solid rgba(0,0,0,.055);
+	}
+
+.threeBlock {
+	background: rgba(0,0,0,.05);
+	h1 {
+		font-size: 2.3vw;
+		@media (max-width: 767px){
+			font-size: 5vw;
+			}
+		}
+	.block {
+		@extend .col-sm-4;
+		min-height: 33.3333vw;
+		}
+	}
+
+.fourBlock {
+	background: rgba(0,0,0,.075);
+	h1 {
+		font-size: 1.6vw;
+		@media (max-width: 767px){
+			font-size: 5vw;
+			}
+		}
+	.block {
+		@extend .col-sm-3;
+		min-height: 25vw;
+		}
+	}
+.container .threeBlock .block {
+	min-height: 390px;
+	@media (max-width: 1199px){
+		min-height: 323px;
+		}
+	@media (max-width: 991px){
+		min-height: 250px;
+		}
+	}
+.container .fourBlock .block {
+	min-height: 293px;
+	@media (max-width: 1199px){
+		min-height: 243px;
+		}
+	@media (max-width: 991px){
+		min-height: 188px;
+		}
+	}
+
+.blockInner {
+	padding: 0 15px 15px;
+	border: 1px solid rgba(255,255,255,.5);
+	box-shadow: 0 0 12px rgba(0,0,0,.015);
+	}
+
+
+

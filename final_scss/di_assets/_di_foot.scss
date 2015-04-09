@@ -1,0 +1,146 @@
+/* Scss Document */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::   FOOT   :::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.footTop,
+.footBottom {
+	margin: 0 auto;
+	padding: 20px 10px;
+	max-width: 90%;
+	@media (max-width: 1040px) {
+		max-width: 95%;
+		}
+	@media (max-width: 550px) {
+		max-width: 100%;
+		}
+	}
+.footTop {
+	@extend .clearfix;
+	text-align: left;
+	}
+.footNavCol {
+	width: 19.75%;
+	float: left;
+	display: inline-block;
+	@media (max-width: 991px) {
+		width: 33%;
+		}
+	@media (max-width: 590px) {
+		width: 49.75%;
+		}
+	ul {
+		list-style: none;
+		@media (max-width: 991px) {
+			padding-left: 12px;
+			}
+		}
+	li {
+		background: none;
+		padding: 0;
+		}
+	li a {
+		color: #d2c8a9;
+		font-size: 14px;
+		text-decoration: none;
+		padding: 6px 0;
+		}
+	li a:hover,
+	li a:focus,
+	li a:active,
+	li a.active {
+			color: $brand-success;
+			}
+	li.footPnav a {
+		color: $brand-success;
+		font-size: 18px;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+		padding: 12px 0 8px;
+		}
+	li.footPnav a:hover,
+	li.footPnav a:focus,
+	li.footPnav a:active,
+	li.footPnav a.active {
+		color: #d2c8a9;
+		}
+	}
+
+
+.footBottom {
+	border-top: 1px solid rgba(0,0,0,.1);
+	ul {
+		@extend .list-inline;
+		margin-left: 0;
+		}
+	ul li {
+		padding-left: 1px;
+		padding-right: 1px;
+		}
+	@extend .clearfix;
+	@media (max-width: 991px) {
+		padding: 20px;
+		}
+	}
+
+.footUti,
+.compliance,
+.footLogo {
+	display: inline;
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+    vertical-align: middle;
+	@media (max-width: 991px) {
+		text-align: center;
+		}
+	}
+
+.footUti {
+	@extend .col-md-4;;
+	ul li {
+		color: $brand-success;
+		a {
+			color: $brand-success;
+			text-decoration: none;
+			font-size: 14px;
+			}
+		a:hover,
+		a:focus,
+		a:active,
+		a.active {
+			color: #d2c8a9;
+			}
+		}
+	@media (max-width: 991px) {
+		padding-left: 0px;
+		}
+	}
+
+.compliance {
+	@extend .col-md-3;
+	text-align: right;
+	@media (max-width: 991px) {
+		text-align: center;
+		padding-left: 0;
+		}
+	}
+
+.footLogo {
+	@extend .col-md-5;
+	text-align: right;
+	@media (max-width: 991px) {
+		text-align: center;
+		padding-left: 0px;
+		}
+	img {
+		@media (max-width: 550px) {
+			max-width: 100%;
+			}
+		}
+	}
+
+
+
+

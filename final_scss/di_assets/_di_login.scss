@@ -1,0 +1,219 @@
+/* Scss Document */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::   LOGIN   ::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.loginOB {
+	background: url(../images/bg_content.gif);
+    padding: 17px 21px 5px;
+    position: relative;
+	text-align: center;
+	position: absolute;
+	z-index: 750;
+	min-width: 334px;
+	top: 5%;
+	right: 1.5%;
+	
+	@media (max-width: 991px) {
+		position: relative;
+		top: 0;
+		right: 0;
+		max-width: 80%;
+		min-width: 300px;
+		display: block;
+		clear: both;
+		margin: 20px auto;
+		border-radius: $border-radius-base;
+		border: 1px solid $brand-success;
+		background: rgba(255,255,255,.7);
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+		}
+	@media (max-width: 550px) {
+		max-width: 100%;
+		}
+		
+	form {
+		max-width: 92%;
+		text-align: left;
+		margin: 0 auto;
+		}
+	h1 {
+		text-align: left;
+		padding: 12px 15px;
+		margin: 10px 0;
+		color: #a67c16;
+		font-size: 24px;
+		font-weight: 600;
+		border: 2px solid rgba(196,147,26,.6);
+		background: rgba(255,255,255,.6);
+		border-radius: 2px;
+		span {
+			position: relative;
+			top: -3px;
+			}
+		}
+
+	.form-control {
+		padding: 6px 12px;
+		background: rgba(255,255,255,.4);
+		border: 1px solid rgba(197,146,26,.4);
+		box-shadow: none;
+		margin: 0;
+		}
+	.form-group {
+		margin-bottom: 12px;
+		}
+	
+	@media (max-width: 1099px) {
+		min-width: 300px;
+		h1 {
+			font-size: 18px;
+			padding: 6px 8px;
+			margin: 5px 0;
+			}
+		.form-control {
+			padding: 3px 6px;
+			}
+		}
+	}
+#back .loginOB {
+	background: none;
+	top: 14%;
+	right: 4%;
+	@media (max-width: 991px) {
+		position: absolute;
+		max-width: auto;
+		min-width: auto;
+		display: inherit;
+		clear: none;
+		margin: auto;
+		border-radius: none;
+		border: none;
+		background: none;
+		box-shadow: none;
+		top: 5%;
+		right: 2%;
+		}
+	@media (max-width: 767px) {
+		top: 0;
+		}
+	@media (max-width: 550px) {
+		display: block;
+		width: 100%;
+		position: relative;
+		top: 0;
+		right: 0;
+		margin: 0;
+		padding: 0;
+		clear: both;
+		}
+	}
+
+#back .loginOB h1 {
+	font-size: 18px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	}
+#back h1 span img {
+	width: 7.5%;
+	}
+.btnOB.btn,
+#back a.btnOB {
+	float: right;
+	display: inline-block;
+	border-radius: 6px;
+	-moz-user-select: none;
+    background-image: none;
+    border: 1px solid #00191e;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 7px 19px;
+    text-align: center;
+    white-space: nowrap;
+	color: #fff;
+	background: #0e5c67; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #0e5c67 0%, #002d36 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e5c67), color-stop(100%,#002d36)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #0e5c67 0%,#002d36 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #0e5c67 0%,#002d36 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #0e5c67 0%,#002d36 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #0e5c67 0%,#002d36 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e5c67', endColorstr='#002d36',GradientType=0 ); /* IE6-9 */
+
+box-shadow: 0 2px 5px rgba(0,0,0,.15);
+	
+	
+	@media (max-width: 1099px) {
+		font-size: 14px;
+		padding: 7px 13px;
+		}
+	}
+#back a.btnOB {
+	float: right;
+	position: relative;
+    top: -10px;
+	@media (max-width: 550px) {
+		top: -5px;
+		}
+	}
+.btnOB.btn:hover,
+.btnOB.btn.active,
+#back a.btnOB:hover,
+#back a.btnOB.active {
+	background: #002d36;
+	}
+
+.loginOB .btn-success {
+	font-size: 11.5px;
+	font-weight: 600;
+	border: 1px solid rgba(255,255,255,.9);
+	box-shadow: 0 0 5px 1px rgba(0,0,0,.10);
+	padding: 7px 5px;
+	margin-top: 5px;
+	margin-right: 1px;
+	@media (max-width: 1099px) {
+		font-size: 10.5px;
+		padding: 4px 3px;
+		}
+	
+	}
+
+.loginCol {
+	color: #fff;
+	text-align: center;
+	display: block;
+	clear: both;
+	border-top: 1px solid rgba(138,159,163,.41);
+	padding-top: 6px;
+	margin-top: 6px;
+	a {
+		color: #fff;
+		}
+	.btn {
+		margin: 3px 0;
+		font-size: 15px;
+		border-radius: 4px;
+		display: block;
+		padding-bottom: 7px;
+		}
+	@media (max-width: 991px) {
+		margin: 20px 0 0;
+		padding: 20px 0 10px;
+		}
+	}
+
+
+
+

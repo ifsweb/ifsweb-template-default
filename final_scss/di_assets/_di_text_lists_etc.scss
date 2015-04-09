@@ -1,0 +1,179 @@
+/* Scss Document */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::   TEXT/LISTS   ::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+h1,h2,h3,h4,h5,h6 {
+	text-align: left;
+	}
+h1 {
+	color: #0e5c67;
+	font-size: 26px;
+	font-weight: 600;
+	}
+h2 {
+	color: #0e5c67;
+	font-size: 23px;
+	font-weight: 400;
+	}
+h3 {
+	color: #a5821e;
+	font-size: 19px;
+	font-weight: 400;
+	}
+h4 {
+	color: #3f3f3f;
+	font-size: 16.5px;
+	font-weight: 700;
+	}
+h5 {
+	color: #a5821e;
+	font-size: 14px;
+	font-weight: 700;
+	}
+h6 {
+	color: #a5821e;
+	font-size: 12px;
+	font-weight: 900;
+	}
+
+a {
+	display: block;
+	}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+p a,
+table a,
+form a,
+.breadcrumb a,
+.alert a {
+	display: inline;
+	}
+
+p {
+	margin: 8px 0;
+	}
+
+.content ul,
+.content ol,
+.content ol.breadcrumb {
+  margin: 0 0 30px;
+  padding: 0 0 6px 0; }
+
+.content ol.breadcrumb li {
+  background: none repeat scroll 0 0 transparent; }
+
+.content ol.breadcrumb li {
+  line-height: 18px;
+  margin: 6px 6px 6px 0; }
+
+
+.breadcrumb > li {
+  display: inline-block; }
+
+	
+.content ul li {
+  background: url(../images/bullet.png) no-repeat 0em 0em;
+  list-style-type: none;
+  padding: 7px 0 7px 20px;
+  line-height: 18px; }
+
+.content ol li {
+  margin: 0 0 6px 25px;
+  line-height: 18px; }
+
+/*mixed lists */
+.content ul ul, .content ol ol {
+  margin-bottom: -6px;
+  padding: 6px 0 0 0; }
+
+.content ul li, .content ol li ul li, .content ol li ul li ol li ul li {
+  background: url(../images/bullet.png) no-repeat 0 1em;
+  list-style: none; }
+
+.content ol li, .content ol li ol li, .content ul li ol li ol li {
+  background: none; }
+
+.content ol li ol li {
+  background: none;
+  list-style: lower-alpha; }
+
+.content ul ul li {
+  background: url(../images/bullet2.png) no-repeat 0 1em; }
+
+.content h1:first-child,
+.content h1:first-of-type {
+  margin: 24px 0 12px;
+  padding: 0;
+  line-height: 24px; }
+
+
+blockquote {
+  border-left: 0; }
+
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 50px;
+  position: relative;
+  left: -20px;
+  top: 0;
+  color: #7a7a7a; }
+
+blockquote cite {
+  color: #999999;
+  display: block;
+  margin-top: 10px; }
+
+blockquote cite:before {
+  content: "\2014 \2009"; }
+
+
+.content ul.nav,
+.content ul.breadcrumb,
+.content ul.pagination,
+.content ul.pager {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	}
+
+.content ul.nav > li,
+.content ul.pagination > li,
+.content ul.pager > li  {
+	background-image: none;
+	margin: auto;
+	padding: inherit;
+	}
+.content ul.list-group > li  {
+	@extend .list-group-item;
+	background-image: none;
+	}
+.content ul.dropdown-menu  {
+	margin: 0;
+	padding: 0;
+	 > li  {
+		 background-image: none;
+		 display: block;
+		 margin: 0;
+		 padding: 0;
+		 }
+	 > li.dropdown-header {
+		 padding: 3px 20px;
+		 }
+	}
+
+.content ul.breadcrumb {
+	margin: 0 0 5px;
+	padding: 2px 5px;
+	> li {
+		background-image: none;
+		padding: 4px 0 4px 3px;
+		}
+	}
+

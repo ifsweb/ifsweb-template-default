@@ -1,0 +1,138 @@
+/* Scss Document */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     :::::::::::::::::::::::::::::::::::::::::::::::::   MAST ELEMENTS   :::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.navbar-toggle {
+	z-index: 6000;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	background: $brand-success;
+		.icon-bar {
+		background: #fff;
+		}
+	@media (max-width: 550px) {
+		right: -6px;
+		padding: 6px 8px;
+		.icon-bar {
+			width: 18px;
+			}
+		}
+	}
+
+.navbar-collapse {
+	@media (max-width: 767px) {
+		padding-left: 0;
+		padding-right: 0;
+		}
+	}
+
+.search {
+	@extend .col-sm-4;
+	margin-bottom: 0;
+	float: right;
+	@media (max-width: 767px) {
+		float: none;
+		}
+	.form-control.searchField {
+		padding-left: 35px;
+		color: $brand-success;
+		background: #fff url(../images/icon_glass.png) no-repeat .5em .5em;
+		border-color: $brand-success;
+		}
+	.btn-success {
+		font-size: 12px;
+		font-weight: 600;
+		line-height: 1.85;
+		}
+	}
+
+
+
+.logo {
+	@extend .col-sm-4;
+	text-align: left;
+	padding-top: 26px;
+	padding-bottom: 26px;
+	
+		img {
+			max-width: 100%;
+			}
+	@media (max-width: 767px) {
+		text-align: center;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		}
+	@media (max-width: 550px) {
+		text-align: left;
+		max-width: 200px;
+		}
+	}
+
+.uti {
+	text-align: right;
+	padding-top: 43px;
+	float: right;
+	@extend .col-sm-8;
+	@media (max-width: 991px) {
+		  padding-right: 0;
+		  padding-left: 0;
+		  }
+	@media (max-width: 767px) {
+		text-align: center;
+		float: none;
+		padding: 0;
+		}
+	@media (max-width: 550px) {
+		text-align: left;
+		}
+	ul {
+		@extend .list-inline;
+		@media (max-width: 767px) {
+			margin: 0 auto 12px;
+			}
+		> li {
+			padding-left: 0;
+			padding-right: 0;
+			}
+		}
+	li {
+		margin-left: 12px;
+		@media (max-width: 767px) {
+			margin-left: 0;
+			}
+		a {
+			font-size: 13px;
+			text-decoration: none;
+			padding: 0 5px;
+			@media (max-width: 991px) {
+				font-size: 11px;
+				padding: 0 7px;
+				}
+			@media (max-width: 767px) {
+				font-size: 14px;
+				}
+			@media (max-width: 550px) {
+				font-size: 9px;
+				font-weight: 600;
+				padding: 0 6px;
+				span {
+					margin-right: -5px;
+					}
+				}
+			}
+		a:hover,
+		a:active,
+		a.active,
+		a:focus {
+			text-decoration: underline;
+			}
+		}
+	}
+
+
+
+

@@ -1,0 +1,58 @@
+/* Scss Document */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     :::::::::::::::::::::::::::::::::::::::::::::::::   CONTENT BACK   ::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.contentBack {
+	padding: 0;
+	.contentInner {
+		margin-left: 0;
+		margin-right: 0;
+		}
+	}
+
+.imgBack {
+	text-align: center;
+	img {
+		border-radius: $borderRadius2;
+		border: 1px solid rgba(14,89,100,.14);
+		max-width: 100%;
+		margin: 0 auto;
+		@media (max-width: 767px) {
+			border-radius: 0px;
+			border: none;
+			margin: 0;
+			}
+		@media (max-width: 550px) {
+			display: none;
+			}
+		}
+	}
+
+
+.content {
+	background: rgba(159,190,196,.1);
+	padding: 10px 30px 25px;
+	clear: both;
+	font-size: 15px;
+	line-height: 1.75em;
+	text-align: left;
+	border-top: none;
+	}
+
+.contentImg {
+  margin-bottom: 15px; }
+
+.contentImg img {
+  border-radius: 9px;
+  width: 100%;
+  max-width: 100%; }
+
+
+
+
+
+
+

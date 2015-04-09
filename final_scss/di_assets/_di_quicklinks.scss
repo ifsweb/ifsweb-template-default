@@ -1,0 +1,72 @@
+/* Scss Document */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::   QUICK LINKS   :::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.quickLinks {
+	text-align: center;
+	h1 {
+		margin: 0;
+		padding: 17px 20px 15px;
+		box-shadow: 0 1px 6px rgba(0,0,0,.15);
+		background: rgba(255,255,255,.5);
+		font-size: 23px;
+		font-weight: 600;
+		a {
+			text-decoration: none;
+			color: $brand-success;
+			vertical-align: middle;
+			}
+		a.more {
+			color: inherit;
+			font-size: 14px;
+			height: 32px;
+			line-height: 32px;
+			}
+		a.more:hover,
+		a.more:focus,
+		a.more:active,
+		a.more.active {
+			color: $brand-success;
+			}
+		span {
+			margin-right: 5px;
+			position: relative;
+			top: -2px;
+			}
+		}
+	ul {
+		text-align: left;
+		width: 90%;
+		list-style: none;
+		background-image: none;
+		padding: 0 0 10px;
+		margin: 10px auto;
+		li {
+			margin: 0;
+			padding: 0;
+			border-bottom: 1px solid rgba(138,159,163,.3);
+			border-top: 2px solid rgba(255,255,255,1);
+			}
+		li.quickLinksTop {
+			border-top: none;
+			}
+		li a {
+			@extend .clearfix;
+			text-decoration: none;
+			font-size: 14px;
+			font-weight: 600;
+			padding: 0 0 4px;
+			line-height: 30px;
+			height: 30px;
+			}
+		li a span {
+			}
+		}
+	}
+
+
+
+

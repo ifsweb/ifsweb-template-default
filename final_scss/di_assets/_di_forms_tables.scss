@@ -1,0 +1,127 @@
+/* Scss Document */
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     :::::::::::::::::::::::::::::::::::::::::::::::::   FORMS/TABLES   :::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+.form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline,
+.radio,
+.checkbox {
+	top: 20px;
+	margin-top: 0;
+	margin-bottom: 8px;
+	padding-top: 3px;
+	padding-bottom: 15px;
+	min-height: 27px;
+	@extend .clearfix;
+	}
+.radio {
+	label input {
+		position: relative;
+		top: 1px;
+		}
+	}
+.checkbox {
+	label input {
+		position: relative;
+		top: 1px;
+		}
+	}
+
+.radio-inline input {
+	top: 4px;
+	}
+.checkbox-inline input {
+	top: 4px;
+	}
+
+label {
+	display: block;
+	margin: 0 0 6px 0;
+	line-height: 100%;
+	.checkbox & {
+		display: block;
+		margin: 0 0 6px 0;
+		}
+	.radio & {
+		display: block;
+		margin: 0 0 6px 0;
+		}
+	}
+
+.appfield1 {
+  box-shadow: 0 5px 5px #ddd inset; }
+
+.appfield2 {
+  width: 98%;
+  border: 1px #c7c4bd solid;
+  border-radius: 0;
+  background: #efefef;
+  padding: 5px 0 2px 2px;
+  box-shadow: 0 5px 5px #ddd inset; }
+
+
+
+table {
+  background: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  padding: 0 10px 30px 10px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: normal; }
+
+form table {
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  padding: 0; }
+
+.tableheader {
+  background: $brand-success;
+  color: #fff;
+  font-weight: normal;
+  padding: 15px;
+  font-size: 19px;
+  border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0; }
+
+td {
+  text-align: left;
+  }
+
+th {
+  border-bottom: 1px solid #fff;
+  background-color: $brand-info;
+  color: #fff;
+  text-align: left;
+  padding: .3em 15px;
+  width: 98%;
+  margin: 0 auto; }
+
+.tablecontent1 {
+  border-bottom: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 8px 15px;
+  width: 98%;
+  margin: 0 auto; }
+
+.tablecontent2 {
+  border-bottom: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.45);
+  padding: 8px 15px;
+  width: 98%;
+  margin: 0 auto; }
+
+.table a:active, table a:hover {
+  text-decoration: underline; }
+
+
+
+
